@@ -10,10 +10,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        proto: resolve(__dirname, "pages/proto.html"),
-        ui28: resolve(__dirname, "pages/28ui.html"),
-        mira: resolve(__dirname, "pages/mira.html"),
-        package: resolve(__dirname, "pages/package.html"),
+        ui_prototyping: resolve(__dirname, "pages/ui-prototyping.html"),
+        ui_design_projects: resolve(__dirname, "pages/ui-design-projects.html"),
+        mira_course_detail: resolve(__dirname, "pages/mira-course-detail.html"),
+        package_monitoring_frontend: resolve(__dirname, "pages/package-monitoring-frontend.html"),
       },
     },
   },
