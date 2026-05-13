@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "Inter", "Helvetica Neue", "Arial", sans-serif;
+    --font-mono: "Menlo", "Monaco", "Courier New", monospace;
+
+    /* Cargo aesthetic colors */
+    --color-cargo-bg: #e6e6e6; /* Classic Cargo slightly gray/off-white background */
+    --color-cargo-dark: #111111;
+    --color-cargo-muted: #666666;
+}
+
+@layer base {
+    :root {
+        background-color: var(--color-cargo-bg);
+        color: var(--color-cargo-dark);
+        font-family: var(--font-sans);
+    }
+
+    ::selection {
+        background-color: var(--color-cargo-dark);
+        color: var(--color-cargo-bg);
+    }
+
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        overflow-x: hidden;
+    }
+
+    /* Cargo-style raw links */
+    a {
+        transition: opacity 0.2s ease;
+    }
+
+    a:hover {
+        opacity: 0.5;
+    }
+}
+
+/* --- Lenis Smooth Scroll Base CSS --- */
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+    pointer-events: none;
+}
+
+/* --- Cargo UI Utilities --- */
+@layer utilities {
+    .cargo-border {
+        border: 1px solid var(--color-cargo-dark);
+    }
+
+    .cargo-border-b {
+        border-bottom: 1px solid var(--color-cargo-dark);
+    }
+
+    .cargo-border-t {
+        border-top: 1px solid var(--color-cargo-dark);
+    }
+
+    .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}

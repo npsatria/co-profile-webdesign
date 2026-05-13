@@ -1,25 +1,324 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="/assets/logo-atrem-project.svg" type="image/x-icon">
-  <title>Atrem Project - profile</title>
-   <link rel="stylesheet" href="/src/style.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <li><a href=""></a>Home</li>
-      <li><a href=""></a>About</li>
-      <li><a href=""></a>Portofolio</li>
-      <li><a href=""></a>Contact</li>
-    </nav>
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="/assets/logo-atrem-project.svg"
+            type="image/x-icon"
+        />
+        <title>Atrem Project - Praktek Kerja Lapangan</title>
 
-  </header>
+        <!-- Google Fonts: Inter & Space Mono (Cargo Style) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
 
+        <!-- Swiper CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
 
-  <script type="module" src="/src/main.js"></script>
-</body>
+        <!-- Main Style -->
+        <link rel="stylesheet" href="/src/css/style.css" />
+    </head>
+    <body
+        class="bg-[#e6e6e6] text-[#111111] font-sans antialiased overflow-x-hidden selection:bg-[#111111] selection:text-[#e6e6e6]"
+    >
+        <!-- Navigation (Cargo Brutalist Style) -->
+        <header
+            class="fixed top-0 w-full z-50 border-b border-[#111111] bg-[#e6e6e6] px-4 md:px-8 py-4 flex flex-col md:flex-row md:justify-between md:items-center text-xs font-mono uppercase tracking-widest gap-4 md:gap-0 transition-transform duration-300"
+        >
+            <div class="font-bold flex items-center gap-2">
+                <span
+                    class="w-3 h-3 bg-[#111111] rounded-full animate-pulse"
+                ></span>
+                Atrem Project
+            </div>
+            <nav class="flex gap-4 md:gap-8 overflow-x-auto hide-scrollbar">
+                <a
+                    href="#about"
+                    class="hover:opacity-50 transition-opacity whitespace-nowrap"
+                    >About</a
+                >
+                <a
+                    href="#skills"
+                    class="hover:opacity-50 transition-opacity whitespace-nowrap"
+                    >Skills</a
+                >
+                <a
+                    href="#quests"
+                    class="hover:opacity-50 transition-opacity whitespace-nowrap"
+                    >Quests</a
+                >
+                <a
+                    href="#projects"
+                    class="hover:opacity-50 transition-opacity whitespace-nowrap"
+                    >Work</a
+                >
+            </nav>
+            <div class="hidden md:block whitespace-nowrap">Batch 9 — Satria </div>
+        </header>
+
+        <main class="mt-[100px] md:mt-[60px]">
+            <!-- 1. HERO SECTION -->
+            <section
+                id="hero"
+                class="min-h-[90vh] flex flex-col justify-end p-4 md:p-8 border-b border-[#111111] relative"
+            >
+                <div class="absolute top-8 left-4 md:left-8 max-w-sm">
+                    <p class="text-sm font-mono uppercase tracking-widest mb-2">
+                        Praktek Kerja Lapangan
+                    </p>
+                    <p class="text-xs text-[#666666] font-mono">
+                        Ngakan Putu Satria Dewangga
+                    </p>
+                </div>
+
+                <h1
+                    class="text-[18vw] md:text-[14vw] font-bold tracking-tighter leading-[0.85] mb-4 md:mb-8 uppercase mt-32"
+                >
+                    ATREM <br />
+                    <span id="hero-typeit" class="text-[#666666]"></span>
+                </h1>
+
+                <div
+                    class="flex flex-col md:flex-row justify-between items-start md:items-end border-t border-[#111111] pt-6 mt-8 gap-4"
+                >
+                    <p
+                        class="max-w-2xl text-lg md:text-2xl font-medium leading-tight"
+                    >
+                        Fokus pada digitalisasi usaha. Mulai dari sistem
+                        manajemen laundry, LMS, hingga company profile.
+                    </p>
+                    <i
+                        data-lucide="arrow-down-right"
+                        class="w-12 h-12 md:w-16 md:h-16 shrink-0 text-[#111111]"
+                    ></i>
+                </div>
+            </section>
+
+            <!-- 2. ABOUT SECTION -->
+            <section
+                id="about"
+                class="grid grid-cols-1 md:grid-cols-4 border-b border-[#111111]"
+            >
+                <div
+                    class="col-span-1 border-b md:border-b-0 md:border-r border-[#111111] p-4 md:p-8"
+                >
+                    <h2
+                        class="text-xs font-mono uppercase tracking-widest sticky top-24"
+                    >
+                        Tentang Agensi
+                    </h2>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>
 
+                </div>
+
+                <div class="col-span-3 p-4 md:p-8 flex flex-col gap-16 md:gap-24 py-12 md:py-24">
+                    <!-- About 1 -->
+                    <article class="gsap-reveal max-w-4xl">
+                        <h3 class="text-3xl md:text-5xl font-bold tracking-tight mb-6 uppercase">Atrem Project</h3>
+                        <p class="text-lg md:text-2xl leading-relaxed text-[#444444]">
+                            Atrem Project merupakan hasil dari inisiatif Merta Yoga, yang memulai pendirian agensi ini setelah lulus dari Sekolah Menengah Kejuruan (SMK). Agensi ini berfokus pada penyediaan solusi untuk mendigitalisasi berbagai usaha. Atrem menawarkan berbagai layanan, termasuk pembuatan sistem manajemen laundry, Learning Management System (LMS), jasa desain profil perusahaan, dan masih banyak lagi.
+                        </p>
+                    </article>
+
+                    <!-- About 2 -->
+                    <article class="gsap-reveal max-w-4xl">
+                        <h3 class="text-3xl md:text-5xl font-bold tracking-tight mb-6 uppercase">Sejarah</h3>
+                        <p class="text-lg md:text-2xl leading-relaxed text-[#444444]">
+                            Semua berawal dari ketertarikan Merta Yoga pada bidang komputer, terutama setelah ia mengetahui bahwa seorang programmer dapat bekerja secara remote. Hal ini mendorongnya untuk memilih SMK 1 Denpasar dengan jurusan Rekayasa Perangkat Lunak (RPL) sebagai langkah awal dalam kariernya. Setelah menyelesaikan pendidikan di SMK, Merta Yoga memutuskan untuk mendirikan Atrem Project sebagai sumber penghasilan sampingan.
+                        </p>
+                    </article>
+
+                    <!-- About 3 -->
+                    <article class="gsap-reveal max-w-4xl">
+                        <h3 class="text-3xl md:text-5xl font-bold tracking-tight mb-6 uppercase">System Internship</h3>
+                        <p class="text-lg md:text-2xl leading-relaxed text-[#444444]">
+                            Atrem Project merekrut anggota agensi melalui sistem magang, di mana setiap angkatan disebut sebagai "batch." Saya termasuk dalam batch 6. Setiap anggota batch akan diberikan tugas sesuai dengan bidang yang mereka pilih. Jika salah satu anggota batch dinilai kompeten oleh Merta Yoga, mereka akan ditawari kesempatan untuk bergabung dengan Atrem Project sebagai tim yang akan menangani proyek klien.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- 3. SKILLS SECTION -->
+            <section id="skills" class="grid grid-cols-1 md:grid-cols-4 border-b border-[#111111]">
+                <div class="col-span-1 border-b md:border-b-0 md:border-r border-[#111111] p-4 md:p-8">
+                    <h2 class="text-xs font-mono uppercase tracking-widest sticky top-24">Hal yang Dipelajari</h2>
+                </div>
+
+                <div class="col-span-3">
+                    <div class="p-4 md:p-8 border-b border-[#111111]">
+                        <p class="text-lg md:text-xl text-[#444444] max-w-3xl leading-relaxed">
+                            Di Atrem Project, sistem belajarnya berbasis mentorship. Kami diberikan tugas yang harus diselesaikan secara mandiri, dan jika mengalami kesulitan, kami dapat mendiskusikannya.
+                        </p>
+                    </div>
+
+                    <!-- Skills Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2">
+                        <!-- Skill 1 -->
+                        <div class="p-6 md:p-12 border-b md:border-r border-[#111111] gsap-skill hover:bg-[#111111] hover:text-[#e6e6e6] transition-colors duration-300 group">
+                            <i data-lucide="microscope" class="w-12 h-12 mb-8 text-[#111111] group-hover:text-[#e6e6e6] transition-colors"></i>
+                            <h4 class="text-2xl font-bold mb-4 uppercase">UX Research</h4>
+                            <p class="text-[#666666] group-hover:text-[#a0a0a0] transition-colors">Selama di sini, saya diperkenalkan dengan UX Research, yang merupakan tahap pertama dalam pembuatan aplikasi atau website.</p>
+                        </div>
+
+                        <!-- Skill 2 -->
+                        <div class="p-6 md:p-12 border-b border-[#111111] gsap-skill hover:bg-[#111111] hover:text-[#e6e6e6] transition-colors duration-300 group">
+                            <i data-lucide="test-tubes" class="w-12 h-12 mb-8 text-[#111111] group-hover:text-[#e6e6e6] transition-colors"></i>
+                            <h4 class="text-2xl font-bold mb-4 uppercase">UX Testing</h4>
+                            <p class="text-[#666666] group-hover:text-[#a0a0a0] transition-colors">Di sini, saya diajarkan cara melakukan UX testing yang benar, mulai dari mencari responden hingga cara menanggapi mereka.</p>
+                        </div>
+
+                        <!-- Skill 3 -->
+                        <div class="p-6 md:p-12 border-b md:border-b-0 md:border-r border-[#111111] gsap-skill hover:bg-[#111111] hover:text-[#e6e6e6] transition-colors duration-300 group">
+                            <i data-lucide="figma" class="w-12 h-12 mb-8 text-[#111111] group-hover:text-[#e6e6e6] transition-colors"></i>
+                            <h4 class="text-2xl font-bold mb-4 uppercase">UI Prototyping</h4>
+                            <p class="text-[#666666] group-hover:text-[#a0a0a0] transition-colors">Saya mengeksplorasi UI Prototyping, di mana saya membuat animasi dan user flow di Figma untuk meningkatkan kualitas tahap UX Testing.</p>
+                        </div>
+
+                        <!-- Skill 4 -->
+                        <div class="p-6 md:p-12 gsap-skill hover:bg-[#111111] hover:text-[#e6e6e6] transition-colors duration-300 group">
+                            <i data-lucide="wind" class="w-12 h-12 mb-8 text-[#111111] group-hover:text-[#e6e6e6] transition-colors"></i>
+                            <h4 class="text-2xl font-bold mb-4 uppercase">Tailwind CSS</h4>
+                            <p class="text-[#666666] group-hover:text-[#a0a0a0] transition-colors">Tailwind adalah framework CSS yang terkenal. Di sini, saya dibina dan diajarkan cara menggunakan Tailwind dengan benar dan efektif.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. SIDE QUEST SECTION (Swiper) -->
+            <section id="quests" class="border-b border-[#111111] overflow-hidden">
+                <div class="flex flex-col md:flex-row border-b border-[#111111]">
+                    <div class="p-4 md:p-8 md:w-1/4 border-b md:border-b-0 md:border-r border-[#111111]">
+                        <h2 class="text-xs font-mono uppercase tracking-widest">Side Quests</h2>
+                    </div>
+                    <div class="p-4 md:p-8 md:w-3/4 flex items-center justify-between">
+                        <p class="text-lg max-w-xl text-[#444444]">
+                            Tugas tambahan yang berfungsi sebagai tumpukan aset untuk Atrem Project.
+                        </p>
+                        <div class="flex gap-2">
+                            <button class="swiper-button-prev-custom w-10 h-10 border border-[#111111] flex items-center justify-center hover:bg-[#111111] hover:text-[#e6e6e6] transition-colors"><i data-lucide="arrow-left" class="w-5 h-5"></i></button>
+                            <button class="swiper-button-next-custom w-10 h-10 border border-[#111111] flex items-center justify-center hover:bg-[#111111] hover:text-[#e6e6e6] transition-colors"><i data-lucide="arrow-right" class="w-5 h-5"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper quest-swiper border-b border-[#111111]">
+                    <div class="swiper-wrapper">
+                        <!-- Quest 1 -->
+                        <div class="swiper-slide border-r border-[#111111] p-8 md:p-12 min-h-[350px] flex flex-col justify-between">
+                            <div class="text-4xl font-mono text-[#666666]">01</div>
+                            <div>
+                                <h3 class="text-2xl font-bold uppercase mb-4">Mini Blog Atrem Tech Zone</h3>
+                                <p class="text-[#444444]">Membuat blog untuk menjadi referensi konten Atrem Tech Zone yang merupakan akun informatif dari Atrem Project.</p>
+                            </div>
+                        </div>
+                        <!-- Quest 2 -->
+                        <div class="swiper-slide border-r border-[#111111] p-8 md:p-12 min-h-[350px] flex flex-col justify-between">
+                            <div class="text-4xl font-mono text-[#666666]">02</div>
+                            <div>
+                                <h3 class="text-2xl font-bold uppercase mb-4">Target Promosi Jasa</h3>
+                                <p class="text-[#444444]">Mencari website atau instagram dari berbagai bidang usaha yang akan digunakan sebagai target promosi jasa Atrem Project.</p>
+                            </div>
+                        </div>
+                        <!-- Quest 3 -->
+                        <div class="swiper-slide border-r border-[#111111] p-8 md:p-12 min-h-[350px] flex flex-col justify-between">
+                            <div class="text-4xl font-mono text-[#666666]">03</div>
+                            <div>
+                                <h3 class="text-2xl font-bold uppercase mb-4">Referensi UI Company Profile</h3>
+                                <p class="text-[#444444]">Mencari 300+ referensi UI yang digunakan sebagai referensi dari pembuatan portofolio Atrem Project.</p>
+                            </div>
+                        </div>
+                        <!-- Quest 4 -->
+                        <div class="swiper-slide p-8 md:p-12 min-h-[350px] flex flex-col justify-between">
+                            <div class="text-4xl font-mono text-[#666666]">04</div>
+                            <div>
+                                <h3 class="text-2xl font-bold uppercase mb-4">Referensi Sistem</h3>
+                                <p class="text-[#444444]">Mengumpulkan referensi sistem yang digunakan untuk mengupgrade sistem-sistem yang akan dibuat atau sudah dibuat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. PROJECTS SECTION -->
+            <section id="projects" class="grid grid-cols-1 md:grid-cols-4">
+                <div class="col-span-1 border-b md:border-b-0 md:border-r border-[#111111] p-4 md:p-8">
+                    <h2 class="text-xs font-mono uppercase tracking-widest sticky top-24">Project yang Dikerjakan</h2>
+                </div>
+
+                <div class="col-span-3">
+                    <!-- Project 1 -->
+                    <div class="group border-b border-[#111111] p-6 md:p-12 hover:bg-[#111111] hover:text-[#e6e6e6] transition-all duration-500 flex flex-col md:flex-row justify-between md:items-center cursor-pointer">
+                        <div>
+                            <h3 class="text-3xl md:text-5xl font-bold uppercase mb-4 tracking-tighter">16 UI Prototyping Project</h3>
+                            <div class="flex gap-3 flex-wrap font-mono text-xs">
+                                <span class="border border-current px-3 py-1 rounded-full">UX Testing</span>
+                                <span class="border border-current px-3 py-1 rounded-full">UI Prototyping</span>
+                            </div>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="w-12 h-12 mt-6 md:mt-0 opacity-0 group-hover:opacity-100 transition-opacity transform group-hover:translate-x-2 group-hover:-translate-y-2 duration-300"></i>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="group border-b border-[#111111] p-6 md:p-12 hover:bg-[#111111] hover:text-[#e6e6e6] transition-all duration-500 flex flex-col md:flex-row justify-between md:items-center cursor-pointer">
+                        <div>
+                            <h3 class="text-3xl md:text-5xl font-bold uppercase mb-4 tracking-tighter">28 UI Design Project</h3>
+                            <div class="flex gap-3 flex-wrap font-mono text-xs">
+                                <span class="border border-current px-3 py-1 rounded-full">UX Research</span>
+                                <span class="border border-current px-3 py-1 rounded-full">UX Testing</span>
+                            </div>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="w-12 h-12 mt-6 md:mt-0 opacity-0 group-hover:opacity-100 transition-opacity transform group-hover:translate-x-2 group-hover:-translate-y-2 duration-300"></i>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="group border-b border-[#111111] p-6 md:p-12 hover:bg-[#111111] hover:text-[#e6e6e6] transition-all duration-500 flex flex-col md:flex-row justify-between md:items-center cursor-pointer">
+                        <div>
+                            <h3 class="text-3xl md:text-5xl font-bold uppercase mb-4 tracking-tighter">Mira Course</h3>
+                            <div class="flex gap-3 flex-wrap font-mono text-xs">
+                                <span class="border border-current px-3 py-1 rounded-full">UX Research</span>
+                                <span class="border border-current px-3 py-1 rounded-full">UX Testing</span>
+                                <span class="border border-current px-3 py-1 rounded-full">UI Prototyping</span>
+                            </div>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="w-12 h-12 mt-6 md:mt-0 opacity-0 group-hover:opacity-100 transition-opacity transform group-hover:translate-x-2 group-hover:-translate-y-2 duration-300"></i>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="group p-6 md:p-12 hover:bg-[#111111] hover:text-[#e6e6e6] transition-all duration-500 flex flex-col md:flex-row justify-between md:items-center cursor-pointer">
+                        <div>
+                            <h3 class="text-3xl md:text-5xl font-bold uppercase mb-4 tracking-tighter">Package Monitoring</h3>
+                            <div class="flex gap-3 flex-wrap font-mono text-xs">
+                                <span class="border border-current px-3 py-1 rounded-full">Tailwind</span>
+                                <span class="border border-current px-3 py-1 rounded-full">Basic JS</span>
+                                <span class="border border-current px-3 py-1 rounded-full">Daisy UI</span>
+                            </div>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="w-12 h-12 mt-6 md:mt-0 opacity-0 group-hover:opacity-100 transition-opacity transform group-hover:translate-x-2 group-hover:-translate-y-2 duration-300"></i>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="border-t border-[#111111] bg-[#111111] text-[#e6e6e6] p-8 md:p-16 flex flex-col items-center justify-center text-center">
+            <h2 class="text-4xl md:text-6xl font-bold tracking-tighter uppercase mb-4">Sekian, Terimakasih</h2>
+            <p class="font-mono text-xs text-[#a0a0a0]">© 2024 Atrem Project Batch 6</p>
+        </footer>
+
+        <!-- JS Scripts -->
+        <script type="module" src="/src/js/main.js"></script>
+    </body>
+</html>
