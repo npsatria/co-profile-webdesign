@@ -1,63 +1,96 @@
 @layer components {
-  /* Layout Root */
-  .brutalist-container {
-    @apply border-x border-black max-w-7xl mx-auto bg-white;
+  /* Navigation Bars */
+  .cargo-nav {
+    @apply fixed left-0 w-full px-6 py-4 flex justify-between items-center z-50 mix-blend-difference pointer-events-none;
+  }
+  .cargo-nav > * {
+    @apply pointer-events-auto;
+  }
+  .cargo-nav-top {
+    @apply top-0;
+  }
+  .cargo-nav-bottom {
+    @apply bottom-0;
+  }
+  
+  .nav-btn {
+    @apply text-white hover:text-primary transition-colors cursor-pointer text-sm tracking-wide lowercase;
+  }
+  .nav-btn.active {
+    @apply text-primary font-bold;
   }
 
-  /* Section Wrapper - 4 Column Layout (Stacked on mobile) */
-  .brutalist-section {
-    @apply border-b border-black grid grid-cols-1 lg:grid-cols-4 gap-0;
+  /* Massive Background Text */
+  .bg-text-container {
+    @apply fixed inset-0 flex items-center justify-center z-0 pointer-events-none select-none px-4;
+  }
+  .bg-text {
+    @apply text-primary font-display text-[15vw] leading-[0.8] tracking-tighter text-center uppercase mix-blend-screen;
   }
 
-  /* Sidebar/Label Column (Stacked on top for mobile) */
-  .brutalist-label-col {
-    @apply p-4 lg:p-6 border-b lg:border-b-0 lg:border-r border-black font-bold uppercase text-[10px] tracking-widest flex flex-row lg:flex-col justify-between bg-[#efefef] items-center lg:items-start;
+  /* Main Container for the Views */
+  .view-container {
+    @apply fixed inset-0 z-10 w-full h-full overflow-y-auto pt-24 pb-24 px-4;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .view-container::-webkit-scrollbar {
+    display: none;
   }
 
-  /* Main Content Column */
-  .brutalist-main-col {
-    @apply lg:col-span-3 flex flex-col;
+  /* Data Cards (Images) */
+  .data-card {
+    @apply relative overflow-hidden bg-[#222] border border-white/10 cursor-pointer transform-gpu;
+    /* Default is hidden/small until view is set */
+  }
+  .data-card img {
+    @apply w-full h-full object-cover opacity-80 transition-opacity duration-300;
+  }
+  .data-card:hover img {
+    @apply opacity-30 grayscale;
   }
 
-  /* Grid Cells for modular items */
-  .brutalist-data-grid {
-    @apply grid grid-cols-1 md:grid-cols-2;
+  /* Detail overlay on hover */
+  .card-detail {
+    @apply absolute inset-0 p-6 flex flex-col justify-center items-center text-center opacity-0 transition-opacity duration-300 pointer-events-none;
+  }
+  .data-card:hover .card-detail {
+    @apply opacity-100;
+  }
+  .card-detail h3 {
+    @apply text-primary font-display text-4xl uppercase tracking-tighter mb-4;
+  }
+  .card-detail p {
+    @apply text-sm text-white/90 leading-relaxed font-mono max-w-sm;
   }
 
-  .brutalist-data-cell {
-    @apply p-6 lg:p-8 border-b border-black md:odd:border-r transition-colors duration-0 hover:bg-black hover:text-white;
+  /* Grid View */
+  .view-mode-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-7xl mx-auto h-auto min-h-full;
+  }
+  .view-mode-grid .data-card {
+    @apply w-full aspect-[4/3] rounded-sm;
   }
 
-  /* Typography - Fully Responsive */
-  .brutalist-h1 {
-    @apply text-5xl md:text-7xl lg:text-9xl font-bold uppercase tracking-tighter leading-[0.8];
+  /* Slideshow View */
+  .view-mode-slideshow {
+    @apply flex items-center justify-center w-full h-full;
+  }
+  .swiper-container {
+    @apply w-full max-w-5xl aspect-video mx-auto relative overflow-hidden rounded-sm;
+  }
+  .swiper-slide {
+    @apply flex justify-center items-center;
+  }
+  .view-mode-slideshow .data-card {
+    @apply w-full h-full;
   }
 
-  .brutalist-h2 {
-    @apply text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-none;
+  /* Freeform View */
+  .view-mode-freeform {
+    @apply relative w-full h-full;
   }
-
-  /* Navigation - Scrollable on mobile */
-  .brutalist-nav-item {
-    @apply px-4 lg:px-8 py-4 border-r border-black font-bold uppercase text-[10px] tracking-widest hover:bg-black hover:text-white transition-colors duration-0 flex items-center justify-center whitespace-nowrap;
+  .view-mode-freeform .data-card {
+    @apply absolute w-64 md:w-80 aspect-video rounded-sm shadow-2xl;
   }
-
-  /* UI Elements */
-  .brutalist-badge {
-    @apply border border-black px-2 py-0.5 text-[9px] lg:text-[10px] uppercase font-bold bg-white text-black;
-  }
-
-  .brutalist-tab {
-    @apply border-r border-black px-4 lg:px-6 py-4 font-bold uppercase text-[10px] cursor-pointer hover:bg-black hover:text-white transition-colors duration-0 flex-1 text-center whitespace-nowrap;
-  }
-
-  .brutalist-tab.active {
-    @apply bg-black text-white;
-  }
-
-  /* Utility */
-  .brutalist-border-t { @apply border-t border-black; }
-  .brutalist-border-r { @apply border-r border-black; }
-  .brutalist-border-b { @apply border-b border-black; }
-  .brutalist-border-l { @apply border-l border-black; }
 }

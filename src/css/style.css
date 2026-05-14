@@ -1,24 +1,30 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #000000;
-  --color-secondary: #333333;
-  --color-accent: #ff0000; /* Red for high contrast hits */
-  --color-bg: #f0f0f0;
-  --color-text: #000000;
+  --color-primary: #80e5a3; /* Mint Green */
+  --color-secondary: #111111; /* Dark background */
+  --color-accent: #ffffff; 
+  --color-bg: #151515;
+  --color-text: #ffffff;
   
   --font-mono: "Space Mono", monospace;
-  --font-sans: "Space Mono", monospace; /* Forcing mono for brutalist feel */
+  /* Add Anton for the massive title font */
+  --font-display: "Anton", sans-serif;
 }
 
 @layer base {
-  html {
-    @apply scroll-smooth;
+  html, body {
+    @apply bg-bg text-text font-mono antialiased overflow-hidden m-0 p-0 w-full h-full;
   }
-  body {
-    @apply bg-bg text-text font-mono antialiased overflow-x-hidden;
-    /* Default border for everything in brutalism */
-    border-color: #000000;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
   }
 }
 
