@@ -3,42 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mira Course - Atrem Project</title>
-  <link rel="stylesheet" crossorigin href="/assets/style-BUK1JVRX.css">
-</head>
-<body>
-    <header class="fixed top-0 z-50 w-full py-6">
-        <nav class="my-container flex justify-center">
-            <div class="border backdrop-blur-lg rounded-3xl w-fit bg-white/50 border-primary/5 p-4">
-                <div class="mx-8 space-x-8 flex">
-                    <a href="/index.html" class="nav-link">Home</a>
-                    <a href="/pages/ui-prototyping.html" class="nav-link">UI Prototype</a>
-                    <a href="/pages/ui-design-projects.html" class="nav-link">UI Project</a>
-                    <a href="/pages/mira-course-detail.html" class="nav-link opacity-100 font-bold">Mira Course</a>
-                    <a href="/pages/package-monitoring-frontend.html" class="nav-link">Package</a>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <title>MIRA COURSE / ATREM / SATRIA</title>
+    
+    <!-- Google Fonts: Space Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-    <main>
-        <section class="pt-32 pb-24 my-container">
-            <div class="space-y-12">
-                <img src="/assets/images/mirafix.png" alt="Mira Course" class="w-full rounded-3xl shadow-2xl">
-                
-                <div class="max-w-4xl mx-auto space-y-8">
-                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-                        <div>
-                            <h1 class="text-3xl md:text-4xl font-bold text-text">Mira Course</h1>
-                            <div class="flex gap-2 mt-4">
-                                <span class="my-badge">UX Research</span>
-                                <span class="my-badge">UI Prototyping</span>
-                            </div>
+  <link rel="stylesheet" crossorigin href="/assets/style-CyHGjhmq.css">
+</head>
+<body class="bg-[#e0e0e0] text-black">
+    <div class="brutalist-container min-h-screen">
+        <header class="border-b border-black sticky top-0 bg-white z-50 overflow-hidden">
+            <nav class="flex justify-between items-center h-16">
+                <a href="/index.html" class="px-4 md:px-8 flex items-center h-full border-r border-black font-bold uppercase tracking-tighter text-xl hover:bg-black hover:text-white transition-colors duration-0">
+                    ← BACK
+                </a>
+                <div class="flex h-full flex-1 overflow-x-auto no-scrollbar">
+                    <a href="/index.html" class="brutalist-nav-item">01/HOME</a>
+                    <a href="/pages/ui-prototyping.html" class="brutalist-nav-item">02/PROTOTYPE</a>
+                    <a href="/pages/ui-design-projects.html" class="brutalist-nav-item">03/DESIGN</a>
+                    <a href="/pages/mira-course-detail.html" class="brutalist-nav-item bg-black text-white">04/MIRA</a>
+                    <a href="/pages/package-monitoring-frontend.html" class="brutalist-nav-item border-r-0 lg:border-r">05/PACKAGE</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="brutalist-section">
+                <div class="brutalist-label-col">
+                    <span>[ PROJECT_INFO ]</span>
+                    <span class="hidden lg:inline">DETAIL_VIEW</span>
+                </div>
+                <div class="brutalist-main-col bg-white">
+                    <div class="p-6 md:p-12 lg:p-16 border-b border-black">
+                        <span class="text-[9px] lg:text-[10px] font-bold uppercase tracking-[0.4em] block mb-4 text-black/40 underline decoration-black/20 decoration-2 underline-offset-4">[ WORK_03 ]</span>
+                        <h1 class="brutalist-h1 mb-8">MIRA <br> COURSE</h1>
+                        <div class="flex flex-wrap gap-2 mb-8 lg:mb-12">
+                            <span class="brutalist-badge">LMS_DESIGN</span>
+                            <span class="brutalist-badge">CASE_STUDY</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2">
+                        <div class="p-6 md:p-8 lg:p-12 border-b lg:border-b-0 lg:border-r border-black font-bold uppercase text-xs lg:text-sm leading-relaxed space-y-6 lg:space-y-8">
+                            <p class="p-4 bg-black text-white">
+                                Mira Course adalah platform LMS yang dirancang untuk efisiensi belajar online.
+                            </p>
+                            <p class="text-black/60">
+                                Berfokus pada kemudahan akses materi dan interaksi antara pengajar dan siswa dalam satu ekosistem digital. Studi kasus lengkap tentang digitalisasi edukasi.
+                            </p>
+                        </div>
+                        <div class="bg-black flex items-center justify-center p-6 lg:p-12 min-h-[300px]">
+                            <img src="/assets/images/mirafix.png" alt="Mira Course" class="w-full border-2 border-white shadow-[10px_10px_0px_0px_rgba(255,255,255,0.1)]">
                         </div>
                     </div>
                 </div>
+            </section>
+        </main>
+
+        <footer class="brutalist-section border-b-0">
+            <div class="brutalist-label-col">
+                <span>[ END_INFO ]</span>
             </div>
-        </section>
-    </main>
+            <div class="brutalist-main-col bg-black text-white p-8 text-center">
+                <p class="font-bold uppercase text-[9px] lg:text-[10px] tracking-[0.5em]">ATREM PROJECT / 2026 / WORKS_DATABASE</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

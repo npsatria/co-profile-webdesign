@@ -12,8 +12,7 @@ export function initTabs() {
         // Reset buttons
         [button1, button2, button3].forEach(btn => {
             if (btn) {
-                btn.classList.remove("border-b-primary");
-                btn.classList.add("border-b-primary/30");
+                btn.classList.remove("active");
             }
         });
         
@@ -26,8 +25,7 @@ export function initTabs() {
         });
 
         // Set active
-        activeBtn.classList.add("border-b-primary");
-        activeBtn.classList.remove("border-b-primary/30");
+        activeBtn.classList.add("active");
         activeContent.classList.remove("hidden");
         activeContent.classList.add("flex");
     }

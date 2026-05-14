@@ -1,10 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: oklch(26.6978% 0.011068 285.626204);
-  --color-secondary: oklch(90.1328% 0.005985 285.282584);
-  --color-text: #111111;
-  --color-base-100: #ffffff;
+  --color-primary: #000000;
+  --color-secondary: #333333;
+  --color-accent: #ff0000; /* Red for high contrast hits */
+  --color-bg: #f0f0f0;
+  --color-text: #000000;
+  
+  --font-mono: "Space Mono", monospace;
+  --font-sans: "Space Mono", monospace; /* Forcing mono for brutalist feel */
 }
 
 @layer base {
@@ -12,7 +16,9 @@
     @apply scroll-smooth;
   }
   body {
-    @apply bg-[#e6e6e6] text-text overflow-x-hidden antialiased;
+    @apply bg-bg text-text font-mono antialiased overflow-x-hidden;
+    /* Default border for everything in brutalism */
+    border-color: #000000;
   }
 }
 
