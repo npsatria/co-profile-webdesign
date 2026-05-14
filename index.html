@@ -1,253 +1,280 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/assets/logo-atrem-project.svg" type="image/x-icon">
-    <title>ATREM PROJECT | DIGITAL AGENCY</title>
-    <link rel="stylesheet" href="/src/css/style.css" />
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="/assets/logo-atrem-project.svg" type="image/x-icon">
+        <title>ATREM.CO / PKL / SATRIA</title>
+        
+        <!-- Google Fonts: Space Mono -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-    <div class="cargo-container min-h-screen pb-24 relative">
-        <!-- Navigation -->
-        <header class="cargo-nav border-b border-white/20 sticky top-0 bg-[var(--color-primary-blue)] z-50">
-            <div class="flex items-center gap-4">
-                <img src="/assets/logo-atrem-project.svg" alt="Atrem Logo" class="h-8 w-auto invert" />
-                <span class="font-bold tracking-widest uppercase">Atrem Project®</span>
-            </div>
+        <!-- Styles -->
+        <link rel="stylesheet" href="/src/css/style.css" />
+    </head>
+    <body class="bg-[#e0e0e0] text-black">
+        
+        <div class="brutalist-container min-h-screen">
+            <!-- Navigation -->
+            <header class="border-b border-black sticky top-0 bg-white z-50">
+                <nav class="flex justify-between items-center h-16">
+                    <div class="px-4 sm:px-8 flex items-center h-full border-r border-black font-bold uppercase tracking-tighter text-xl sm:text-2xl">
+                        ATREM.CO
+                    </div>
+                    <div class="flex h-full flex-1 overflow-x-auto no-scrollbar">
+                        <a href="#company" class="brutalist-nav-item">01/COMPANY</a>
+                        <a href="#learnings" class="brutalist-nav-item">02/SKILLS</a>
+                        <a href="#sideq" class="brutalist-nav-item">03/QUESTS</a>
+                        <a href="#projects" class="brutalist-nav-item border-r-0">04/WORKS</a>
+                    </div>
+                    <div class="px-8 h-full border-l border-black font-bold uppercase text-[10px] tracking-widest hidden lg:flex items-center whitespace-nowrap">
+                        BATCH 09 / 2026
+                    </div>
+                </nav>
+            </header>
 
-            <!-- Desktop Nav -->
-            <div class="hidden md:flex gap-8">
-                <a href="#hero" class="uppercase font-bold tracking-widest text-sm">Home</a>
-                <a href="#company" class="uppercase font-bold tracking-widest text-sm">About</a>
-                <a href="#learnings" class="uppercase font-bold tracking-widest text-sm">Skills</a>
-                <a href="#portfolio" class="uppercase font-bold tracking-widest text-sm">Portfolio</a>
-            </div>
+            <main>
+                <!-- Hero Section -->
+                <section id="hero" class="brutalist-section">
+                    <div class="brutalist-label-col">
+                        <span>[ HERO_MASTER ]</span>
+                        <span class="lg:rotate-90 lg:origin-bottom-left lg:pb-4">V.1.0.0</span>
+                    </div>
+                    <div class="brutalist-main-col bg-white">
+                        <div class="p-8 md:p-16 border-b border-black">
+                            <p class="mb-8 font-bold uppercase tracking-[0.4em] text-[10px] text-black/40 underline decoration-black/20 decoration-2 underline-offset-4">PRAKTEK KERJA LAPANGAN</p>
+                            <h1 class="brutalist-h1 mb-8">
+                                ATREM <br />
+                                PROJECT
+                            </h1>
+                            <div class="max-w-xl">
+                                <p class="text-xl md:text-2xl font-bold uppercase leading-none italic bg-black text-white p-4 inline-block">
+                                    Digitalisasi Usaha Tanpa Henti.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2">
+                            <div class="p-8 border-b md:border-b-0 md:border-r border-black flex flex-col justify-end min-h-[200px]">
+                                <p class="text-[10px] font-bold uppercase mb-2">INTERN NAME:</p>
+                                <p class="text-2xl sm:text-3xl font-bold uppercase tracking-tighter leading-none">Ngakan Putu Satria Dewangga</p>
+                            </div>
+                            <div class="bg-black relative overflow-hidden h-[300px] md:h-auto">
+                                <img src="/assets/atrem-pic.webp" alt="Satria" class="w-full h-full object-cover grayscale opacity-70" />
+                                <div class="absolute inset-0 border-[10px] sm:border-[20px] border-white/10 pointer-events-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-            <div class="hidden md:block font-bold tracking-widest uppercase text-sm">
-                Batch 09 / 2026
-            </div>
+                <!-- About Section -->
+                <section id="company" class="brutalist-section">
+                    <div class="brutalist-label-col">
+                        <span>[ SECTION_01 ]</span>
+                        <span>ABOUT_AGENCY</span>
+                    </div>
+                    <div class="brutalist-main-col">
+                        <div class="flex border-b border-black overflow-x-auto bg-white no-scrollbar">
+                            <button class="brutalist-tab active" id="but1">01/PROFIL</button>
+                            <button class="brutalist-tab" id="but2">02/SEJARAH</button>
+                            <button class="brutalist-tab border-r-0" id="but3">03/SISTEM</button>
+                        </div>
+                        <div class="p-8 md:p-16 bg-white min-h-[450px] flex flex-col justify-center">
+                            <div id="content1" class="flex flex-col gap-8">
+                                <h2 class="brutalist-h2">ATREM PROJECT</h2>
+                                <p class="text-base md:text-xl leading-relaxed max-w-2xl font-bold uppercase">
+                                    Atrem Project merupakan hasil dari inisiatif Merta Yoga, yang memulai pendirian agensi ini setelah lulus dari Sekolah Menengah Kejuruan (SMK). Agensi ini berfokus pada penyediaan solusi untuk mendigitalisasi berbagai usaha. Atrem menawarkan berbagai layanan, termasuk pembuatan sistem manajemen laundry, Learning Management System (LMS), jasa desain profil perusahaan, dan masih banyak lagi.
+                                </p>
+                                <div class="grid grid-cols-2 md:grid-cols-4 border border-black">
+                                    <div class="p-4 border-r border-b md:border-b-0 border-black font-bold uppercase text-[9px] sm:text-[10px] text-center flex items-center justify-center">Laundry</div>
+                                    <div class="p-4 border-r border-b md:border-b-0 border-black font-bold uppercase text-[9px] sm:text-[10px] text-center flex items-center justify-center">LMS</div>
+                                    <div class="p-4 border-r border-black font-bold uppercase text-[9px] sm:text-[10px] text-center flex items-center justify-center">Design</div>
+                                    <div class="p-4 font-bold uppercase text-[9px] sm:text-[10px] text-center flex items-center justify-center">Digital</div>
+                                </div>
+                            </div>
 
-            <!-- Hamburger Button -->
-            <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 z-50 relative focus:outline-none" aria-expanded="false" aria-label="Toggle menu">
-                <span class="block w-6 h-0.5 bg-white transition-transform duration-300"></span>
-                <span class="block w-6 h-0.5 bg-white transition-opacity duration-300"></span>
-                <span class="block w-6 h-0.5 bg-white transition-transform duration-300"></span>
-            </button>
-        </header>
+                            <div id="content2" class="hidden flex-col gap-8">
+                                <h2 class="brutalist-h2">HISTORY</h2>
+                                <p class="text-base md:text-xl leading-relaxed max-w-2xl font-bold uppercase italic">
+                                    Semua berawal dari ketertarikan Merta Yoga pada bidang komputer, terutama setelah ia mengetahui bahwa seorang programmer dapat bekerja secara remote. Hal ini mendorongnya untuk memilih SMK 1 Denpasar dengan jurusan Rekayasa Perangkat Lunak (RPL) sebagai langkah awal dalam kariernya. Setelah menyelesaikan pendidikan di SMK, Merta Yoga memutuskan untuk mendirikan Atrem Project sebagai sumber penghasilan sampingan.
+                                </p>
+                            </div>
 
-        <!-- Mobile Menu Overlay -->
-        <div id="mobile-menu" class="fixed inset-0 bg-[var(--color-primary-blue)] z-40 translate-x-full transition-transform duration-500 ease-in-out flex flex-col items-center justify-center gap-8 md:hidden">
-            <a href="#hero" class="mobile-nav-link text-4xl font-black uppercase tracking-widest hover:text-white/70">Home</a>
-            <a href="#company" class="mobile-nav-link text-4xl font-black uppercase tracking-widest hover:text-white/70">About</a>
-            <a href="#learnings" class="mobile-nav-link text-4xl font-black uppercase tracking-widest hover:text-white/70">Skills</a>
-            <a href="#portfolio" class="mobile-nav-link text-4xl font-black uppercase tracking-widest hover:text-white/70">Portfolio</a>
-            <div class="mt-8 font-bold tracking-widest uppercase text-sm opacity-50">Batch 09 / 2026</div>
+                            <div id="content3" class="hidden flex-col gap-8">
+                                <h2 class="brutalist-h2">INTERN_SYSTEM</h2>
+                                <p class="text-base md:text-xl leading-relaxed max-w-2xl font-bold uppercase">
+                                    Atrem Project merekrut anggota agensi melalui sistem magang, di mana setiap angkatan disebut sebagai "batch." Saya termasuk dalam batch 09. Setiap anggota batch akan diberikan tugas sesuai dengan bidang yang mereka pilih. Jika salah satu anggota batch dinilai kompeten oleh Merta Yoga, mereka akan ditawari kesempatan untuk bergabung dengan Atrem Project sebagai tim yang akan menangani proyek klien.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Skills Section -->
+                <section id="learnings" class="brutalist-section">
+                    <div class="brutalist-label-col">
+                        <span>[ SECTION_02 ]</span>
+                        <span>SKILLS_LIST</span>
+                    </div>
+                    <div class="brutalist-main-col">
+                        <div class="p-8 border-b border-black flex justify-between items-center bg-black text-white">
+                            <h3 class="text-lg sm:text-xl font-bold uppercase tracking-tighter">HAL YANG DIPELAJARI</h3>
+                            <span class="text-[10px] font-bold uppercase">[ BATCH_09 ]</span>
+                        </div>
+                        <div class="brutalist-data-grid">
+                            <div class="brutalist-data-cell">
+                                <div class="w-12 h-12 text-3xl solar-ux mb-6 text-black"></div>
+                                <h4 class="text-lg font-bold uppercase mb-2">UX Research</h4>
+                                <p class="text-[10px] uppercase font-bold opacity-60">Memahami fundamental kebutuhan pengguna dalam produk digital.</p>
+                            </div>
+                            <div class="brutalist-data-cell">
+                                <div class="w-12 h-12 text-3xl solar-research mb-6 text-black"></div>
+                                <h4 class="text-lg font-bold uppercase mb-2">UX Testing</h4>
+                                <p class="text-[10px] uppercase font-bold opacity-60">Validasi desain melalui interaksi langsung dengan responden.</p>
+                            </div>
+                            <div class="brutalist-data-cell">
+                                <div class="w-12 h-12 text-3xl solar-prototype mb-6 text-black"></div>
+                                <h4 class="text-lg font-bold uppercase mb-2">UI Prototyping</h4>
+                                <p class="text-[10px] uppercase font-bold opacity-60">Visualisasi alur pengguna melalui Figma yang interaktif.</p>
+                            </div>
+                            <div class="brutalist-data-cell">
+                                <svg width="48" height="48" viewBox="0 0 64 65" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-current mb-6">
+                                    <path d="M32 13.46C23.5378 13.46 18.2489 17.6911 16.1333 26.1533C19.3067 21.9222 23.0089 20.3355 27.24 21.3933C29.6533 21.996 31.3787 23.748 33.288 25.6866C36.4027 28.8466 40 32.5 47.8667 32.5C56.3289 32.5 61.6178 28.2688 63.7333 19.8066C60.56 24.0377 56.8578 25.6244 52.6267 24.5666C50.2107 23.964 48.488 22.212 46.5733 20.2733C43.4667 17.1133 39.8667 13.46 32 13.46ZM16.1333 32.5C7.67111 32.5 2.38222 36.7311 0.266663 45.1933C3.44 40.9622 7.14222 39.3755 11.3733 40.4333C13.7867 41.036 15.512 42.788 17.424 44.7266C20.5333 47.8866 24.1333 51.54 32 51.54C40.4622 51.54 45.7511 47.3089 47.8667 38.8466C44.6933 43.0777 40.9911 44.6644 36.76 43.6066C34.344 43.004 32.6213 41.252 30.7067 39.3133C27.6 36.1533 24 32.5 16.1333 32.5Z" />
+                                </svg>
+                                <h4 class="text-lg font-bold uppercase mb-2">Tailwind CSS</h4>
+                                <p class="text-[10px] uppercase font-bold opacity-60">Slicing antarmuka modern dengan efisiensi tinggi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Quests Section -->
+                <section id="sideq" class="brutalist-section">
+                    <div class="brutalist-label-col">
+                        <span>[ SECTION_03 ]</span>
+                        <span>SIDE_QUEST</span>
+                    </div>
+                    <div class="brutalist-main-col">
+                        <div class="p-8 bg-white border-b border-black lg:border-b-0">
+                            <h3 class="brutalist-h2 mb-4">EXTRA_WORK</h3>
+                            <p class="text-sm font-bold uppercase max-w-md">Asset dan tugas tambahan untuk ekosistem Atrem.</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 border-t border-black">
+                            <div class="p-8 border-b border-black md:border-r hover:bg-black hover:text-white group">
+                                <p class="text-[10px] font-bold mb-4">[01]</p>
+                                <h5 class="text-lg sm:text-xl font-bold uppercase">MINI BLOG TECH ZONE</h5>
+                            </div>
+                            <div class="p-8 border-b border-black hover:bg-black hover:text-white group">
+                                <p class="text-[10px] font-bold mb-4">[02]</p>
+                                <h5 class="text-lg sm:text-xl font-bold uppercase">TARGET PROMOSI JASA</h5>
+                            </div>
+                            <div class="p-8 border-b border-black md:border-b-0 md:border-r hover:bg-black hover:text-white group">
+                                <p class="text-[10px] font-bold mb-4">[03]</p>
+                                <h5 class="text-lg sm:text-xl font-bold uppercase">300+ UI REFERENCES</h5>
+                            </div>
+                            <div class="p-8 hover:bg-black hover:text-white group">
+                                <p class="text-[10px] font-bold mb-4">[04]</p>
+                                <h5 class="text-lg sm:text-xl font-bold uppercase">SYSTEM REVIEWS</h5>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Works Section -->
+                <section id="projects" class="brutalist-section">
+                    <div class="brutalist-label-col">
+                        <span>[ SECTION_04 ]</span>
+                        <span>WORKS_INDEX</span>
+                    </div>
+                    <div class="brutalist-main-col">
+                        <div class="p-8 bg-black text-white flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
+                            <h2 class="brutalist-h1">WORKS</h2>
+                            <p class="text-[10px] font-bold mb-0 sm:mb-4 underline decoration-white/30 decoration-2 underline-offset-8">SELECTED_PROJECTS</p>
+                        </div>
+                        
+                        <div class="brutalist-data-grid">
+                            <a href="/pages/ui-prototyping.html" class="brutalist-data-cell group p-0 aspect-square flex flex-col">
+                                <div class="p-8 border-b border-black">
+                                    <h4 class="text-xl sm:text-2xl font-bold uppercase leading-none">16 UI <br> PROTOTYPING</h4>
+                                </div>
+                                <div class="flex-1 overflow-hidden relative">
+                                    <img src="/assets/images/proto-thumb.png" alt="UI Prototyping" class="brutalist-work-img" />
+                                </div>
+                                <div class="p-4 bg-[#efefef] text-black border-t border-black flex flex-wrap gap-2 mt-auto">
+                                    <span class="brutalist-badge">FIGMA</span>
+                                    <span class="brutalist-badge">UX_TEST</span>
+                                </div>
+                            </a>
+
+                            <a href="/pages/ui-design-projects.html" class="brutalist-data-cell group p-0 aspect-square flex flex-col">
+                                <div class="p-8 border-b border-black">
+                                    <h4 class="text-xl sm:text-2xl font-bold uppercase leading-none">28 UI <br> DESIGNS</h4>
+                                </div>
+                                <div class="flex-1 overflow-hidden relative">
+                                    <img src="/assets/images/ui-thumb.png" alt="UI Design" class="brutalist-work-img" />
+                                </div>
+                                <div class="p-4 bg-[#efefef] text-black border-t border-black flex flex-wrap gap-2 mt-auto">
+                                    <span class="brutalist-badge">VISUAL</span>
+                                    <span class="brutalist-badge">RESEARCH</span>
+                                </div>
+                            </a>
+
+                            <a href="/pages/mira-course-detail.html" class="brutalist-data-cell group p-0 aspect-square flex flex-col">
+                                <div class="p-8 border-b border-black">
+                                    <h4 class="text-xl sm:text-2xl font-bold uppercase leading-none">MIRA <br> COURSE</h4>
+                                </div>
+                                <div class="flex-1 overflow-hidden relative">
+                                    <img src="/assets/images/mira-thumb.png" alt="Mira Course" class="brutalist-work-img" />
+                                </div>
+                                <div class="p-4 bg-[#efefef] text-black border-t border-black flex flex-wrap gap-2 mt-auto">
+                                    <span class="brutalist-badge">LMS</span>
+                                    <span class="brutalist-badge">CASE_STUDY</span>
+                                </div>
+                            </a>
+
+                            <a href="/pages/package-monitoring-frontend.html" class="brutalist-data-cell group p-0 aspect-square flex flex-col">
+                                <div class="p-8 border-b border-black">
+                                    <h4 class="text-xl sm:text-2xl font-bold uppercase leading-none">PACKAGE <br> MONITORING</h4>
+                                </div>
+                                <div class="flex-1 overflow-hidden relative">
+                                    <img src="/assets/images/package-thumn.png" alt="Package Monitoring" class="brutalist-work-img" />
+                                </div>
+                                <div class="p-4 bg-[#efefef] text-black border-t border-black flex flex-wrap gap-2 mt-auto">
+                                    <span class="brutalist-badge">SLICING</span>
+                                    <span class="brutalist-badge">TAILWIND</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Footer -->
+            <footer class="brutalist-section border-b-0">
+                <div class="brutalist-label-col">
+                    <span>[ END_FILE ]</span>
+                    <span>THANK_YOU</span>
+                </div>
+                <div class="brutalist-main-col bg-black text-white p-8 sm:p-16">
+                    <h2 class="text-5xl sm:text-7xl md:text-9xl font-bold uppercase tracking-tighter leading-none mb-16">
+                        SEKIAN <br />
+                        TERIMA <br />
+                        KASIH.
+                    </h2>
+                    <div class="flex flex-col md:flex-row justify-between items-center border-t border-white/20 pt-8 font-bold uppercase text-[10px] tracking-widest gap-4">
+                        <p>© 2026 SATRIA / ATREM CO.</p>
+                        <div class="flex gap-8 mt-4 md:mt-0 overflow-x-auto no-scrollbar pb-2 md:pb-0">
+                            <a href="#" class="hover:underline">GITHUB</a>
+                            <a href="#" class="hover:underline">LINKEDIN</a>
+                            <a href="#" class="hover:underline">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
 
-        <main>
-            <!-- Hero Section -->
-            <section id="hero" class="cargo-section flex flex-col items-center justify-center min-h-[80vh] text-center relative overflow-hidden">
-                <h1 class="cargo-heading-mega relative z-10 hero-reveal">
-                    ATREM
-                </h1>
-                <h2 class="cargo-heading-xl mb-12 relative z-10 bg-[var(--color-primary-blue)] px-4 hero-reveal">
-                    WEB DESIGN & <br> DIGITAL AGENCY
-                </h2>
-
-                <div class="w-full max-w-4xl mx-auto mt-8 border-4 border-white p-2 relative z-10 bg-white shadow-[20px_20px_0px_0px_#1a1a1a] hero-reveal">
-                    <img src="/assets/atrem-pic.webp" alt="Atrem Project Team" class="w-full h-auto grayscale hover:grayscale-0 transition-all duration-500" />
-                </div>
-
-                <div class="mt-24 text-center border-t border-white/20 pt-12 w-full hero-reveal">
-                    <p class="cargo-heading-md italic mb-4">PRAKTEK KERJA LAPANGAN</p>
-                    <p class="cargo-body-large uppercase font-bold tracking-widest">
-                        Digitalisasi Usaha Tanpa Henti.
-                    </p>
-                </div>
-            </section>
-
-            <!-- About Section (Atrem Project) -->
-            <section id="company" class="cargo-section">
-                <div class="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-white/20 pb-8">
-                    <h2 class="cargo-heading-xl text-left">
-                        ABOUT <br>
-                        <span class="cargo-subtitle-italic">(AGENCY)</span>
-                    </h2>
-                </div>
-
-                <div class="cargo-tab-container w-full">
-                    <div class="cargo-tab-nav">
-                        <button class="cargo-tab-btn active text-xl" id="but1">Atrem Project</button>
-                        <button class="cargo-tab-btn text-xl" id="but2">Sejarah</button>
-                        <button class="cargo-tab-btn text-xl" id="but3">System Internship</button>
-                    </div>
-
-                    <div id="content1" class="cargo-tab-content flex flex-col gap-6 mt-8">
-                        <h3 class="cargo-heading-md">Atrem Project</h3>
-                        <p class="cargo-body-large font-bold max-w-4xl">
-                            Atrem Project merupakan hasil dari inisiatif Merta Yoga, yang memulai pendirian agensi ini setelah lulus dari Sekolah Menengah Kejuruan (SMK).
-                        </p>
-                        <p class="cargo-body text-xl max-w-4xl leading-relaxed">
-                            Agensi ini berfokus pada penyediaan solusi untuk mendigitalisasi berbagai usaha. Atrem menawarkan berbagai layanan, termasuk pembuatan sistem manajemen laundry, Learning Management System (LMS), jasa desain profil perusahaan, dan masih banyak lagi.
-                        </p>
-                    </div>
-
-                    <div id="content2" class="cargo-tab-content flex-col gap-6 mt-8">
-                        <h3 class="cargo-heading-md">Sejarah Atrem Project</h3>
-                        <!-- <p class="cargo-body-large font-serif italic text-2xl border-l-4 border-white pl-8 py-4 max-w-4xl">
-                            "Semua berawal dari ketertarikan Merta Yoga pada bidang komputer, terutama setelah ia mengetahui bahwa seorang programmer dapat bekerja secara remote."
-                        </p> -->
-                        <p class="cargo-body text-xl max-w-4xl leading-relaxed">
-                            Hal ini mendorongnya untuk memilih SMK 1 Denpasar dengan jurusan Rekayasa Perangkat Lunak (RPL) sebagai langkah awal dalam kariernya. Setelah menyelesaikan pendidikan di SMK, Merta Yoga memutuskan untuk mendirikan Atrem Project sebagai sumber penghasilan sampingan.
-                        </p>
-                    </div>
-
-                    <div id="content3" class="cargo-tab-content flex-col gap-6 mt-8">
-                        <h3 class="cargo-heading-md">System Internship</h3>
-                        <p class="cargo-body text-xl max-w-4xl leading-relaxed">
-                            Atrem Project merekrut anggota agensi melalui sistem magang, di mana setiap angkatan disebut sebagai "batch." Saya termasuk dalam batch 9. Setiap anggota batch akan diberikan tugas sesuai dengan bidang yang mereka pilih. Jika salah satu anggota batch dinilai kompeten oleh Merta Yoga, mereka akan ditawari kesempatan untuk bergabung dengan Atrem Project sebagai tim yang akan menangani proyek klien.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Skills & Side Quests Section -->
-            <section id="learnings" class="cargo-section-no-border grid grid-cols-1 lg:grid-cols-2 gap-16 pt-16">
-                <!-- Skills Column -->
-                <div>
-                    <h2 class="cargo-heading-md mb-4">Hal - Hal Yang Di Pelajari</h2>
-                    <p class="text-base italic mb-8 opacity-80 max-w-md">Di Atrem Project, sistem belajarnya berbasis mentorship. Kami diberikan tugas yang harus diselesaikan secara mandiri, dan jika mengalami kesulitan, kami dapat mendiskusikannya.</p>
-                    <div class="cargo-list">
-                        <div class="cargo-list-item flex-col items-start gap-2">
-                            <span class="cargo-list-item-title">UX Research</span>
-                            <span class="text-sm opacity-80 leading-relaxed">Selama di sini, saya diperkenalkan dengan UX Research, yang merupakan tahap pertama dalam pembuatan aplikasi atau website.</span>
-                        </div>
-                        <div class="cargo-list-item flex-col items-start gap-2">
-                            <span class="cargo-list-item-title">UX Testing</span>
-                            <span class="text-sm opacity-80 leading-relaxed">Di sini, saya diajarkan cara melakukan UX testing yang benar, mulai dari mencari responden hingga cara menanggapi mereka.</span>
-                        </div>
-                        <div class="cargo-list-item flex-col items-start gap-2">
-                            <span class="cargo-list-item-title">UI Prototyping</span>
-                            <span class="text-sm opacity-80 leading-relaxed">Di sini, saya mengeksplorasi UI Prototyping, di mana saya membuat animasi dan user flow di Figma untuk meningkatkan kualitas tahap UX Testing.</span>
-                        </div>
-                        <div class="cargo-list-item flex-col items-start gap-2">
-                            <span class="cargo-list-item-title">Tailwind CSS</span>
-                            <span class="text-sm opacity-80 leading-relaxed">Tailwind adalah framework CSS yang terkenal. Di sini, saya dibina dan diajarkan cara menggunakan Tailwind dengan benar dan efektif.</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Side Quests Column -->
-                <div id="sidequests">
-                    <h2 class="cargo-heading-md mb-4">Side Quest</h2>
-                    <p class="text-base italic mb-8 opacity-80 max-w-md">Di Atrem Project terdapat Side Quest, dimana Side Quest ini berfungsi sebagai tumpukan asset untuk Atrem Project.</p>
-                    <div class="cargo-list">
-                        <div class="cargo-list-item flex-col items-start gap-2">
-                            <span class="cargo-list-item-title">01 / Mini Blog Atrem Tech Zone</span>
-                            <span class="text-sm opacity-80 leading-relaxed">Saya mendapatkan Side Quest untuk membuat blog untuk menjadi referensi konten Atrem Tech Zone yang merupakan akun informatif dari Atrem Project.</span>
-                        </div>
-                        <div class="cargo-list-item flex-col items-start gap-2">
-                            <span class="cargo-list-item-title">02 / Target Promosi Jasa</span>
-                            <span class="text-sm opacity-80 leading-relaxed">Kami mendapatkan Side Quest mencari website atau instagram dari berbagai bidang usaha yang akan digunakan sebagai target promosi jasa Atrem Project.</span>
-                        </div>
-                        <div class="cargo-list-item flex-col items-start gap-2">
-                            <span class="cargo-list-item-title">03 / Referensi UI Company Profile</span>
-                            <span class="text-sm opacity-80 leading-relaxed">Saya mendapatkan Side Quest untuk mencari 300+ referensi UI yang digunakan sebagai referensi dari pembuatan portofolio Atrem Project.</span>
-                        </div>
-                        <div class="cargo-list-item flex-col items-start gap-2">
-                            <span class="cargo-list-item-title">04 / Referensi Sistem</span>
-                            <span class="text-sm opacity-80 leading-relaxed">Saya Mendapatkan Side Quest untuk mengumpulkan referensi sistem yang digunakan untuk mengupgrade sistem - sistem yang akan di buat atau sudah di buat.</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Portfolio Section -->
-            <section id="portfolio" class="cargo-section pt-32">
-                <div class="text-center mb-24">
-                    <h2 class="cargo-heading-xl mb-4">
-                        WORKS
-                    </h2>
-                    <p class="cargo-subtitle-italic">(PROJECT YANG SAYA KERJAKAN)</p>
-                </div>
-
-                <div class="cargo-grid-2">
-                    <!-- Project 1 -->
-                    <a href="/pages/ui-prototyping.html" class="cargo-project-card border-4 border-transparent hover:border-white p-4 transition-all">
-                        <div class="cargo-project-image-wrapper border-2 border-white">
-                            <span class="cargo-project-badge !bg-white !text-[var(--color-primary-blue)]">01—UI Prototyping</span>
-                            <img src="/assets/images/proto-thumb.png" alt="UI Prototyping" class="cargo-project-image" />
-                        </div>
-                        <div class="cargo-project-info mt-4">
-                            <p class="cargo-project-title">16 UI Prototyping</p>
-                            <p class="cargo-project-category">Figma & UX Testing</p>
-                            <p class="cargo-project-desc">
-                                Eksplorasi pembuatan prototyping interaktif menggunakan Figma. Fokus pada user flow dan pengembangan animasi yang meningkatkan intuitivitas antarmuka.
-                            </p>
-                        </div>
-                    </a>
-
-                    <!-- Project 2 -->
-                    <a href="/pages/ui-design-projects.html" class="cargo-project-card border-4 border-transparent hover:border-white p-4 transition-all">
-                        <div class="cargo-project-image-wrapper border-2 border-white">
-                            <span class="cargo-project-badge !bg-white !text-[var(--color-primary-blue)]">02—UI Design</span>
-                            <img src="/assets/images/ui-thumb.png" alt="UI Design" class="cargo-project-image" />
-                        </div>
-                        <div class="cargo-project-info mt-4">
-                            <p class="cargo-project-title">28 UI Designs</p>
-                            <p class="cargo-project-category">Visual & UX Research</p>
-                            <p class="cargo-project-desc">
-                                Koleksi ekstensif 28 desain antarmuka pengguna lintas kategori. Dirancang dengan keseimbangan antara estetika modern dan fungsionalitas bisnis.
-                            </p>
-                        </div>
-                    </a>
-
-                    <!-- Project 3 -->
-                    <a href="/pages/mira-course-detail.html" class="cargo-project-card border-4 border-transparent hover:border-white p-4 transition-all">
-                        <div class="cargo-project-image-wrapper border-2 border-white">
-                            <span class="cargo-project-badge !bg-white !text-[var(--color-primary-blue)]">03—Mira Course</span>
-                            <img src="/assets/images/mira-thumb.png" alt="Mira Course" class="cargo-project-image" />
-                        </div>
-                        <div class="cargo-project-info mt-4">
-                            <p class="cargo-project-title">Mira Course</p>
-                            <p class="cargo-project-category">LMS Platform Design</p>
-                            <p class="cargo-project-desc">
-                                Platform Learning Management System (LMS) komprehensif. Didesain untuk mempermudah akses edukasi digital dan interaksi dua arah antara pengajar dan siswa.
-                            </p>
-                        </div>
-                    </a>
-
-                    <!-- Project 4 -->
-                    <a href="/pages/package-monitoring-frontend.html" class="cargo-project-card border-4 border-transparent hover:border-white p-4 transition-all">
-                        <div class="cargo-project-image-wrapper border-2 border-white">
-                            <span class="cargo-project-badge !bg-white !text-[var(--color-primary-blue)]">04—Package Monitoring</span>
-                            <img src="/assets/images/package-thumn.png" alt="Package Monitoring" class="cargo-project-image" />
-                        </div>
-                        <div class="cargo-project-info mt-4">
-                            <p class="cargo-project-title">Package Monitoring</p>
-                            <p class="cargo-project-category">Frontend Slicing & Tailwind CSS</p>
-                            <p class="cargo-project-desc">
-                                Pengembangan frontend berbasis Tailwind CSS untuk sistem logistik. Menghasilkan antarmuka pemantauan pengiriman paket yang real-time dan highly responsive.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </section>
-        </main>
-
-        <!-- Footer -->
-        <footer class="mt-32 pt-12 border-t-4 border-white flex flex-col md:flex-row justify-between items-center text-sm font-bold uppercase tracking-widest">
-            <div class="flex items-center gap-4 mb-8 md:mb-0">
-                <img src="/assets/logo-atrem-project.svg" alt="Atrem Logo" class="h-6 w-auto invert" />
-                <p>© ATREM PROJECT DIGITAL AGENCY</p>
-            </div>
-            <a href="#" class="hover:bg-white hover:text-[var(--color-primary-blue)] px-6 py-3 border-2 border-white transition-colors">Scroll to Top ↑</a>
-        </footer>
-    </div>
-
-    <!-- Scripts -->
-    <script type="module" src="/src/js/main.js"></script>
-</body>
+        <!-- Scripts -->
+        <script type="module" src="/src/js/main.js"></script>
+    </body>
 </html>

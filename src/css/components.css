@@ -4,55 +4,60 @@
     @apply border-x border-black max-w-7xl mx-auto bg-white;
   }
 
-  /* Section Wrapper - 4 Column Layout (Stacked on mobile) */
+  /* Section Wrapper - 4 Column Layout */
   .brutalist-section {
     @apply border-b border-black grid grid-cols-1 lg:grid-cols-4 gap-0;
   }
 
-  /* Sidebar/Label Column (Stacked on top for mobile) */
+  /* Sidebar/Label Column (1/4) */
   .brutalist-label-col {
-    @apply p-4 lg:p-6 border-b lg:border-b-0 lg:border-r border-black font-bold uppercase text-[10px] tracking-widest flex flex-row lg:flex-col justify-between bg-[#efefef] items-center lg:items-start;
+    @apply p-6 border-b lg:border-b-0 lg:border-r border-black font-bold uppercase text-[10px] tracking-widest flex flex-row lg:flex-col justify-between items-center lg:items-start bg-[#efefef] sticky top-16 lg:top-0 lg:h-auto z-40;
   }
 
-  /* Main Content Column */
+  /* Main Content Column (3/4) */
   .brutalist-main-col {
     @apply lg:col-span-3 flex flex-col;
   }
 
   /* Grid Cells for modular items */
   .brutalist-data-grid {
-    @apply grid grid-cols-1 md:grid-cols-2;
+    @apply grid grid-cols-1 sm:grid-cols-2;
   }
 
   .brutalist-data-cell {
-    @apply p-6 lg:p-8 border-b border-black md:odd:border-r transition-colors duration-0 hover:bg-black hover:text-white;
+    @apply p-8 border-b border-black sm:odd:border-r transition-colors duration-0 hover:bg-black hover:text-white;
   }
 
-  /* Typography - Fully Responsive */
+  /* Typography */
   .brutalist-h1 {
-    @apply text-5xl md:text-7xl lg:text-9xl font-bold uppercase tracking-tighter leading-[0.8];
+    @apply text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold uppercase tracking-tighter leading-[0.8];
   }
 
   .brutalist-h2 {
-    @apply text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-none;
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-none;
   }
 
-  /* Navigation - Scrollable on mobile */
+  /* Navigation */
   .brutalist-nav-item {
-    @apply px-4 lg:px-8 py-4 border-r border-black font-bold uppercase text-[10px] tracking-widest hover:bg-black hover:text-white transition-colors duration-0 flex items-center justify-center whitespace-nowrap;
+    @apply px-4 sm:px-8 py-4 border-r border-black font-bold uppercase text-[9px] sm:text-[10px] tracking-widest hover:bg-black hover:text-white transition-colors duration-0 flex items-center justify-center flex-1 sm:flex-initial text-center;
   }
 
   /* UI Elements */
   .brutalist-badge {
-    @apply border border-black px-2 py-0.5 text-[9px] lg:text-[10px] uppercase font-bold bg-white text-black;
+    @apply border border-black px-2 py-0.5 text-[10px] uppercase font-bold bg-white text-black whitespace-nowrap;
   }
 
   .brutalist-tab {
-    @apply border-r border-black px-4 lg:px-6 py-4 font-bold uppercase text-[10px] cursor-pointer hover:bg-black hover:text-white transition-colors duration-0 flex-1 text-center whitespace-nowrap;
+    @apply border-r border-black px-4 sm:px-6 py-4 font-bold uppercase text-[9px] sm:text-[10px] cursor-pointer hover:bg-black hover:text-white transition-colors duration-0 flex-1 text-center;
   }
 
   .brutalist-tab.active {
     @apply bg-black text-white;
+  }
+
+  /* Images */
+  .brutalist-work-img {
+    @apply w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300;
   }
 
   /* Utility */
