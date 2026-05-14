@@ -4,135 +4,250 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/assets/logo-atrem-project.svg" type="image/x-icon">
-    <title>ATREM.CO / FLAT BRUTALISM</title>
-    
-    <!-- Google Fonts: Space Mono & Anton -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
+    <title>ATREM PROJECT | DIGITAL AGENCY</title>
     <link rel="stylesheet" href="/src/css/style.css" />
 </head>
 <body>
-    
-    <!-- Top Navigation -->
-    <nav class="cargo-nav cargo-nav-top">
-        <div class="font-bold lowercase">atrem® co.</div>
-        <div class="hidden md:flex gap-4 md:gap-8">
-            <button data-view="grid" class="nav-btn active">grid</button>
-            <button data-view="feed" class="nav-btn">feed</button>
-            <button data-view="slideshow" class="nav-btn">slideshow</button>
-            <button data-view="freeform" class="nav-btn">freeform</button>
-        </div>
-        <div class="flex gap-4">
-            <a href="#" class="nav-btn">github</a>
-            <a href="#" class="nav-btn">linkedin</a>
-        </div>
-    </nav>
 
-    <!-- Massive Background Text -->
-    <div class="bg-text-container">
-        <div class="bg-text" id="bg-text-anim"></div>
+    <div class="cargo-container min-h-screen pb-24 relative">
+        <!-- Navigation -->
+        <header class="cargo-nav border-b border-white/20 sticky top-0 bg-[var(--color-primary-blue)] z-50">
+            <div class="flex items-center gap-4">
+                <img src="/assets/logo-atrem-project.svg" alt="Atrem Logo" class="h-8 w-auto invert" />
+                <span class="font-bold tracking-widest uppercase">Atrem Project®</span>
+            </div>
+
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex gap-8">
+                <a href="#hero" class="uppercase font-bold tracking-widest text-sm">Home</a>
+                <a href="#company" class="uppercase font-bold tracking-widest text-sm">About</a>
+                <a href="#learnings" class="uppercase font-bold tracking-widest text-sm">Skills</a>
+                <a href="#portfolio" class="uppercase font-bold tracking-widest text-sm">Portfolio</a>
+            </div>
+
+            <div class="hidden md:block font-bold tracking-widest uppercase text-sm">
+                Batch 09 / 2026
+            </div>
+
+            <!-- Hamburger Button -->
+            <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 z-50 relative focus:outline-none" aria-expanded="false" aria-label="Toggle menu">
+                <span class="block w-6 h-0.5 bg-white transition-transform duration-300"></span>
+                <span class="block w-6 h-0.5 bg-white transition-opacity duration-300"></span>
+                <span class="block w-6 h-0.5 bg-white transition-transform duration-300"></span>
+            </button>
+        </header>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="fixed inset-0 bg-[var(--color-primary-blue)] z-40 translate-x-full transition-transform duration-500 ease-in-out flex flex-col items-center justify-center gap-8 md:hidden">
+            <a href="#hero" class="mobile-nav-link text-4xl font-black uppercase tracking-widest hover:text-white/70">Home</a>
+            <a href="#company" class="mobile-nav-link text-4xl font-black uppercase tracking-widest hover:text-white/70">About</a>
+            <a href="#learnings" class="mobile-nav-link text-4xl font-black uppercase tracking-widest hover:text-white/70">Skills</a>
+            <a href="#portfolio" class="mobile-nav-link text-4xl font-black uppercase tracking-widest hover:text-white/70">Portfolio</a>
+            <div class="mt-8 font-bold tracking-widest uppercase text-sm opacity-50">Batch 09 / 2026</div>
+        </div>
+
+        <main>
+            <!-- Hero Section -->
+            <section id="hero" class="cargo-section flex flex-col items-center justify-center min-h-[80vh] text-center relative overflow-hidden">
+                <h1 class="cargo-heading-mega relative z-10 hero-reveal">
+                    ATREM
+                </h1>
+                <h2 class="cargo-heading-xl mb-12 relative z-10 bg-[var(--color-primary-blue)] px-4 hero-reveal">
+                    WEB DESIGN & <br> DIGITAL AGENCY
+                </h2>
+
+                <div class="w-full max-w-4xl mx-auto mt-8 border-4 border-white p-2 relative z-10 bg-white shadow-[20px_20px_0px_0px_#1a1a1a] hero-reveal">
+                    <img src="/assets/atrem-pic.webp" alt="Atrem Project Team" class="w-full h-auto grayscale hover:grayscale-0 transition-all duration-500" />
+                </div>
+
+                <div class="mt-24 text-center border-t border-white/20 pt-12 w-full hero-reveal">
+                    <p class="cargo-heading-md italic mb-4">PRAKTEK KERJA LAPANGAN</p>
+                    <p class="cargo-body-large uppercase font-bold tracking-widest">
+                        Digitalisasi Usaha Tanpa Henti.
+                    </p>
+                </div>
+            </section>
+
+            <!-- About Section (Atrem Project) -->
+            <section id="company" class="cargo-section">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-white/20 pb-8">
+                    <h2 class="cargo-heading-xl text-left">
+                        ABOUT <br>
+                        <span class="cargo-subtitle-italic">(AGENCY)</span>
+                    </h2>
+                </div>
+
+                <div class="cargo-tab-container w-full">
+                    <div class="cargo-tab-nav">
+                        <button class="cargo-tab-btn active text-xl" id="but1">Atrem Project</button>
+                        <button class="cargo-tab-btn text-xl" id="but2">Sejarah</button>
+                        <button class="cargo-tab-btn text-xl" id="but3">System Internship</button>
+                    </div>
+
+                    <div id="content1" class="cargo-tab-content flex flex-col gap-6 mt-8">
+                        <h3 class="cargo-heading-md">Atrem Project</h3>
+                        <p class="cargo-body-large font-bold max-w-4xl">
+                            Atrem Project merupakan hasil dari inisiatif Merta Yoga, yang memulai pendirian agensi ini setelah lulus dari Sekolah Menengah Kejuruan (SMK).
+                        </p>
+                        <p class="cargo-body text-xl max-w-4xl leading-relaxed">
+                            Agensi ini berfokus pada penyediaan solusi untuk mendigitalisasi berbagai usaha. Atrem menawarkan berbagai layanan, termasuk pembuatan sistem manajemen laundry, Learning Management System (LMS), jasa desain profil perusahaan, dan masih banyak lagi.
+                        </p>
+                    </div>
+
+                    <div id="content2" class="cargo-tab-content flex-col gap-6 mt-8">
+                        <h3 class="cargo-heading-md">Sejarah Atrem Project</h3>
+                        <!-- <p class="cargo-body-large font-serif italic text-2xl border-l-4 border-white pl-8 py-4 max-w-4xl">
+                            "Semua berawal dari ketertarikan Merta Yoga pada bidang komputer, terutama setelah ia mengetahui bahwa seorang programmer dapat bekerja secara remote."
+                        </p> -->
+                        <p class="cargo-body text-xl max-w-4xl leading-relaxed">
+                            Hal ini mendorongnya untuk memilih SMK 1 Denpasar dengan jurusan Rekayasa Perangkat Lunak (RPL) sebagai langkah awal dalam kariernya. Setelah menyelesaikan pendidikan di SMK, Merta Yoga memutuskan untuk mendirikan Atrem Project sebagai sumber penghasilan sampingan.
+                        </p>
+                    </div>
+
+                    <div id="content3" class="cargo-tab-content flex-col gap-6 mt-8">
+                        <h3 class="cargo-heading-md">System Internship</h3>
+                        <p class="cargo-body text-xl max-w-4xl leading-relaxed">
+                            Atrem Project merekrut anggota agensi melalui sistem magang, di mana setiap angkatan disebut sebagai "batch." Saya termasuk dalam batch 9. Setiap anggota batch akan diberikan tugas sesuai dengan bidang yang mereka pilih. Jika salah satu anggota batch dinilai kompeten oleh Merta Yoga, mereka akan ditawari kesempatan untuk bergabung dengan Atrem Project sebagai tim yang akan menangani proyek klien.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills & Side Quests Section -->
+            <section id="learnings" class="cargo-section-no-border grid grid-cols-1 lg:grid-cols-2 gap-16 pt-16">
+                <!-- Skills Column -->
+                <div>
+                    <h2 class="cargo-heading-md mb-4">Hal - Hal Yang Di Pelajari</h2>
+                    <p class="text-base italic mb-8 opacity-80 max-w-md">Di Atrem Project, sistem belajarnya berbasis mentorship. Kami diberikan tugas yang harus diselesaikan secara mandiri, dan jika mengalami kesulitan, kami dapat mendiskusikannya.</p>
+                    <div class="cargo-list">
+                        <div class="cargo-list-item flex-col items-start gap-2">
+                            <span class="cargo-list-item-title">UX Research</span>
+                            <span class="text-sm opacity-80 leading-relaxed">Selama di sini, saya diperkenalkan dengan UX Research, yang merupakan tahap pertama dalam pembuatan aplikasi atau website.</span>
+                        </div>
+                        <div class="cargo-list-item flex-col items-start gap-2">
+                            <span class="cargo-list-item-title">UX Testing</span>
+                            <span class="text-sm opacity-80 leading-relaxed">Di sini, saya diajarkan cara melakukan UX testing yang benar, mulai dari mencari responden hingga cara menanggapi mereka.</span>
+                        </div>
+                        <div class="cargo-list-item flex-col items-start gap-2">
+                            <span class="cargo-list-item-title">UI Prototyping</span>
+                            <span class="text-sm opacity-80 leading-relaxed">Di sini, saya mengeksplorasi UI Prototyping, di mana saya membuat animasi dan user flow di Figma untuk meningkatkan kualitas tahap UX Testing.</span>
+                        </div>
+                        <div class="cargo-list-item flex-col items-start gap-2">
+                            <span class="cargo-list-item-title">Tailwind CSS</span>
+                            <span class="text-sm opacity-80 leading-relaxed">Tailwind adalah framework CSS yang terkenal. Di sini, saya dibina dan diajarkan cara menggunakan Tailwind dengan benar dan efektif.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Side Quests Column -->
+                <div id="sidequests">
+                    <h2 class="cargo-heading-md mb-4">Side Quest</h2>
+                    <p class="text-base italic mb-8 opacity-80 max-w-md">Di Atrem Project terdapat Side Quest, dimana Side Quest ini berfungsi sebagai tumpukan asset untuk Atrem Project.</p>
+                    <div class="cargo-list">
+                        <div class="cargo-list-item flex-col items-start gap-2">
+                            <span class="cargo-list-item-title">01 / Mini Blog Atrem Tech Zone</span>
+                            <span class="text-sm opacity-80 leading-relaxed">Saya mendapatkan Side Quest untuk membuat blog untuk menjadi referensi konten Atrem Tech Zone yang merupakan akun informatif dari Atrem Project.</span>
+                        </div>
+                        <div class="cargo-list-item flex-col items-start gap-2">
+                            <span class="cargo-list-item-title">02 / Target Promosi Jasa</span>
+                            <span class="text-sm opacity-80 leading-relaxed">Kami mendapatkan Side Quest mencari website atau instagram dari berbagai bidang usaha yang akan digunakan sebagai target promosi jasa Atrem Project.</span>
+                        </div>
+                        <div class="cargo-list-item flex-col items-start gap-2">
+                            <span class="cargo-list-item-title">03 / Referensi UI Company Profile</span>
+                            <span class="text-sm opacity-80 leading-relaxed">Saya mendapatkan Side Quest untuk mencari 300+ referensi UI yang digunakan sebagai referensi dari pembuatan portofolio Atrem Project.</span>
+                        </div>
+                        <div class="cargo-list-item flex-col items-start gap-2">
+                            <span class="cargo-list-item-title">04 / Referensi Sistem</span>
+                            <span class="text-sm opacity-80 leading-relaxed">Saya Mendapatkan Side Quest untuk mengumpulkan referensi sistem yang digunakan untuk mengupgrade sistem - sistem yang akan di buat atau sudah di buat.</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio Section -->
+            <section id="portfolio" class="cargo-section pt-32">
+                <div class="text-center mb-24">
+                    <h2 class="cargo-heading-xl mb-4">
+                        WORKS
+                    </h2>
+                    <p class="cargo-subtitle-italic">(PROJECT YANG SAYA KERJAKAN)</p>
+                </div>
+
+                <div class="cargo-grid-2">
+                    <!-- Project 1 -->
+                    <a href="/pages/ui-prototyping.html" class="cargo-project-card border-4 border-transparent hover:border-white p-4 transition-all">
+                        <div class="cargo-project-image-wrapper border-2 border-white">
+                            <span class="cargo-project-badge !bg-white !text-[var(--color-primary-blue)]">01—UI Prototyping</span>
+                            <img src="/assets/images/proto-thumb.png" alt="UI Prototyping" class="cargo-project-image" />
+                        </div>
+                        <div class="cargo-project-info mt-4">
+                            <p class="cargo-project-title">16 UI Prototyping</p>
+                            <p class="cargo-project-category">Figma & UX Testing</p>
+                            <p class="cargo-project-desc">
+                                Eksplorasi pembuatan prototyping interaktif menggunakan Figma. Fokus pada user flow dan pengembangan animasi yang meningkatkan intuitivitas antarmuka.
+                            </p>
+                        </div>
+                    </a>
+
+                    <!-- Project 2 -->
+                    <a href="/pages/ui-design-projects.html" class="cargo-project-card border-4 border-transparent hover:border-white p-4 transition-all">
+                        <div class="cargo-project-image-wrapper border-2 border-white">
+                            <span class="cargo-project-badge !bg-white !text-[var(--color-primary-blue)]">02—UI Design</span>
+                            <img src="/assets/images/ui-thumb.png" alt="UI Design" class="cargo-project-image" />
+                        </div>
+                        <div class="cargo-project-info mt-4">
+                            <p class="cargo-project-title">28 UI Designs</p>
+                            <p class="cargo-project-category">Visual & UX Research</p>
+                            <p class="cargo-project-desc">
+                                Koleksi ekstensif 28 desain antarmuka pengguna lintas kategori. Dirancang dengan keseimbangan antara estetika modern dan fungsionalitas bisnis.
+                            </p>
+                        </div>
+                    </a>
+
+                    <!-- Project 3 -->
+                    <a href="/pages/mira-course-detail.html" class="cargo-project-card border-4 border-transparent hover:border-white p-4 transition-all">
+                        <div class="cargo-project-image-wrapper border-2 border-white">
+                            <span class="cargo-project-badge !bg-white !text-[var(--color-primary-blue)]">03—Mira Course</span>
+                            <img src="/assets/images/mira-thumb.png" alt="Mira Course" class="cargo-project-image" />
+                        </div>
+                        <div class="cargo-project-info mt-4">
+                            <p class="cargo-project-title">Mira Course</p>
+                            <p class="cargo-project-category">LMS Platform Design</p>
+                            <p class="cargo-project-desc">
+                                Platform Learning Management System (LMS) komprehensif. Didesain untuk mempermudah akses edukasi digital dan interaksi dua arah antara pengajar dan siswa.
+                            </p>
+                        </div>
+                    </a>
+
+                    <!-- Project 4 -->
+                    <a href="/pages/package-monitoring-frontend.html" class="cargo-project-card border-4 border-transparent hover:border-white p-4 transition-all">
+                        <div class="cargo-project-image-wrapper border-2 border-white">
+                            <span class="cargo-project-badge !bg-white !text-[var(--color-primary-blue)]">04—Package Monitoring</span>
+                            <img src="/assets/images/package-thumn.png" alt="Package Monitoring" class="cargo-project-image" />
+                        </div>
+                        <div class="cargo-project-info mt-4">
+                            <p class="cargo-project-title">Package Monitoring</p>
+                            <p class="cargo-project-category">Frontend Slicing & Tailwind CSS</p>
+                            <p class="cargo-project-desc">
+                                Pengembangan frontend berbasis Tailwind CSS untuk sistem logistik. Menghasilkan antarmuka pemantauan pengiriman paket yang real-time dan highly responsive.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="mt-32 pt-12 border-t-4 border-white flex flex-col md:flex-row justify-between items-center text-sm font-bold uppercase tracking-widest">
+            <div class="flex items-center gap-4 mb-8 md:mb-0">
+                <img src="/assets/logo-atrem-project.svg" alt="Atrem Logo" class="h-6 w-auto invert" />
+                <p>© ATREM PROJECT DIGITAL AGENCY</p>
+            </div>
+            <a href="#" class="hover:bg-white hover:text-[var(--color-primary-blue)] px-6 py-3 border-2 border-white transition-colors">Scroll to Top ↑</a>
+        </footer>
     </div>
 
-    <!-- Main Views Container -->
-    <div class="view-container">
-        <div id="data-wrapper">
-            
-            <!-- Card 1: Profil -->
-            <div class="card-wrapper">
-                <div class="data-card">
-                    <img src="/assets/atrem-pic.webp" alt="Atrem Profil">
-                    <div class="card-detail">
-                        <h3>PROFIL</h3>
-                        <p>Atrem Project berfokus pada digitalisasi berbagai usaha, dari sistem laundry hingga LMS dan company profile.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 2: Sejarah -->
-            <div class="card-wrapper">
-                <div class="data-card">
-                    <img src="/assets/images/history.png" alt="Sejarah">
-                    <div class="card-detail">
-                        <h3>SEJARAH</h3>
-                        <p>Didirikan oleh Merta Yoga (RPL SMK 1 Denpasar) untuk memberikan solusi digital dengan sistem remote-friendly.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 3: Sistem -->
-            <div class="card-wrapper">
-                <div class="data-card">
-                    <img src="/assets/images/intenr.png" alt="Sistem">
-                    <div class="card-detail">
-                        <h3>SISTEM</h3>
-                        <p>Merekrut melalui sistem "batch" magang. Kompetensi menentukan keterlibatan langsung dalam proyek klien.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 4: Prototyping -->
-            <div class="card-wrapper">
-                <div class="data-card">
-                    <img src="/assets/images/proto-thumb.png" alt="Prototyping">
-                    <div class="card-detail">
-                        <h3>PROTOTYPING</h3>
-                        <p>16 UI Prototyping: Mengeksplorasi user flow dan animasi menggunakan Figma untuk visualisasi interaktif.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 5: Design -->
-            <div class="card-wrapper">
-                <div class="data-card">
-                    <img src="/assets/images/ui-thumb.png" alt="UI Design">
-                    <div class="card-detail">
-                        <h3>VISUAL DESIGN</h3>
-                        <p>28 UI Designs: Menitikberatkan pada estetika fungsional dan eksplorasi tren desain modern.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 6: Mira Course -->
-            <div class="card-wrapper">
-                <div class="data-card">
-                    <img src="/assets/images/mira-thumb.png" alt="Mira Course">
-                    <div class="card-detail">
-                        <h3>MIRA COURSE</h3>
-                        <p>Platform LMS yang dirancang untuk efisiensi belajar online, menghubungkan pengajar dan siswa.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 7: Package -->
-            <div class="card-wrapper">
-                <div class="data-card">
-                    <img src="/assets/images/package-thumn.png" alt="Package Monitoring">
-                    <div class="card-detail">
-                        <h3>PACKAGE SYS</h3>
-                        <p>Slicing frontend dengan Tailwind CSS untuk pemantauan paket real-time yang responsif.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- Bottom Navigation -->
-    <nav class="cargo-nav cargo-nav-bottom">
-        <div class="lowercase">ngakan putu satria dewangga</div>
-        <div class="lowercase text-right">batch 09 / 2026</div>
-    </nav>
-
-    <!-- Mobile Mode Selector (visible only on small screens) -->
-    <div class="fixed bottom-12 left-0 w-full flex justify-center gap-4 md:hidden z-50 pointer-events-auto mix-blend-difference text-white">
-        <button data-view="grid" class="nav-btn active">grid</button>
-        <button data-view="feed" class="nav-btn">feed</button>
-        <button data-view="slideshow" class="nav-btn">slide</button>
-    </div>
-
+    <!-- Scripts -->
     <script type="module" src="/src/js/main.js"></script>
 </body>
 </html>
