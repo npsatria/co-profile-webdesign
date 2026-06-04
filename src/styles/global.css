@@ -631,24 +631,23 @@ html{
   --atrem-blue: #3780D4;
   --atrem-cyan: #57C4D9;
   --atrem-dark: #151618;
-  --atrem-light: #F7FAFC;
   --atrem-gold: #F6C46A;
-  --atrem-surface: #1E1F22;
-  --atrem-line: rgba(255, 255, 255, 0.12);
-  --atrem-muted: rgba(255, 255, 255, 0.68);
-  --atrem-soft-blue: rgba(55, 128, 212, 0.15);
-  --atrem-soft-cyan: rgba(87, 196, 217, 0.18);
+  --atrem-surface: #F7FAFC;
+  --atrem-line: rgba(21, 22, 24, 0.14);
+  --atrem-muted: rgba(21, 22, 24, 0.68);
+  --atrem-soft-blue: rgba(55, 128, 212, 0.10);
+  --atrem-soft-cyan: rgba(87, 196, 217, 0.16);
   --atrem-soft-gold: rgba(246, 196, 106, 0.24);
-  --p: 60.27% 0.165 258.4;
-  --b2: 14.28% 0.007 265.8;
-  --b3: 18.52% 0.006 265.8;
+  --p: 57.39% 0.1537 253.31;
+  --b2: 88.5482% 0 0;
+  --b3: 81.8833% 0 0;
   --in: 72.06% 0.191 231.6;
   --su: 64.8% 0.150 160;
-  --wa: 81.56% 0.155 86.8;
+  --wa: 84.71% 0.199 83.87;
   --er: 71.76% 0.221 22.18;
-  --bc: 96.8% 0.006 240;
+  --bc: 18.22% 0.006 250;
   --pc: 100% 0 0;
-  --sc: 0% 0 0;
+  --sc: 100% 0 0;
   --inc: 0% 0 0;
   --suc: 0% 0 0;
   --wac: 0% 0 0;
@@ -662,8 +661,8 @@ html{
   --border-btn: 1px;
   --tab-border: 1px;
   --tab-radius: 0.5rem;
-  --s: 75.52% 0.126 211.5;
-  --b1: 10.64% 0.009 265.8;
+  --s: 75.03% 0.121 211.72;
+  --b1: 98.8% 0.006 240;
 }
 
 @media (prefers-color-scheme: dark){
@@ -671,10 +670,11 @@ html{
     color-scheme: dark;
     --in: 72.06% 0.191 231.6;
     --su: 64.8% 0.150 160;
-    --wa: 81.56% 0.155 86.8;
+    --wa: 84.71% 0.199 83.87;
     --er: 71.76% 0.221 22.18;
-    --pc: 100% 0 0;
-    --sc: 0% 0 0;
+    --pc: 13.138% 0.0392 275.75;
+    --sc: 14.96% 0.052 342.55;
+    --ac: 14.902% 0.0334 183.61;
     --inc: 0% 0 0;
     --suc: 0% 0 0;
     --wac: 0% 0 0;
@@ -688,26 +688,29 @@ html{
     --border-btn: 1px;
     --tab-border: 1px;
     --tab-radius: 0.5rem;
-    --p: 60.27% 0.165 258.4;
-    --s: 75.52% 0.126 211.5;
-    --b1: 10.64% 0.009 265.8;
-    --b2: 14.28% 0.007 265.8;
-    --b3: 18.52% 0.006 265.8;
-    --bc: 96.8% 0.006 240;
+    --p: 65.69% 0.196 275.75;
+    --s: 74.8% 0.26 342.55;
+    --a: 74.51% 0.167 183.61;
+    --n: 31.3815% 0.021108 254.139175;
+    --nc: 74.6477% 0.0216 264.435964;
+    --b1: 25.3267% 0.015896 252.417568;
+    --b2: 23.2607% 0.013807 253.100675;
+    --b3: 21.1484% 0.01165 254.087939;
+    --bc: 74.6477% 0.0216 264.435964;
   }
 }
 
 [data-theme=mytheme]{
-  --p: 60.27% 0.165 258.4;
-  --b2: 14.28% 0.007 265.8;
-  --b3: 18.52% 0.006 265.8;
+  --p: 57.39% 0.1537 253.31;
+  --b2: 88.5482% 0 0;
+  --b3: 81.8833% 0 0;
   --in: 72.06% 0.191 231.6;
   --su: 64.8% 0.150 160;
-  --wa: 81.56% 0.155 86.8;
+  --wa: 84.71% 0.199 83.87;
   --er: 71.76% 0.221 22.18;
-  --bc: 96.8% 0.006 240;
+  --bc: 18.22% 0.006 250;
   --pc: 100% 0 0;
-  --sc: 0% 0 0;
+  --sc: 100% 0 0;
   --inc: 0% 0 0;
   --suc: 0% 0 0;
   --wac: 0% 0 0;
@@ -721,8 +724,8 @@ html{
   --border-btn: 1px;
   --tab-border: 1px;
   --tab-radius: 0.5rem;
-  --s: 75.52% 0.126 211.5;
-  --b1: 10.64% 0.009 265.8;
+  --s: 75.03% 0.121 211.72;
+  --b1: 98.8% 0.006 240;
 }
 
 [data-theme=dark]{
@@ -1283,8 +1286,8 @@ details.collapse summary::-webkit-details-marker{
   font-size: 20px;
   font-weight: 500;
   --tw-text-opacity: 1;
-  color: var(--atrem-light);
-  opacity: 0.6;
+  color: var(--atrem-dark);
+  opacity: 0.68;
   transition-duration: 300ms;
 }
 
@@ -1337,7 +1340,7 @@ details.collapse summary::-webkit-details-marker{
   font-weight: 700;
   line-height: 60px;
   --tw-text-opacity: 1;
-  color: var(--atrem-light);
+  color: var(--atrem-dark);
 }
 
 .skill-card{
@@ -1350,7 +1353,7 @@ details.collapse summary::-webkit-details-marker{
   padding: 1rem;
   text-align: center;
   --tw-text-opacity: 1;
-  color: var(--atrem-light);
+  color: var(--atrem-dark);
   transition-duration: 300ms;
 }
 
@@ -1413,7 +1416,7 @@ details.collapse summary::-webkit-details-marker{
   font-size: clamp(54px, 9vw, 132px);
   font-weight: 900;
   line-height: 0.9;
-  color: var(--atrem-light);
+  color: var(--atrem-dark);
 }
 
 .portfolio-heading p:last-child{
@@ -1440,7 +1443,7 @@ details.collapse summary::-webkit-details-marker{
   background: rgba(87, 196, 217, 0.10);
   font-size: 14px;
   font-weight: 800;
-  color: var(--atrem-light);
+  color: var(--atrem-dark);
 }
 
 .portfolio-list{
@@ -1455,7 +1458,7 @@ details.collapse summary::-webkit-details-marker{
   min-height: 280px;
   border-bottom: 1px solid var(--atrem-line);
   padding: clamp(24px, 4vw, 44px) 0;
-  color: var(--atrem-light);
+  color: var(--atrem-dark);
   text-decoration: none;
   transition-duration: 300ms;
 }
@@ -1578,7 +1581,7 @@ details.collapse summary::-webkit-details-marker{
   font-size: clamp(58px, 11vw, 176px);
   font-weight: 950;
   line-height: 0.86;
-  color: var(--atrem-light);
+  color: var(--atrem-dark);
 }
 
 .cho-detail-meta{
@@ -1610,7 +1613,7 @@ details.collapse summary::-webkit-details-marker{
   font-size: clamp(18px, 2vw, 26px);
   font-weight: 850;
   line-height: 1.12;
-  color: var(--atrem-light);
+  color: var(--atrem-dark);
 }
 
 .cho-detail-cover{
@@ -1645,7 +1648,7 @@ details.collapse summary::-webkit-details-marker{
 .cho-detail-story p{
   max-width: 920px;
   margin-bottom: 28px;
-  color: var(--atrem-muted);
+  color: rgba(21, 22, 24, 0.78);
   font-size: clamp(20px, 2.25vw, 32px);
   font-weight: 650;
   line-height: 1.35;
@@ -1677,7 +1680,7 @@ details.collapse summary::-webkit-details-marker{
   gap: 14px;
   border-top: 1px solid var(--atrem-line);
   padding-top: 36px;
-  color: var(--atrem-light);
+  color: var(--atrem-dark);
   text-decoration: none;
 }
 
@@ -1723,9 +1726,9 @@ details.collapse summary::-webkit-details-marker{
   flex-direction: column;
   border: 1px solid var(--atrem-line);
   border-radius: 18px;
-  background: var(--atrem-surface);
+  background: rgba(255, 255, 255, 0.86);
   padding: clamp(22px, 2.2vw, 32px);
-  color: var(--atrem-light);
+  color: var(--atrem-dark);
   box-shadow: 0 18px 42px rgba(55, 128, 212, 0.08);
   transition-duration: 300ms;
 }
@@ -2232,7 +2235,7 @@ details.collapse summary::-webkit-details-marker{
 
 .text-primary{
   --tw-text-opacity: 1;
-  color: var(--atrem-light);
+  color: var(--atrem-dark);
 }
 
 .text-secondary{
@@ -2242,7 +2245,7 @@ details.collapse summary::-webkit-details-marker{
 
 .text-text{
   --tw-text-opacity: 1;
-  color: var(--atrem-light);
+  color: var(--atrem-dark);
 }
 
 .text-white{
