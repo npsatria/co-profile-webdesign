@@ -3016,3 +3016,50 @@ body{
     border-bottom: 2px solid var(--atrem-line) !important;
   }
 }
+
+/* High contrast & dark mode color visibility overrides */
+.hero-adxy {
+  color: var(--atrem-dark) !important;
+}
+
+.hero-adxy-title h1 {
+  color: var(--atrem-dark) !important;
+}
+
+.hero-adxy-title p {
+  color: var(--atrem-dark) !important;
+  border-color: var(--atrem-line) !important;
+  background: var(--atrem-soft-blue) !important;
+}
+
+.hero-adxy-meta,
+.hero-adxy-footer {
+  color: var(--atrem-muted) !important;
+  border-color: var(--atrem-line) !important;
+}
+
+.portfolio-index {
+  color: var(--atrem-muted) !important;
+}
+
+.cho-detail-story p {
+  color: var(--atrem-dark) !important;
+  opacity: 0.9 !important;
+}
+
+.section-projects,
+.section-os,
+.section-writings {
+  border-top: 2px solid var(--atrem-line) !important;
+  border-bottom: 2px solid var(--atrem-line) !important;
+  background-color: var(--atrem-surface) !important;
+}
+
+/* Base link color brutalist visibility */
+a {
+  border-bottom-color: var(--atrem-line) !important;
+}
+
+a:hover {
+  border-bottom-color: var(--atrem-blue) !important;
+}
