@@ -10,7 +10,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <nav class="fixed z-40 my-container navbar w-full">
         <div class="navbar-start"></div>
         <div
-            class="border navbar-center backdrop-blur-lg rounded-3xl w-fit bg-base-100/50 border-primary/5 mx-auto"
+            class="navbar-center brutalist-nav-container w-fit mx-auto"
         >
             <div class="flex p-4 space-x-4">
                 <div class="mx-8 space-x-4">
@@ -25,47 +25,27 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </nav>
 
     <!-- Header Section -->
-    <header
-        class="relative flex flex-col items-center justify-center w-full min-h-screen"
-    >
-        <h1 class="text-4xl font-bold text-center text-primary leading-[100px]">
-            Praktek Kerja Lapangan <br />
-            <span class="text-secondary">Atrem Project</span>
-        </h1>
-        <p class="mt-6 text-lg font-semibold text-text">
-            Ngakan Putu Satria Dewangga
-        </p>
-        <img
-            src="/assets/decoration/star.svg"
-            alt=""
-            class="absolute top-[200px] w-16 left-[200px]"
-        />
-        <img
-            src="/assets/decoration/star.svg"
-            alt=""
-            class="absolute bottom-[240px] w-8 left-[400px]"
-        />
-        <img
-            src="/assets/decoration/star.svg"
-            alt=""
-            class="absolute bottom-[200px] right-[440px] w-10 opacity-60"
-        />
-        <img
-            src="/assets/decoration/star.svg"
-            alt=""
-            class="absolute top-[200px] right-[240px] w-12 opacity-80"
-        />
-        <img
-            src="/assets/decoration/effect.png"
-            alt=""
-            class="absolute left-0 h-full"
-        />
-        <img
-            src="/assets/decoration/effect-r.png"
-            alt=""
-            class="absolute right-0 h-full"
-        />
+    <header class="hero-adxy">
+        <div class="hero-adxy-meta" aria-label="Internship metadata">
+            <span>2026</span>
+            <span>Batch 9</span>
+            <span>Atrem Project</span>
+        </div>
+        <div class="hero-adxy-title">
+            <p>Ngakan Putu Satria Dewangga</p>
+            <h1>
+                Internship <br />
+                Portfolio
+            </h1>
+        </div>
+        <div class="hero-adxy-footer">
+            <span>Front-end slicing</span>
+            <span>Dashboard systems</span>
+            <span>Mobile UI</span>
+        </div>
     </header>
+
+    <div class="section-divider"></div>
 
     <!-- Company Section -->
     <section class="pt-[200px] pb-[100px] my-container" id="company">
@@ -153,6 +133,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         </div>
     </section>
 
+    <div class="section-divider"></div>
+
     <!-- Learnings Section -->
     <section class="my-container py-[100px]" id="learnings">
         <div class="flex items-center justify-between">
@@ -221,6 +203,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             </div>
         </div>
     </section>
+
+    <div class="section-divider"></div>
 
     <!-- Side Quest Section -->
     <section class="py-[100px] my-container" id="sideq">
@@ -309,6 +293,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             </article>
         </div>
     </section>
+
+    <div class="section-divider"></div>
 
     <!-- Projects Section -->
     <section class="project-portfolio my-container" id="projects">
@@ -412,6 +398,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             </a>
         </div>
     </section>
+
+    <div class="section-divider"></div>
 
     <!-- Footer Scene (original, untouched) -->
     <section class="footer-scene" aria-label="Footer crowd">
