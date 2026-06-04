@@ -1735,11 +1735,11 @@ details.collapse summary::-webkit-details-marker{
   min-height: 300px;
   flex-direction: column;
   border: 1px solid var(--atrem-line);
-  border-radius: 18px;
+  border-radius: 0;
   background: rgba(245, 246, 247, 0.92);
   padding: clamp(22px, 2.2vw, 32px);
   color: var(--atrem-dark);
-  box-shadow: 0 18px 42px rgba(21, 22, 24, 0.08);
+  box-shadow: none;
   transition-duration: 300ms;
 }
 
@@ -1751,7 +1751,7 @@ details.collapse summary::-webkit-details-marker{
 .side-quest-card:hover{
   background: linear-gradient(135deg, var(--atrem-dark), #1f2933);
   color: rgb(255 255 255);
-  transform: translateY(-4px);
+  transform: none;
 }
 
 .side-quest-number{
@@ -2308,7 +2308,7 @@ body{
 }
 
 .navbar-center{
-  box-shadow: 0 16px 50px rgba(21, 22, 24, 0.08);
+  box-shadow: none;
 }
 
 .hero-adxy{
@@ -2473,7 +2473,7 @@ body{
     height: clamp(300px, 24vw, 360px);
     min-height: clamp(300px, 24vw, 360px);
     overflow: hidden;
-    background: #151618;
+    background: var(--atrem-surface);
 }
 
 #crowd-canvas {
@@ -2517,17 +2517,17 @@ body{
     transform: translateX(-50%);
     gap: 10px;
     padding: 10px 20px;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 8px;
-    background: rgba(20, 20, 20, 0.86);
-    color: rgba(255, 255, 255, 0.62);
+    border: 2px solid var(--atrem-dark);
+    border-radius: 4px;
+    background: var(--atrem-surface);
+    color: rgba(21, 22, 24, 0.72);
     font-size: clamp(0.86rem, 1.2vw, 1rem);
     font-weight: 700;
     line-height: 1.4;
     text-align: center;
-    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
-    -webkit-backdrop-filter: blur(12px);
-    backdrop-filter: blur(12px);
+    box-shadow: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
     opacity: 1 !important;
     visibility: visible !important;
     pointer-events: auto;
@@ -2539,20 +2539,20 @@ body{
 }
 
 .footer-separator {
-    color: rgba(255, 255, 255, 0.34);
+    color: rgba(21, 22, 24, 0.38);
 }
 
 .layout-footer a {
     display: inline-flex;
     align-items: center;
     gap: 7px;
-    color: #ffffff;
+    color: var(--atrem-dark);
     text-decoration: none;
     white-space: nowrap;
 }
 
 .layout-footer a:hover {
-    color: #57c4d9;
+    color: rgba(21, 22, 24, 0.68);
 }
 
 .footer-github-icon {
@@ -2792,18 +2792,18 @@ p, li, select, input, textarea {
 
 /* Navbar */
 .brutalist-nav-container {
-  background-color: var(--atrem-cyan) !important;
+  background-color: var(--atrem-surface) !important;
   border: 2px solid var(--atrem-line) !important;
-  border-radius: 4px !important;
-  box-shadow: 4px 4px 0px 0px var(--atrem-line) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
-  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  transition: none !important;
 }
 
 .brutalist-nav-container:hover {
-  box-shadow: 6px 6px 0px 0px var(--atrem-line) !important;
-  transform: translate(-2px, -2px) !important;
+  box-shadow: none !important;
+  transform: none !important;
 }
 
 .nav-link {
@@ -2821,22 +2821,12 @@ p, li, select, input, textarea {
 
 /* Section divider repeating linear gradient */
 .section-divider {
-  --mask-image: linear-gradient(to top, transparent 0%, var(--atrem-surface) 150%);
   width: 100%;
-  height: 3.5rem;
-  background-color: var(--atrem-surface);
-  background-size: 0.6rem 0.6rem;
-  background-image: repeating-linear-gradient(
-    45deg,
-    var(--atrem-line) 0,
-    var(--atrem-line) 1.5px,
-    transparent 0,
-    transparent 50%
-  );
-  -webkit-mask-image: var(--mask-image);
-  mask-image: var(--mask-image);
-  margin: 2rem 0;
-  border: none !important;
+  height: 0;
+  background: none !important;
+  background-image: none !important;
+  margin: 0;
+  border-top: 2px solid var(--atrem-line) !important;
 }
 
 /* Company tabs overrides */
@@ -2874,7 +2864,7 @@ p, li, select, input, textarea {
   border-right: 2px solid var(--atrem-line) !important;
   border-bottom: 2px solid var(--atrem-line) !important;
   background: var(--atrem-cyan) !important;
-  transition: all 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  transition: background-color 0.15s ease, color 0.15s ease !important;
 }
 
 .skill-card:hover {
@@ -2893,17 +2883,17 @@ p, li, select, input, textarea {
 /* Side Quest cards */
 .side-quest-card {
   border: 2px solid var(--atrem-line) !important;
-  border-radius: 4px !important;
+  border-radius: 0 !important;
   background: var(--atrem-cyan) !important;
-  box-shadow: 4px 4px 0px 0px var(--atrem-line) !important;
-  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  box-shadow: none !important;
+  transition: background-color 0.15s ease, color 0.15s ease !important;
 }
 
 .side-quest-card:hover {
   background: var(--atrem-cyan) !important;
   color: var(--atrem-dark) !important;
-  box-shadow: 8px 8px 0px 0px var(--atrem-line) !important;
-  transform: translate(-4px, -4px) !important;
+  box-shadow: none !important;
+  transform: none !important;
 }
 
 .side-quest-card:hover h3 {
@@ -2912,7 +2902,7 @@ p, li, select, input, textarea {
 
 .side-quest-number {
   border: 2px solid var(--atrem-line) !important;
-  border-radius: 4px !important;
+  border-radius: 0 !important;
   background: var(--atrem-line) !important;
   color: var(--atrem-surface) !important;
 }
@@ -2926,7 +2916,7 @@ p, li, select, input, textarea {
 /* Portfolio Work Cards */
 .portfolio-work-card {
   border-bottom: 2px solid var(--atrem-line) !important;
-  transition: all 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  transition: background-color 0.15s ease, color 0.15s ease !important;
 }
 
 .portfolio-work-card:hover {
@@ -2937,8 +2927,8 @@ p, li, select, input, textarea {
 
 .portfolio-thumb {
   border: 2px solid var(--atrem-line) !important;
-  border-radius: 4px !important;
-  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.3) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
 
 .portfolio-work-card:hover .portfolio-thumb {
@@ -2947,40 +2937,40 @@ p, li, select, input, textarea {
 
 .portfolio-copy span {
   border: 1px solid currentColor !important;
-  border-radius: 4px !important;
+  border-radius: 0 !important;
 }
 
 .portfolio-action {
   border: 2px solid currentColor !important;
-  border-radius: 4px !important;
+  border-radius: 0 !important;
 }
 
 .portfolio-filters span {
   border: 2px solid var(--atrem-line) !important;
-  border-radius: 4px !important;
+  border-radius: 0 !important;
   background: var(--atrem-cyan) !important;
-  box-shadow: 2px 2px 0px 0px var(--atrem-line) !important;
+  box-shadow: none !important;
   font-weight: 700 !important;
   cursor: pointer;
   transition: all 0.15s ease !important;
 }
 
 .portfolio-filters span:hover {
-  transform: translate(-1px, -1px) !important;
-  box-shadow: 3px 3px 0px 0px var(--atrem-line) !important;
+  transform: none !important;
+  box-shadow: none !important;
 }
 
 .portfolio-filters span:first-child {
   background: var(--atrem-blue) !important;
   color: var(--atrem-surface) !important;
-  box-shadow: 2px 2px 0px 0px var(--atrem-line) !important;
+  box-shadow: none !important;
 }
 
 /* Project Detail layout overrides */
 .cho-detail-cover {
   border: 3px solid var(--atrem-line) !important;
-  border-radius: 4px !important;
-  box-shadow: 8px 8px 0px 0px var(--atrem-line) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
 
 .cho-detail-meta {
