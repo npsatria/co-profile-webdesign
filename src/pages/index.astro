@@ -9,7 +9,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <!-- Navigation Navbar -->
     <nav class="fixed z-40 my-container navbar w-full">
         <div class="navbar-start"></div>
-        <div class="border navbar-center backdrop-blur-lg rounded-3xl w-fit bg-base-100/50 border-primary/5 mx-auto">
+        <div
+            class="border navbar-center backdrop-blur-lg rounded-3xl w-fit bg-base-100/50 border-primary/5 mx-auto"
+        >
             <div class="flex p-4 space-x-4">
                 <div class="mx-8 space-x-4">
                     <a href="#company" class="nav-link">Company</a>
@@ -23,18 +25,46 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </nav>
 
     <!-- Header Section -->
-    <header class="relative flex flex-col items-center justify-center w-full min-h-screen">
+    <header
+        class="relative flex flex-col items-center justify-center w-full min-h-screen"
+    >
         <h1 class="text-4xl font-bold text-center text-primary leading-[100px]">
             Praktek Kerja Lapangan <br />
             <span class="text-secondary">Atrem Project</span>
         </h1>
-        <p class="mt-6 text-lg font-semibold text-text">I Gede Dhiyo Lawe Wikantara</p>
-        <img src="/assets/decoration/star.svg" alt="" class="absolute top-[200px] w-16 left-[200px]" />
-        <img src="/assets/decoration/star.svg" alt="" class="absolute bottom-[240px] w-8 left-[400px]" />
-        <img src="/assets/decoration/star.svg" alt="" class="absolute bottom-[200px] right-[440px] w-10 opacity-60" />
-        <img src="/assets/decoration/star.svg" alt="" class="absolute top-[200px] right-[240px] w-12 opacity-80" />
-        <img src="/assets/decoration/effect.png" alt="" class="absolute left-0 h-full" />
-        <img src="/assets/decoration/effect-r.png" alt="" class="absolute right-0 h-full" />
+        <p class="mt-6 text-lg font-semibold text-text">
+            Ngakan Putu Satria Dewangga
+        </p>
+        <img
+            src="/assets/decoration/star.svg"
+            alt=""
+            class="absolute top-[200px] w-16 left-[200px]"
+        />
+        <img
+            src="/assets/decoration/star.svg"
+            alt=""
+            class="absolute bottom-[240px] w-8 left-[400px]"
+        />
+        <img
+            src="/assets/decoration/star.svg"
+            alt=""
+            class="absolute bottom-[200px] right-[440px] w-10 opacity-60"
+        />
+        <img
+            src="/assets/decoration/star.svg"
+            alt=""
+            class="absolute top-[200px] right-[240px] w-12 opacity-80"
+        />
+        <img
+            src="/assets/decoration/effect.png"
+            alt=""
+            class="absolute left-0 h-full"
+        />
+        <img
+            src="/assets/decoration/effect-r.png"
+            alt=""
+            class="absolute right-0 h-full"
+        />
     </header>
 
     <!-- Company Section -->
@@ -44,41 +74,79 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <span class="text-secondary">Atrem Project</span>
         </h2>
         <div class="flex mt-16">
-            <p class="flex-1 py-6 text-lg font-semibold text-center border-b-2 cursor-pointer text-text border-b-primary" id="but1">Atrem Project</p>
-            <p class="flex-1 py-6 text-lg font-semibold text-center border-b-2 cursor-pointer text-text border-b-primary/30" id="but2">Sejarah Atrem Project</p>
-            <p class="flex-1 py-6 text-lg font-semibold text-center border-b-2 cursor-pointer text-text border-b-primary/30" id="but3">System Internship</p>
+            <p
+                class="flex-1 py-6 text-lg font-semibold text-center border-b-2 cursor-pointer text-text border-b-primary"
+                id="but1"
+            >
+                Atrem Project
+            </p>
+            <p
+                class="flex-1 py-6 text-lg font-semibold text-center border-b-2 cursor-pointer text-text border-b-primary/30"
+                id="but2"
+            >
+                Sejarah Atrem Project
+            </p>
+            <p
+                class="flex-1 py-6 text-lg font-semibold text-center border-b-2 cursor-pointer text-text border-b-primary/30"
+                id="but3"
+            >
+                System Internship
+            </p>
         </div>
         <div class="mt-16">
             <div class="flex gap-8" id="content1">
                 <img src="/assets/images/atrem.png" alt="" />
                 <div>
                     <h3 class="text-2xl font-bold text-text">Atrem Project</h3>
-                    <p class="text-base font-medium text-text leading-[26px]"
-                        >Atrem Project merupakan hasil dari inisiatif Merta Yoga, yang memulai pendirian agensi ini setelah lulus dari Sekolah Menengah Kejuruan (SMK). Agensi ini berfokus pada
-                        penyediaan solusi untuk mendigitalisasi berbagai usaha. Atrem menawarkan berbagai layanan, termasuk pembuatan sistem manajemen laundry, Learning Management System (LMS),
-                        jasa desain profil perusahaan, dan masih banyak lagi.
+                    <p class="text-base font-medium text-text leading-[26px]">
+                        Atrem Project merupakan hasil dari inisiatif Merta Yoga,
+                        yang memulai pendirian agensi ini setelah lulus dari
+                        Sekolah Menengah Kejuruan (SMK). Agensi ini berfokus
+                        pada penyediaan solusi untuk mendigitalisasi berbagai
+                        usaha. Atrem menawarkan berbagai layanan, termasuk
+                        pembuatan sistem manajemen laundry, Learning Management
+                        System (LMS), jasa desain profil perusahaan, dan masih
+                        banyak lagi.
                     </p>
                 </div>
             </div>
             <div class="hidden gap-8" id="content2">
-                <img src="/assets/images/history.png" alt="" class="grayscale" />
+                <img
+                    src="/assets/images/history.png"
+                    alt=""
+                    class="grayscale"
+                />
                 <div>
-                    <h3 class="text-2xl font-bold text-text">Sejarah Atrem Project</h3>
-                    <p class="text-base font-medium text-text leading-[26px]"
-                        >Semua berawal dari ketertarikan Merta Yoga pada bidang komputer, terutama setelah ia mengetahui bahwa seorang programmer dapat bekerja secara remote. Hal ini mendorongnya
-                        untuk memilih SMK 1 Denpasar dengan jurusan Rekayasa Perangkat Lunak (RPL) sebagai langkah awal dalam kariernya. Setelah menyelesaikan pendidikan di SMK, Merta Yoga
-                        memutuskan untuk mendirikan Atrem Project sebagai sumber penghasilan sampingan.
+                    <h3 class="text-2xl font-bold text-text">
+                        Sejarah Atrem Project
+                    </h3>
+                    <p class="text-base font-medium text-text leading-[26px]">
+                        Semua berawal dari ketertarikan Merta Yoga pada bidang
+                        komputer, terutama setelah ia mengetahui bahwa seorang
+                        programmer dapat bekerja secara remote. Hal ini
+                        mendorongnya untuk memilih SMK 1 Denpasar dengan jurusan
+                        Rekayasa Perangkat Lunak (RPL) sebagai langkah awal
+                        dalam kariernya. Setelah menyelesaikan pendidikan di
+                        SMK, Merta Yoga memutuskan untuk mendirikan Atrem
+                        Project sebagai sumber penghasilan sampingan.
                     </p>
                 </div>
             </div>
             <div class="hidden gap-8" id="content3">
                 <img src="/assets/images/intenr.png" alt="" class="grayscale" />
                 <div>
-                    <h3 class="text-2xl font-bold text-text">System Internship</h3>
-                    <p class="text-base font-medium text-text leading-[26px]"
-                        >Atrem Project merekrut anggota agensi melalui sistem magang, di mana setiap angkatan disebut sebagai "batch." Saya termasuk dalam batch 6. Setiap anggota batch akan
-                        diberikan tugas sesuai dengan bidang yang mereka pilih. Jika salah satu anggota batch dinilai kompeten oleh Merta Yoga, mereka akan ditawari kesempatan untuk bergabung
-                        dengan Atrem Project sebagai tim yang akan menangani proyek klien.
+                    <h3 class="text-2xl font-bold text-text">
+                        System Internship
+                    </h3>
+                    <p class="text-base font-medium text-text leading-[26px]">
+                        Atrem Project merekrut anggota agensi melalui sistem
+                        magang, di mana setiap angkatan disebut sebagai "batch."
+                        Saya termasuk dalam batch 9. Setiap anggota batch akan
+                        diberikan tugas sesuai dengan bidang yang mereka pilih.
+                        Jika salah satu anggota batch dinilai kompeten oleh
+                        Merta Yoga, mereka akan ditawari kesempatan untuk
+                        bergabung dengan Atrem Project sebagai tim yang akan
+                        menangani proyek klien.
                     </p>
                 </div>
             </div>
@@ -88,129 +156,259 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <!-- Learnings Section -->
     <section class="my-container py-[100px]" id="learnings">
         <div class="flex items-center justify-between">
-            <p class="section-title max-w-[639px]">Hal - Hal Yang Di Pelajari</p>
-            <p class="text-lg font-semibold leading-[27px] text-text max-w-[687px]"
-                >Di Atrem Project, sistem belajarnya berbasis mentorship. Kami diberikan tugas yang harus diselesaikan secara mandiri, dan jika mengalami kesulitan, kami dapat mendiskusikannya.
+            <p class="section-title max-w-[639px]">
+                Hal - Hal Yang Di Pelajari
+            </p>
+            <p
+                class="text-lg font-semibold leading-[27px] text-text max-w-[687px]"
+            >
+                Selama internship di Atrem Project, saya belajar menerjemahkan
+                desain menjadi halaman web yang responsif, menjaga konsistensi
+                komponen, dan merapikan hasil slicing agar siap direview.
             </p>
         </div>
         <div class="grid grid-cols-4 mt-16">
             <div class="space-y-8 border-r skill-card border-r-primary/20">
                 <div class="w-16 h-16 text-3xl solar-ux mx-auto"></div>
-                <div class="text-xl font-bold text-center">UX Research</div>
-                <p class="text-[18px] font-medium text-center">Selama di sini, saya diperkenalkan dengan UX Research, yang merupakan tahap pertama dalam pembuatan aplikasi atau website.</p>
+                <div class="text-xl font-bold text-center">Figma Handoff</div>
+                <p class="text-[18px] font-medium text-center">
+                    Saya belajar membaca struktur desain Figma, memahami
+                    spacing, typography, asset, dan menentukan section yang
+                    perlu dibuat saat slicing.
+                </p>
             </div>
             <div class="space-y-8 border-r skill-card border-r-primary/20">
                 <div class="w-16 h-16 text-3xl solar-research mx-auto"></div>
-                <div class="text-xl font-bold text-center">UX Testing</div>
-                <p class="text-[18px] font-medium text-center">Di sini, saya diajarkan cara melakukan UX testing yang benar, mulai dari mencari responden hingga cara menanggapi mereka. </p>
+                <div class="text-xl font-bold text-center">
+                    Frontend Slicing
+                </div>
+                <p class="text-[18px] font-medium text-center">
+                    Saya mengubah desain landing page, dashboard, dan mobile
+                    screen menjadi tampilan web yang rapi menggunakan HTML, CSS,
+                    Tailwind, dan JavaScript dasar.
+                </p>
             </div>
             <div class="space-y-8 border-r skill-card border-r-primary/20">
                 <div class="w-16 h-16 text-3xl solar-prototype mx-auto"></div>
-                <div class="text-xl font-bold text-center">UI Prototyping</div>
+                <div class="text-xl font-bold text-center">
+                    Responsive Layout
+                </div>
                 <p class="text-[18px] font-medium text-center">
-                    Di sini, saya mengeksplorasi UI Prototyping, di mana saya membuat animasi dan user flow di Figma untuk meningkatkan kualitas tahap UX Testing.
+                    Saya belajar menyesuaikan layout agar tetap nyaman dilihat
+                    di desktop dan mobile, termasuk grid, card, table, form, dan
+                    image placement.
                 </p>
             </div>
             <div class="space-y-8 border-r skill-card group">
-                <svg width="64" height="64" viewBox="0 0 64 65" fill="white" xmlns="http://www.w3.org/2000/svg" class="fill-primary group-hover:fill-white mx-auto">
+                <svg
+                    width="64"
+                    height="64"
+                    viewBox="0 0 64 65"
+                    fill="white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="fill-primary group-hover:fill-white mx-auto"
+                >
                     <path
                         d="M32 13.46C23.5378 13.46 18.2489 17.6911 16.1333 26.1533C19.3067 21.9222 23.0089 20.3355 27.24 21.3933C29.6533 21.996 31.3787 23.748 33.288 25.6866C36.4027 28.8466 40 32.5 47.8667 32.5C56.3289 32.5 61.6178 28.2688 63.7333 19.8066C60.56 24.0377 56.8578 25.6244 52.6267 24.5666C50.2107 23.964 48.488 22.212 46.5733 20.2733C43.4667 17.1133 39.8667 13.46 32 13.46ZM16.1333 32.5C7.67111 32.5 2.38222 36.7311 0.266663 45.1933C3.44 40.9622 7.14222 39.3755 11.3733 40.4333C13.7867 41.036 15.512 42.788 17.424 44.7266C20.5333 47.8866 24.1333 51.54 32 51.54C40.4622 51.54 45.7511 47.3089 47.8667 38.8466C44.6933 43.0777 40.9911 44.6644 36.76 43.6066C34.344 43.004 32.6213 41.252 30.7067 39.3133C27.6 36.1533 24 32.5 16.1333 32.5Z"
-                    />
+                    ></path>
                 </svg>
-                <div class="text-xl font-bold text-center">Tailwind</div>
-                <p class="text-[18px] font-medium text-center">Tailwind adalah framework CSS yang terkenal. Di sini, saya dibina dan diajarkan cara menggunakan Tailwind dengan benar dan efektif.</p>
+                <div class="text-xl font-bold text-center">Visual Review</div>
+                <p class="text-[18px] font-medium text-center">
+                    Saya belajar melakukan review detail seperti alignment,
+                    jarak antar elemen, konsistensi warna, ukuran font, dan
+                    kesesuaian hasil slicing dengan desain.
+                </p>
             </div>
         </div>
     </section>
 
     <!-- Side Quest Section -->
-    <section class="my-container py-[100px]" id="sideq">
-        <div class="grid grid-cols-2">
-            <div class="pr-32 space-y-6">
-                <p class="section-title">Side Quest</p>
-                <p class="text-lg font-medium text-text"> Di Atrem Project terdapat Side Quest, dimana Side Quest ini berfungsi sebagai tumpukan asset untuk Atrem Project </p>
-            </div>
-            <div class="space-y-6">
-                <div class="bg-transparent border-b rounded-none collapse border-b-black/50">
-                    <input type="radio" class="peer" name="my-accordion-1" checked />
-                    <div class="collapse-title peer-checked:text-white text-primary peer-checked:bg-primary">Mini Blog Atrem Tech Zone</div>
-                    <div class="collapse-content bg-base-100 peer-checked:bg-primary peer-checked:text-white">
-                        Saya mendapatkan Side Quest untuk membuat blog untuk menjadi referensi konten Atrem Tech Zone yang merupakan akun informatif dari Atrem Project
-                    </div>
-                </div>
-                <div class="bg-transparent border-b rounded-none collapse border-b-black/50">
-                    <input type="radio" class="peer" name="my-accordion-1" />
-                    <div class="collapse-title peer-checked:text-white text-primary peer-checked:bg-primary">Target Promosi Jasa</div>
-                    <div class="collapse-content bg-base-100 peer-checked:bg-primary peer-checked:text-white">
-                        Kami mendapatkan Side Quest mencari website atau instagram dari berbagai bidang usaha yang akan digunakan sebagai target promosi jasa Atrem Project
-                    </div>
-                </div>
-                <div class="bg-transparent border-b rounded-none collapse border-b-black/50">
-                    <input type="radio" class="peer" name="my-accordion-1" />
-                    <div class="collapse-title peer-checked:text-white text-primary peer-checked:bg-primary">Referensi UI Company Profile</div>
-                    <div class="collapse-content bg-base-100 peer-checked:bg-primary peer-checked:text-white">
-                        Saya mendapatkan Side Quest untuk mencari 300+ referensi UI yang digunakan sebagai referensi dari pembuatan portofolio Atrem Project
-                    </div>
-                </div>
-                <div class="bg-transparent border-b rounded-none collapse border-b-black/50">
-                    <input type="radio" class="peer" name="my-accordion-1" />
-                    <div class="collapse-title peer-checked:text-white text-primary peer-checked:bg-primary">Referensi Sistem</div>
-                    <div class="collapse-content bg-base-100 peer-checked:bg-primary peer-checked:text-white">
-                        Saya Mendapatkan Side Quest untuk mengumpulkan referensi sistem yang digunakan untuk mengupgrade sistem - sistem yang akan di buat atau sudah di buat
-                    </div>
-                </div>
-            </div>
+    <section class="py-[100px] my-container" id="sideq">
+        <div class="side-quest-header">
+            <p class="section-title">Side Quest Selama Internship</p>
+            <p class="text-lg font-semibold leading-[30px] text-text">
+                Selain mengerjakan slicing dan pengembangan tampilan web, saya
+                juga mendapatkan beberapa tugas pendukung selama internship di
+                Atrem Project. Tugas ini membantu saya memahami kebutuhan
+                pemasaran, riset pasar, referensi desain, dan aktivitas promosi
+                agensi.
+            </p>
+        </div>
+
+        <div class="side-quest-grid">
+            <article class="side-quest-card">
+                <span class="side-quest-number">01</span>
+                <h3>Target Promosi Jasa</h3>
+                <p>
+                    Saya mencari minimal 20 akun Instagram atau Google Maps
+                    untuk setiap kategori usaha, seperti bimbingan belajar,
+                    vila, salon, bengkel, laundry, katering, dan wedding
+                    organizer. Data ini digunakan sebagai target pemasaran
+                    layanan digitalisasi dari Atrem Project.
+                </p>
+            </article>
+            <article class="side-quest-card">
+                <span class="side-quest-number">02</span>
+                <h3>Riset Pasar dan Kompetitor</h3>
+                <p>
+                    Saya melakukan riset terhadap 20 produk SaaS berbasis AI dan
+                    non-AI, serta 20 penjual aset digital seperti UI kit, source
+                    code, dan aset pendukung lainnya melalui website maupun
+                    media sosial.
+                </p>
+            </article>
+            <article class="side-quest-card">
+                <span class="side-quest-number">03</span>
+                <h3>Referensi UI dan Benchmarking</h3>
+                <p>
+                    Saya mengumpulkan 25 materi edukasi berupa tips dan tutorial
+                    seputar frontend, backend, serta UI/UX. Saya juga melakukan
+                    benchmarking terhadap 20 website bisnis lokal dan
+                    internasional dengan memilah website yang tampilannya kurang
+                    baik dan website yang sudah memenuhi standar visual.
+                </p>
+            </article>
+            <article class="side-quest-card">
+                <span class="side-quest-number">04</span>
+                <h3>Referensi Sistem dan AI</h3>
+                <p>
+                    Saya mengeksplorasi 20 AI generator tools untuk kebutuhan
+                    Figma dan code. Selain itu, saya menyusun 10 ide sistem
+                    bisnis lengkap dengan jenis bisnis, masalah yang dihadapi,
+                    dan solusi yang dapat ditawarkan.
+                </p>
+            </article>
+            <article class="side-quest-card">
+                <span class="side-quest-number">05</span>
+                <h3>Riset Tren dan Konten Media Sosial</h3>
+                <p>
+                    Saya melakukan riset informasi lomba dan webinar IT, akun
+                    dengan konten vibe coding serta UI/UX, toko thrift pakaian
+                    dan sepatu bekas di Bali, serta analisis dampak konsep Web4
+                    terhadap industri.
+                </p>
+            </article>
+            <article class="side-quest-card">
+                <span class="side-quest-number">06</span>
+                <h3>Media Sosial dan Promosi</h3>
+                <p>
+                    Saya ikut mengunggah story promosi yang diberikan oleh Atrem
+                    Project melalui akun media sosial pribadi sebagai bagian dari
+                    aktivitas promosi agensi.
+                </p>
+            </article>
+            <article class="side-quest-card">
+                <span class="side-quest-number">07</span>
+                <h3>Review dan Testimoni Google Maps</h3>
+                <p>
+                    Saya meminta bantuan orang sekitar untuk mengisi review
+                    Google Maps Atrem Project. Setiap anggota tim menargetkan 10
+                    review dengan menggunakan gambar pendukung dari Google Drive
+                    agar testimoni tidak menggunakan foto yang sama.
+                </p>
+            </article>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section class="py-[100px] my-container" id="projects">
-        <p class="text-center section-title">
-            Project Yang Saya <br />
-            Kerjakan
-        </p>
-        <div class="grid grid-cols-2 gap-4 mt-16">
-            <a href="/porto/" class="block p-6 duration-300 text-text hover:text-white hover:bg-primary hover:scale-105 group active:scale-95 border border-primary/10">
-                <img src="/assets/images/proto-thumb.png" alt="" />
-                <div class="mt-8 space-y-4">
-                    <p class="text-2xl font-bold">16 UI Prototyping Project</p>
-                    <div class="flex space-x-2">
-                        <div class="duration-200 my-badge group-hover:bg-white group-hover:text-text">UX Testing</div>
-                        <div class="duration-200 my-badge group-hover:bg-white group-hover:text-text">UI Prototyping</div>
+    <section class="project-portfolio my-container" id="projects">
+        <div class="portfolio-heading">
+            <p class="portfolio-kicker">Selected Work</p>
+            <h2>Project Portfolio</h2>
+            <p>
+                Daftar pekerjaan utama yang saya kerjakan selama internship di
+                Atrem Project. Format dibuat seperti katalog work: judul besar,
+                kategori, scope, dan halaman detail untuk menjelaskan prosesnya.
+            </p>
+        </div>
+
+        <div class="portfolio-filters" aria-label="Project categories">
+            <span>All</span>
+            <span>Landing Page</span>
+            <span>Dashboard</span>
+            <span>Mobile</span>
+            <span>Website</span>
+        </div>
+
+        <div class="portfolio-list">
+            <a class="portfolio-work-card" href="/porto/">
+                <span class="portfolio-index">01</span>
+                <figure class="portfolio-thumb">
+                    <img src="#" alt="80 UI Slicing" width="960" height="540" />
+                </figure>
+                <div class="portfolio-copy">
+                    <h3>80 UI Slicing</h3>
+                    <p>Slicing kumpulan UI dari tim desain menjadi halaman web yang konsisten, responsif, dan siap direview.</p>
+                    <div>
+                        <span>Landing Page</span>
+                        <span>80 UI</span>
                     </div>
                 </div>
+                <span class="portfolio-action">View</span>
             </a>
-            <a href="/28ui/" class="block p-6 duration-300 text-text hover:text-white hover:bg-primary hover:scale-105 group active:scale-95 border border-primary/10">
-                <img src="/assets/images/ui-thumb.png" alt="" />
-                <div class="mt-8 space-y-4">
-                    <p class="text-2xl font-bold">28 UI Design Project</p>
-                    <div class="flex space-x-2">
-                        <div class="duration-200 my-badge group-hover:bg-white group-hover:text-text">UX Research</div>
-                        <div class="duration-200 my-badge group-hover:bg-white group-hover:text-text">UX Testing</div>
+
+            <a class="portfolio-work-card" href="/28ui/">
+                <span class="portfolio-index">02</span>
+                <figure class="portfolio-thumb">
+                    <img src="/assets/images/12UI-slicing.webp" alt="12 UI Figma Atrem" width="960" height="540" />
+                </figure>
+                <div class="portfolio-copy">
+                    <h3>12 UI Figma Atrem</h3>
+                    <p>Slicing 12 desain Figma internal Atrem dengan fokus pada akurasi layout, warna, typography, dan responsive behavior.</p>
+                    <div>
+                        <span>Figma</span>
+                        <span>Slicing</span>
                     </div>
                 </div>
+                <span class="portfolio-action">View</span>
             </a>
-            <a href="/mira/" class="block p-6 duration-300 text-text hover:text-white hover:bg-primary hover:scale-105 group active:scale-95 border border-primary/10">
-                <img src="/assets/images/mira-thumb.png" alt="" />
-                <div class="mt-8 space-y-4">
-                    <p class="text-2xl font-bold">Mira Course</p>
-                    <div class="flex space-x-2">
-                        <div class="duration-200 my-badge group-hover:bg-white group-hover:text-text">UX Research</div>
-                        <div class="duration-200 my-badge group-hover:bg-white group-hover:text-text">UX Testing</div>
-                        <div class="duration-200 my-badge group-hover:bg-white group-hover:text-text">UI Prototyping</div>
+
+            <a class="portfolio-work-card" href="/mira/">
+                <span class="portfolio-index">03</span>
+                <figure class="portfolio-thumb">
+                    <img src="/assets/images/mockup-Veyrastudio.png" alt="Veyra Studio Website" width="960" height="540" />
+                </figure>
+                <div class="portfolio-copy">
+                    <h3>Veyra Studio Website</h3>
+                    <p>Slicing website Veyra Studio dengan fokus pada tampilan landing page yang brand-ready dan nyaman dipresentasikan.</p>
+                    <div>
+                        <span>Website</span>
+                        <span>Brand</span>
                     </div>
                 </div>
+                <span class="portfolio-action">View</span>
             </a>
-            <a href="/package/" class="block p-6 duration-300 text-text hover:text-white hover:bg-primary hover:scale-105 group active:scale-95 border border-primary/10">
-                <img src="/assets/images/package-thumn.png" alt="" />
-                <div class="mt-8 space-y-4">
-                    <p class="text-2xl font-bold">Package Monitoring Frontend Slicing</p>
-                    <div class="flex space-x-2">
-                        <div class="duration-200 my-badge group-hover:bg-white group-hover:text-text">Tailwind</div>
-                        <div class="duration-200 my-badge group-hover:bg-white group-hover:text-text">Basic JS</div>
-                        <div class="duration-200 my-badge group-hover:bg-white group-hover:text-text">Daisy UI</div>
+
+            <a class="portfolio-work-card" href="/package/">
+                <span class="portfolio-index">04</span>
+                <figure class="portfolio-thumb">
+                    <img src="#" alt="10 Dashboard Systems" width="960" height="540" />
+                </figure>
+                <div class="portfolio-copy">
+                    <h3>10 Dashboard Systems</h3>
+                    <p>Slicing 10 sistem dashboard dengan minimal 8 halaman per sistem dan alur CRUD lengkap.</p>
+                    <div>
+                        <span>Dashboard</span>
+                        <span>CRUD</span>
                     </div>
                 </div>
+                <span class="portfolio-action">View</span>
+            </a>
+
+            <a class="portfolio-work-card" href="/mobile/">
+                <span class="portfolio-index">05</span>
+                <figure class="portfolio-thumb">
+                    <img src="#" alt="10 Mobile Systems" width="960" height="540" />
+                </figure>
+                <div class="portfolio-copy">
+                    <h3>10 Mobile Systems</h3>
+                    <p>Slicing 10 sistem mobile dengan minimal 10 halaman per sistem dan fitur utama lengkap.</p>
+                    <div>
+                        <span>Mobile</span>
+                        <span>UI Flow</span>
+                    </div>
+                </div>
+                <span class="portfolio-action">View</span>
             </a>
         </div>
     </section>
@@ -221,15 +419,36 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             id="crowd-canvas"
             data-peeps-canvas
             data-peeps-src="/assets/images/open-peeps-sheet.avif"
-            aria-hidden="true"
-        ></canvas>
+            aria-hidden="true"></canvas>
         <noscript>
-            <img class="footer-peeps-fallback" src="/assets/images/open-peeps-sheet.avif" alt="" />
+            <img
+                class="footer-peeps-fallback"
+                src="/assets/images/open-peeps-sheet.avif"
+                alt=""
+            />
         </noscript>
 
-        <footer id="contact" class="layout-footer" aria-label="Footer" data-reveal>
-            <p>designed & coded by Dhio for Atrem Project |&nbsp;</p>
-            <a href="/#projects">works</a>
+        <footer id="contact" class="layout-footer" aria-label="Footer">
+            <p>designed by Satria Dewangga</p>
+            <span class="footer-separator" aria-hidden="true">|</span>
+            <a
+                href="https://github.com/npsatria"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub Satria Dewangga"
+            >
+                <svg
+                    class="footer-github-icon"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+                    <path
+                        fill="currentColor"
+                        d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49v-1.9c-2.78.62-3.37-1.21-3.37-1.21-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.56 2.35 1.11 2.92.85.09-.67.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.05 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.71 0 0 .84-.28 2.75 1.05A9.35 9.35 0 0 1 12 7c.85 0 1.71.12 2.51.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.78-4.57 5.04.36.32.68.95.68 1.92v2.85c0 .27.18.59.69.49A10.07 10.07 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"
+                    ></path>
+                </svg>
+                <span>github</span>
+            </a>
         </footer>
     </section>
 </BaseLayout>
@@ -246,7 +465,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         button1?.classList.remove("border-b-primary");
         button2?.classList.remove("border-b-primary");
         button3?.classList.remove("border-b-primary");
-        
+
         button1?.classList.add("border-b-primary/30");
         button2?.classList.add("border-b-primary/30");
         button3?.classList.add("border-b-primary/30");
@@ -257,12 +476,18 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
         button?.classList.add("border-b-primary");
         button?.classList.remove("border-b-primary/30");
-        
+
         content?.classList.add("flex");
         content?.classList.remove("hidden");
     }
 
-    button1?.addEventListener("click", () => tabs(button1, button2, button3, content1));
-    button2?.addEventListener("click", () => tabs(button2, button1, button3, content2));
-    button3?.addEventListener("click", () => tabs(button3, button1, button2, content3));
+    button1?.addEventListener("click", () =>
+        tabs(button1, button2, button3, content1),
+    );
+    button2?.addEventListener("click", () =>
+        tabs(button2, button1, button3, content2),
+    );
+    button3?.addEventListener("click", () =>
+        tabs(button3, button1, button2, content3),
+    );
 </script>

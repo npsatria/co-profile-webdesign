@@ -29,7 +29,7 @@ export const works = [
         title: "80 UI Slicing",
         category: "Landing Page",
         metric: "80 UI",
-        image: "/assets/images/intenr02.webp",
+        image: "#",
         description: "Slicing kumpulan UI dari tim desain menjadi halaman web yang konsisten dan responsif.",
         context: "Pekerjaan ini melatih kecepatan membaca desain, menjaga spacing, dan menerjemahkan visual Figma ke struktur HTML/CSS.",
         role: "Frontend slicing intern",
@@ -55,7 +55,7 @@ export const works = [
         title: "Veyra Studio Website",
         category: "Landing Page",
         metric: "Website",
-        image: "/assets/images/VeyraStudio-slicing.webp",
+        image: "/assets/images/mockup-Veyrastudio.png",
         description: "Slicing desain website Veyra Studio dengan fokus pada landing page yang bersih dan profesional.",
         context: "Project ini menjadi latihan menerjemahkan desain brand/agency agar tetap kuat secara visual tetapi nyaman dibaca.",
         role: "Frontend slicing intern",
@@ -68,7 +68,7 @@ export const works = [
         title: "10 Dashboard Systems",
         category: "Dashboard",
         metric: "10 sistem",
-        image: "/assets/images/intenr01.webp",
+        image: "#",
         description: "Slicing 10 sistem dashboard dengan minimal 8 halaman per sistem dan alur CRUD lengkap.",
         context: "Dashboard membutuhkan konsistensi komponen, struktur tabel, form, empty state, dan layout admin yang mudah discan.",
         role: "Frontend slicing intern",
@@ -81,7 +81,7 @@ export const works = [
         title: "10 Mobile Systems",
         category: "Mobile",
         metric: "10 sistem",
-        image: "/assets/images/intenr03.webp",
+        image: "#",
         description: "Slicing 10 sistem mobile dengan minimal 10 halaman per sistem dan fitur utama lengkap.",
         context: "Fokus pada screen-to-screen flow, komponen mobile, keterbacaan, dan konsistensi interaksi dalam ukuran layar kecil.",
         role: "Mobile UI slicing intern",
@@ -100,47 +100,68 @@ export const processSteps = [
 
 export const learningMaterials = [
     {
-        title: "UX Research",
+        title: "Figma Handoff",
         icon: "solar-ux",
-        description: "Memahami fundamental kebutuhan pengguna dalam produk digital.",
+        description: "Membaca struktur desain Figma, spacing, typography, warna, dan kebutuhan asset sebelum slicing.",
     },
     {
-        title: "UX Testing",
+        title: "Frontend Slicing",
         icon: "solar-research",
-        description: "Validasi desain melalui interaksi langsung dengan responden.",
+        description: "Mengubah desain landing page, dashboard, dan mobile screen menjadi tampilan web responsif.",
     },
     {
-        title: "UI Prototyping",
+        title: "Responsive Layout",
         icon: "solar-prototype",
-        description: "Visualisasi alur pengguna melalui Figma yang interaktif.",
+        description: "Menyesuaikan layout agar nyaman dilihat di desktop dan mobile.",
     },
     {
-        title: "Tailwind CSS",
+        title: "Visual Review",
         icon: "tailwind",
-        description: "Slicing antarmuka modern dengan efisiensi tinggi.",
+        description: "Mengecek alignment, spacing, warna, font, dan kesesuaian hasil slicing dengan desain.",
     },
 ];
 
 export const sideQuests = [
     {
         number: "01",
-        title: "Mini Blog Tech Zone",
-        description: "Pembuatan website mini blog interaktif untuk artikel teknologi. Berfokus pada perancangan antarmuka (slicing UI) dan penataan layout konten.",
+        title: "Target Promosi Jasa",
+        description:
+            "Saya mencari minimal 20 akun Instagram atau Google Maps untuk setiap kategori usaha, seperti bimbingan belajar, vila, salon, bengkel, laundry, katering, dan wedding organizer. Data ini digunakan sebagai target pemasaran layanan digitalisasi dari Atrem Project.",
     },
     {
         number: "02",
-        title: "Target Promosi Jasa",
-        description: "Pengumpulan data 320+ akun Instagram & Google Maps dari 36+ kategori usaha lokal (Bimbel, Villa, Bengkel, Catering, dsb.) sebagai target promosi jasa digital agensi.",
+        title: "Riset Pasar dan Kompetitor",
+        description:
+            "Saya melakukan riset terhadap 20 produk SaaS berbasis AI dan non-AI, serta 20 penjual aset digital seperti UI kit, source code, dan aset pendukung lainnya melalui website maupun media sosial.",
     },
     {
         number: "03",
-        title: "300+ UI References",
-        description: "Eksplorasi referensi desain antarmuka mencakup 10 web lokal & 10 web internasional dari 22 tema bisnis, 40 web SaaS, dan 40 akun penjual aset UI/UX.",
+        title: "Referensi UI dan Benchmarking",
+        description:
+            "Saya mengumpulkan 25 materi edukasi berupa tips dan tutorial seputar frontend, backend, serta UI/UX. Saya juga melakukan benchmarking terhadap 20 website bisnis lokal dan internasional dengan memilah website yang tampilannya kurang baik dan website yang sudah memenuhi standar visual.",
     },
     {
         number: "04",
-        title: "GMaps Reviews",
-        description: "Membantu pengumpulan 10 ulasan/review Google Maps untuk Atrem Project dengan melampirkan foto dokumentasi non-duplikat dari Google Drive.",
-        link: "https://drive.google.com/drive/folders/1Ikj35VN9gUh8h8VytzIKZkCLlx_n1Ztr?usp=sharing",
+        title: "Referensi Sistem dan AI",
+        description:
+            "Saya mengeksplorasi 20 AI generator tools untuk kebutuhan Figma dan code. Selain itu, saya menyusun 10 ide sistem bisnis lengkap dengan jenis bisnis, masalah yang dihadapi, dan solusi yang dapat ditawarkan.",
+    },
+    {
+        number: "05",
+        title: "Riset Tren dan Konten Media Sosial",
+        description:
+            "Saya melakukan riset informasi lomba dan webinar IT, akun dengan konten vibe coding serta UI/UX, toko thrift pakaian dan sepatu bekas di Bali, serta analisis dampak konsep Web4 terhadap industri.",
+    },
+    {
+        number: "06",
+        title: "Media Sosial dan Promosi",
+        description:
+            "Saya ikut mengunggah story promosi yang diberikan oleh Atrem Project melalui akun media sosial pribadi sebagai bagian dari aktivitas promosi agensi.",
+    },
+    {
+        number: "07",
+        title: "Review dan Testimoni Google Maps",
+        description:
+            "Saya meminta bantuan orang sekitar untuk mengisi review Google Maps Atrem Project. Setiap anggota tim menargetkan 10 review dengan menggunakan gambar pendukung dari Google Drive agar testimoni tidak menggunakan foto yang sama.",
     },
 ];

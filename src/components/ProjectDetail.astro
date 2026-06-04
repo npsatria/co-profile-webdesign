@@ -1,0 +1,100 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const {
+    title,
+    description,
+    active,
+    image,
+    category,
+    metric,
+    role,
+    tools = [],
+    scope = [],
+    paragraphs = [],
+} = Astro.props;
+
+const navItems = [
+    { href: "/", label: "Home" },
+    { href: "/porto/", label: "80 UI", key: "80-ui" },
+    { href: "/28ui/", label: "12 UI", key: "12-ui" },
+    { href: "/mira/", label: "Veyra", key: "veyra" },
+    { href: "/package/", label: "Dashboard", key: "dashboard" },
+    { href: "/mobile/", label: "Mobile", key: "mobile" },
+];
+---
+
+<BaseLayout title={`${title} / Atrem Project`} description={description}>
+    <nav class="fixed z-40 px-4 md:px-8 py-4 navbar w-full">
+        <div class="navbar-start"></div>
+        <div class="border navbar-center backdrop-blur-lg rounded-3xl w-fit bg-base-100/50 border-primary/5 mx-auto">
+            <div class="flex p-2 md:p-4 space-x-2 md:space-x-4">
+                <div class="mx-2 md:mx-8 space-x-2 md:space-x-4">
+                    {navItems.map((item) => (
+                        <a href={item.href} class:list={["nav-link text-sm md:text-base", item.key === active && "opacity-100 font-bold"]}>{item.label}</a>
+                    ))}
+                </div>
+            </div>
+        </div>
+        <div class="navbar-end"></div>
+    </nav>
+
+    <main class="cho-project-detail">
+        <a class="cho-back-link" href="/#projects">Back to work</a>
+
+        <section class="cho-detail-hero">
+            <p>Atrem Project / Internship Work</p>
+            <h1>{title}</h1>
+        </section>
+
+        <section class="cho-detail-meta" aria-label="Project information">
+            <div>
+                <span>Year</span>
+                <p>2026</p>
+            </div>
+            <div>
+                <span>Category</span>
+                <p>{category}</p>
+            </div>
+            <div>
+                <span>Metric</span>
+                <p>{metric}</p>
+            </div>
+            <div>
+                <span>Role</span>
+                <p>{role}</p>
+            </div>
+        </section>
+
+        <figure class="cho-detail-cover">
+            <img src={image} alt={title} width="1440" height="900" />
+        </figure>
+
+        <section class="cho-detail-story">
+            <h2>Project Story</h2>
+            <div>
+                {paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+            </div>
+        </section>
+
+        <section class="cho-detail-scope">
+            <div>
+                <span>Scope</span>
+                <ul>
+                    {scope.map((item) => <li>{item}</li>)}
+                </ul>
+            </div>
+            <div>
+                <span>Tools</span>
+                <ul>
+                    {tools.map((item) => <li>{item}</li>)}
+                </ul>
+            </div>
+        </section>
+
+        <a class="cho-next-link" href="/#projects">
+            <span>View all work</span>
+            <strong>Project Portfolio</strong>
+        </a>
+    </main>
+</BaseLayout>
