@@ -7,16 +7,16 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     description="Detail dari proyek Mira Course selama PKL."
 >
     <!-- Navigation Navbar -->
-    <nav class="fixed z-40 my-container navbar w-full">
+    <nav class="fixed z-40 px-4 md:px-8 py-4 navbar w-full">
         <div class="navbar-start"></div>
         <div class="border navbar-center backdrop-blur-lg rounded-3xl w-fit bg-base-100/50 border-primary/5 mx-auto">
-            <div class="flex p-4 space-x-4">
-                <div class="mx-8 space-x-4">
-                    <a href="/" class="nav-link">Home</a>
-                    <a href="/proto/" class="nav-link">UI Prototype</a>
-                    <a href="/28ui/" class="nav-link">UI Project</a>
-                    <a href="/mira/" class="opacity-100 nav-link">Mira Course</a>
-                    <a href="/package/" class="nav-link">Package</a>
+            <div class="flex p-2 md:p-4 space-x-2 md:space-x-4">
+                <div class="mx-2 md:mx-8 space-x-2 md:space-x-4">
+                    <a href="/" class="nav-link text-sm md:text-base">Home</a>
+                    <a href="/porto/" class="nav-link text-sm md:text-base">UI Prototype</a>
+                    <a href="/28ui/" class="nav-link text-sm md:text-base">UI Project</a>
+                    <a href="/mira/" class="opacity-100 nav-link text-sm md:text-base font-bold">Mira Course</a>
+                    <a href="/package/" class="nav-link text-sm md:text-base">Package</a>
                 </div>
             </div>
         </div>
@@ -24,52 +24,104 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </nav>
 
     <!-- Content -->
-    <div class="py-[200px] my-container">
-        <img src="/assets/images/mirafix.png" alt="" class="mx-auto" />
-        <div class="mt-12 px-28">
-            <div class="flex justify-between">
-                <div>
-                    <p class="text-3xl font-bold text-text">Mira Course</p>
-                    <div class="flex space-x-3 mt-4">
-                        <div class="duration-200 my-badge">UX Research</div>
-                        <div class="duration-200 my-badge">UX Testing</div>
-                        <div class="duration-200 my-badge">UI Prototyping</div>
+    <div class="py-[120px] md:py-[180px] px-4 md:px-12 lg:px-24 xl:px-32 max-w-7xl mx-auto">
+        <!-- Main Frame Image -->
+        <div class="border-4 border-black bg-white p-2 md:p-3 shadow-[8px_8px_0px_0px_rgba(37,37,43,1)] rounded-2xl overflow-hidden hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[12px_12px_0px_0px_rgba(37,37,43,1)] transition-all duration-300">
+            <img src="/assets/images/mirafix.png" alt="Mira Course" class="w-full h-auto object-cover rounded-lg" />
+        </div>
+
+        <!-- Details Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12 mt-12 md:mt-16">
+            <!-- Main Content (Left) -->
+            <div class="lg:col-span-2 space-y-6 md:space-y-8">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 pb-6 border-b-2 border-primary/10">
+                    <div>
+                        <h1 class="text-3xl md:text-4xl font-extrabold text-text leading-tight">Mira Course</h1>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="my-badge">UX Research</span>
+                            <span class="my-badge">UX Testing</span>
+                            <span class="my-badge">UI Prototyping</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4 shrink-0">
+                        <svg width="56" height="56" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 md:w-14 md:h-14">
+                            <path
+                                opacity="0.6"
+                                d="M31.112 5.33331H22.2213C19.8637 5.33331 17.6027 6.26987 15.9356 7.93694C14.2685 9.60401 13.332 11.865 13.332 14.2226C13.332 16.5802 14.2685 18.8413 15.9356 20.5084C17.6027 22.1754 19.8637 23.112 22.2213 23.112H31.112V5.33331Z"
+                                fill="black"
+                            />
+                            <path
+                                opacity="0.4"
+                                d="M31.112 23.112H22.2213C19.8641 23.112 17.6034 24.0484 15.9365 25.7152C14.2697 27.3821 13.3333 29.6428 13.3333 32C13.3333 34.3572 14.2697 36.6179 15.9365 38.2848C17.6034 39.9516 19.8641 40.888 22.2213 40.888H31.112V23.112Z"
+                                fill="black"
+                            />
+                            <path
+                                d="M48.888 32C48.888 34.3576 47.9514 36.6186 46.2844 38.2857C44.6173 39.9528 42.3562 40.8893 39.9986 40.8893C37.641 40.8893 35.38 39.9528 33.7129 38.2857C32.0459 36.6186 31.1093 34.3576 31.1093 32C31.1093 29.6424 32.0459 27.3814 33.7129 25.7143C35.38 24.0472 37.641 23.1107 39.9986 23.1107C42.3562 23.1107 44.6173 24.0472 46.2844 25.7143C47.9514 27.3814 48.888 29.6424 48.888 32Z"
+                                fill="black"
+                            />
+                            <path
+                                opacity="0.2"
+                                d="M22.2213 40.8907H31.112V49.7787C31.1115 51.5363 30.5898 53.2544 29.613 54.7156C28.6362 56.1768 27.248 57.3156 25.6241 57.988C24.0001 58.6603 22.2132 58.8361 20.4894 58.4931C18.7655 58.1501 17.1821 57.3036 15.9392 56.0608C14.6964 54.8179 13.8499 53.2345 13.5069 51.5106C13.1639 49.7868 13.3397 47.9999 14.0121 46.3759C14.6844 44.752 15.8232 43.3638 17.2844 42.387C18.7456 41.4102 20.4637 40.8912 22.2213 40.8907Z"
+                                fill="black"
+                            />
+                            <path
+                                opacity="0.8"
+                                d="M31.1093 5.33331H39.9973C42.3549 5.33331 44.6159 6.26987 46.283 7.93694C47.9501 9.60401 48.8866 11.865 48.8866 14.2226C48.8866 16.5802 47.9501 18.8413 46.283 20.5084C44.6159 22.1754 42.3549 23.112 39.9973 23.112H31.1093V5.33331Z"
+                                fill="black"
+                            />
+                        </svg>
                     </div>
                 </div>
-                <div class="flex items-center space-x-4">
-                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            opacity="0.6"
-                            d="M31.112 5.33331H22.2213C19.8637 5.33331 17.6027 6.26987 15.9356 7.93694C14.2685 9.60401 13.332 11.865 13.332 14.2226C13.332 16.5802 14.2685 18.8413 15.9356 20.5084C17.6027 22.1754 19.8637 23.112 22.2213 23.112H31.112V5.33331Z"
-                            fill="black"
-                        />
-                        <path
-                            opacity="0.4"
-                            d="M31.112 23.112H22.2213C19.8641 23.112 17.6034 24.0484 15.9365 25.7152C14.2697 27.3821 13.3333 29.6428 13.3333 32C13.3333 34.3572 14.2697 36.6179 15.9365 38.2848C17.6034 39.9516 19.8641 40.888 22.2213 40.888H31.112V23.112Z"
-                            fill="black"
-                        />
-                        <path
-                            d="M48.888 32C48.888 34.3576 47.9514 36.6186 46.2844 38.2857C44.6173 39.9528 42.3562 40.8893 39.9986 40.8893C37.641 40.8893 35.38 39.9528 33.7129 38.2857C32.0459 36.6186 31.1093 34.3576 31.1093 32C31.1093 29.6424 32.0459 27.3814 33.7129 25.7143C35.38 24.0472 37.641 23.1107 39.9986 23.1107C42.3562 23.1107 44.6173 24.0472 46.2844 25.7143C47.9514 27.3814 48.888 29.6424 48.888 32Z"
-                            fill="black"
-                        />
-                        <path
-                            opacity="0.2"
-                            d="M22.2213 40.8907H31.112V49.7787C31.1115 51.5363 30.5898 53.2544 29.613 54.7156C28.6362 56.1768 27.248 57.3156 25.6241 57.988C24.0001 58.6603 22.2132 58.8361 20.4894 58.4931C18.7655 58.1501 17.1821 57.3036 15.9392 56.0608C14.6964 54.8179 13.8499 53.2345 13.5069 51.5106C13.1639 49.7868 13.3397 47.9999 14.0121 46.3759C14.6844 44.752 15.8232 43.3638 17.2844 42.387C18.7456 41.4102 20.4637 40.8912 22.2213 40.8907Z"
-                            fill="black"
-                        />
-                        <path
-                            opacity="0.8"
-                            d="M31.1093 5.33331H39.9973C42.3549 5.33331 44.6159 6.26987 46.283 7.93694C47.9501 9.60401 48.8866 11.865 48.8866 14.2226C48.8866 16.5802 47.9501 18.8413 46.283 20.5084C44.6159 22.1754 42.3549 23.112 39.9973 23.112H31.1093V5.33331Z"
-                            fill="black"
-                        />
-                    </svg>
+                
+                <div class="text-lg font-medium text-justify text-text leading-[1.8] space-y-6">
+                    <p>
+                        Mira Course adalah sebuah aplikasi e-learning yang dirancang untuk menyediakan berbagai kursus tentang teknologi, dengan fokus pada pengalaman pengguna yang intuitif dan menarik. Proses pengembangan dimulai dengan menentukan tema yang relevan, diikuti dengan identifikasi masalah yang ingin diselesaikan melalui analisis mendalam terhadap kebutuhan pengguna. Data yang terkumpul kemudian disusun menggunakan affinity board untuk mengidentifikasi pola dan tren, yang selanjutnya digunakan untuk membuat User Persona dan User Flow. Dengan pendekatan ini, setiap elemen dalam aplikasi dirancang untuk memenuhi kebutuhan pengguna secara efektif.
+                    </p>
+                    <p>
+                        Setelah tahap perancangan awal, proyek berlanjut ke pembuatan wireframe yang berfungsi sebagai kerangka dasar desain. Setelah wireframe selesai, elemen desain visual ditambahkan untuk menciptakan tampilan yang menarik dan sesuai dengan identitas merek. Prototipe interaktif kemudian dibuat untuk memungkinkan pengguna berinteraksi dengan desain, diikuti dengan tahap pengujian untuk mendapatkan umpan balik yang berharga. Proses iteratif ini memastikan bahwa Mira Course tidak hanya memenuhi kebutuhan pengguna, tetapi juga memberikan pengalaman belajar yang menyenangkan dan efektif dalam dunia teknologi.
+                    </p>
                 </div>
             </div>
-            <a href="https://www.figma.com/design/5iZphLLBFOibVSvOIZc8rt/Mira-Course?node-id=0-1&t=sgNV67rhK7WWh16W-1" target="_blank" class="block mt-10 text-2xl font-bold text-text">Projects Links</a>
-            <div class="mt-10 text-lg font-medium text-justify text-text leading-[27px]">
-                Mira Course adalah sebuah aplikasi e-learning yang dirancang untuk menyediakan berbagai kursus tentang teknologi, dengan fokus pada pengalaman pengguna yang intuitif dan menarik. Proses pengembangan dimulai dengan menentukan tema yang relevan, diikuti dengan identifikasi masalah yang ingin diselesaikan melalui analisis mendalam terhadap kebutuhan pengguna. Data yang terkumpul kemudian disusun menggunakan affinity board untuk mengidentifikasi pola dan tren, yang selanjutnya digunakan untuk membuat User Persona dan User Flow. Dengan pendekatan ini, setiap elemen dalam aplikasi dirancang untuk memenuhi kebutuhan pengguna secara efektif.
-                <br /><br />
-                Setelah tahap perancangan awal, proyek berlanjut ke pembuatan wireframe yang berfungsi sebagai kerangka dasar desain. Setelah wireframe selesai, elemen desain visual ditambahkan untuk menciptakan tampilan yang menarik dan sesuai dengan identitas merek. Prototipe interaktif kemudian dibuat untuk memungkinkan pengguna berinteraksi dengan desain, diikuti dengan tahap pengujian untuk mendapatkan umpan balik yang berharga. Proses iteratif ini memastikan bahwa Mira Course tidak hanya memenuhi kebutuhan pengguna, tetapi juga memberikan pengalaman belajar yang menyenangkan dan efektif dalam dunia teknologi.
+
+            <!-- Sidebar (Right) -->
+            <div class="space-y-6">
+                <div class="border-4 border-black bg-white p-6 shadow-[6px_6px_0px_0px_rgba(37,37,43,1)] space-y-6 rounded-2xl">
+                    <h3 class="text-xl font-bold border-b-2 border-primary/10 pb-3 text-text">Detail Proyek</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <span class="text-sm font-bold uppercase tracking-wider text-text/50">Agensi</span>
+                            <p class="text-base font-semibold text-text mt-0.5">Atrem Project</p>
+                        </div>
+                        <div>
+                            <span class="text-sm font-bold uppercase tracking-wider text-text/50">Kategori</span>
+                            <p class="text-base font-semibold text-text mt-0.5">UI/UX Case Study</p>
+                        </div>
+                        <div>
+                            <span class="text-sm font-bold uppercase tracking-wider text-text/50">Peran</span>
+                            <p class="text-base font-semibold text-text mt-0.5">UI/UX Designer Intern</p>
+                        </div>
+                        <div>
+                            <span class="text-sm font-bold uppercase tracking-wider text-text/50">Peralatan (Tools)</span>
+                            <div class="flex flex-wrap gap-1.5 mt-1.5">
+                                <span class="px-2.5 py-1 text-xs font-bold border border-primary/20 bg-primary/5 rounded-md text-text">Figma</span>
+                                <span class="px-2.5 py-1 text-xs font-bold border border-primary/20 bg-primary/5 rounded-md text-text">Affinity Board</span>
+                                <span class="px-2.5 py-1 text-xs font-bold border border-primary/20 bg-primary/5 rounded-md text-text">User Persona</span>
+                                <span class="px-2.5 py-1 text-xs font-bold border border-primary/20 bg-primary/5 rounded-md text-text">User Flow</span>
+                                <span class="px-2.5 py-1 text-xs font-bold border border-primary/20 bg-primary/5 rounded-md text-text">Wireframing</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://www.figma.com/design/5iZphLLBFOibVSvOIZc8rt/Mira-Course?node-id=0-1&t=sgNV67rhK7WWh16W-1" target="_blank" class="flex items-center justify-center gap-2 w-full py-3.5 font-bold text-white bg-primary hover:bg-primary/95 border-2 border-primary shadow-[4px_4px_0px_0px_rgba(37,37,43,1)] hover:translate-x-[-1px] hover:translate-y-[-1px] hover:shadow-[5px_5px_0px_0px_rgba(37,37,43,1)] active:scale-95 duration-200 transition-all text-center rounded-xl">
+                        <span>Lihat Desain di Figma</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </a>
+                </div>
+
+                <a href="/" class="flex items-center justify-center gap-2 w-full py-3.5 font-bold text-text bg-white border-2 border-black/10 hover:border-black shadow-[4px_4px_0px_0px_rgba(37,37,43,0.05)] hover:translate-x-[-1px] hover:translate-y-[-1px] hover:shadow-[5px_5px_0px_0px_rgba(37,37,43,0.1)] transition-all duration-200 rounded-xl">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                    <span>Kembali ke Beranda</span>
+                </a>
             </div>
         </div>
     </div>

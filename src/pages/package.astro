@@ -7,16 +7,16 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     description="Detail dari proyek Package Monitoring selama PKL."
 >
     <!-- Navigation Navbar -->
-    <nav class="fixed z-40 my-container navbar w-full">
+    <nav class="fixed z-40 px-4 md:px-8 py-4 navbar w-full">
         <div class="navbar-start"></div>
         <div class="border navbar-center backdrop-blur-lg rounded-3xl w-fit bg-base-100/50 border-primary/5 mx-auto">
-            <div class="flex p-4 space-x-4">
-                <div class="mx-8 space-x-4">
-                    <a href="/" class="nav-link">Home</a>
-                    <a href="/proto/" class="nav-link">UI Prototype</a>
-                    <a href="/28ui/" class="nav-link">UI Project</a>
-                    <a href="/mira/" class="nav-link">Mira Course</a>
-                    <a href="/package/" class="opacity-100 nav-link">Package</a>
+            <div class="flex p-2 md:p-4 space-x-2 md:space-x-4">
+                <div class="mx-2 md:mx-8 space-x-2 md:space-x-4">
+                    <a href="/" class="nav-link text-sm md:text-base">Home</a>
+                    <a href="/porto/" class="nav-link text-sm md:text-base">UI Prototype</a>
+                    <a href="/28ui/" class="nav-link text-sm md:text-base">UI Project</a>
+                    <a href="/mira/" class="nav-link text-sm md:text-base">Mira Course</a>
+                    <a href="/package/" class="opacity-100 nav-link text-sm md:text-base font-bold">Package</a>
                 </div>
             </div>
         </div>
@@ -24,30 +24,83 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </nav>
 
     <!-- Content -->
-    <div class="py-[200px] my-container">
-        <img src="/assets/images/packagae-fix.png" alt="" class="mx-auto" />
-        <div class="mt-12 px-28">
-            <div class="flex justify-between">
-                <div>
-                    <p class="text-3xl font-bold text-text">Package Monitoring (Frontend)</p>
-                    <div class="flex space-x-3 mt-4">
-                        <div class="duration-200 my-badge">Tailwind</div>
-                        <div class="duration-200 my-badge">Basic JS</div>
-                        <div class="duration-200 my-badge">Daisy UI</div>
+    <div class="py-[120px] md:py-[180px] px-4 md:px-12 lg:px-24 xl:px-32 max-w-7xl mx-auto">
+        <!-- Main Frame Image -->
+        <div class="border-4 border-black bg-white p-2 md:p-3 shadow-[8px_8px_0px_0px_rgba(37,37,43,1)] rounded-2xl overflow-hidden hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[12px_12px_0px_0px_rgba(37,37,43,1)] transition-all duration-300">
+            <img src="/assets/images/packagae-fix.png" alt="Package Monitoring Frontend Slicing" class="w-full h-auto object-cover rounded-lg" />
+        </div>
+
+        <!-- Details Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12 mt-12 md:mt-16">
+            <!-- Main Content (Left) -->
+            <div class="lg:col-span-2 space-y-6 md:space-y-8">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 pb-6 border-b-2 border-primary/10">
+                    <div>
+                        <h1 class="text-3xl md:text-4xl font-extrabold text-text leading-tight">Package Monitoring (Frontend)</h1>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="my-badge">Tailwind</span>
+                            <span class="my-badge">Basic JS</span>
+                            <span class="my-badge">Daisy UI</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4 shrink-0">
+                        <svg width="56" height="56" viewBox="0 0 64 65" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 md:w-14 md:h-14">
+                            <path
+                                d="M32 13.46C23.5378 13.46 18.2489 17.6911 16.1333 26.1533C19.3067 21.9222 23.0089 20.3355 27.24 21.3933C29.6533 21.996 31.3787 23.748 33.288 25.6866C36.4027 28.8466 40 32.5 47.8667 32.5C56.3289 32.5 61.6178 28.2688 63.7333 19.8066C60.56 24.0377 56.8578 25.6244 52.6267 24.5666C50.2107 23.964 48.488 22.212 46.5733 20.2733C43.4667 17.1133 39.8667 13.46 32 13.46ZM16.1333 32.5C7.67111 32.5 2.38222 36.7311 0.266663 45.1933C3.44 40.9622 7.14222 39.3755 11.3733 40.4333C13.7867 41.036 15.512 42.788 17.424 44.7266C20.5333 47.8866 24.1333 51.54 32 51.54C40.4622 51.54 45.7511 47.3089 47.8667 38.8466C44.6933 43.0777 40.9911 44.6644 36.76 43.6066C34.344 43.004 32.6213 41.252 30.7067 39.3133C27.6 36.1533 24 32.5 16.1333 32.5Z"
+                                fill="black"
+                            />
+                        </svg>
                     </div>
                 </div>
-                <div class="flex items-center space-x-4">
-                    <svg width="64" height="64" viewBox="0 0 64 65" fill="white" xmlns="http://www.w3.org/2000/svg" class="fill-primary mx-auto">
-                        <path
-                            d="M32 13.46C23.5378 13.46 18.2489 17.6911 16.1333 26.1533C19.3067 21.9222 23.0089 20.3355 27.24 21.3933C29.6533 21.996 31.3787 23.748 33.288 25.6866C36.4027 28.8466 40 32.5 47.8667 32.5C56.3289 32.5 61.6178 28.2688 63.7333 19.8066C60.56 24.0377 56.8578 25.6244 52.6267 24.5666C50.2107 23.964 48.488 22.212 46.5733 20.2733C43.4667 17.1133 39.8667 13.46 32 13.46ZM16.1333 32.5C7.67111 32.5 2.38222 36.7311 0.266663 45.1933C3.44 40.9622 7.14222 39.3755 11.3733 40.4333C13.7867 41.036 15.512 42.788 17.424 44.7266C20.5333 47.8866 24.1333 51.54 32 51.54C40.4622 51.54 45.7511 47.3089 47.8667 38.8466C44.6933 43.0777 40.9911 44.6644 36.76 43.6066C34.344 43.004 32.6213 41.252 30.7067 39.3133C27.6 36.1533 24 32.5 16.1333 32.5Z"
-                        />
-                    </svg>
+                
+                <div class="text-lg font-medium text-justify text-text leading-[1.8] space-y-6">
+                    <p>
+                        Package Monitoring System Slicing adalah proyek pengembangan aplikasi yang dirancang untuk memantau pengiriman paket secara efisien dan efektif. Dalam proyek ini, fokus utama saya adalah pada pengembangan antarmuka pengguna (UI) menggunakan teknologi front-end seperti JavaScript dasar, Tailwind CSS, dan DaisyUI. Dengan tools ini, saya bertujuan untuk menciptakan tampilan yang responsif dan menarik, yang memudahkan pengguna dalam melacak status pengiriman paket mereka. Proses pengembangan dimulai dengan mendesain website untuk memastikan bahwa setiap elemen antarmuka berfungsi dengan baik dan memenuhi kebutuhan pengguna.
+                    </p>
+                    <p>
+                        Sementara backend aplikasi dikerjakan oleh rekan tim saya, saya bertanggung jawab untuk mengimplementasikan logika front-end dan memastikan integrasi yang mulus dengan backend. Dengan menggunakan Tailwind CSS dan DaisyUI, saya dapat dengan cepat membangun komponen UI yang konsisten dan estetis, serta mengoptimalkan pengalaman pengguna. Proyek ini tidak hanya menekankan pada fungsionalitas, tetapi juga pada desain yang intuitif, sehingga pengguna dapat dengan mudah mengakses informasi yang mereka butuhkan. Melalui iterasi dan pengujian, saya berkomitmen untuk menyempurnakan aplikasi ini agar dapat memberikan pengalaman pemantauan paket yang memuaskan dan efisien.
+                    </p>
                 </div>
             </div>
-            <div class="mt-10 text-lg font-medium text-justify text-text leading-[27px]">
-                Package Monitoring System Slicing adalah proyek pengembangan aplikasi yang dirancang untuk memantau pengiriman paket secara efisien dan efektif. Dalam proyek ini, fokus utama saya adalah pada pengembangan antarmuka pengguna (UI) menggunakan teknologi front-end seperti JavaScript dasar, Tailwind CSS, dan DaisyUI. Dengan tools ini, saya bertujuan untuk menciptakan tampilan yang responsif dan menarik, yang memudahkan pengguna dalam melacak status pengiriman paket mereka. Proses pengembangan dimulai dengan mendesain website untuk memastikan bahwa setiap elemen antarmuka berfungsi dengan baik dan memenuhi kebutuhan pengguna.
-                <br /><br />
-                Sementara backend aplikasi dikerjakan oleh rekan tim saya, saya bertanggung jawab untuk mengimplementasikan logika front-end dan memastikan integrasi yang mulus dengan backend. Dengan menggunakan Tailwind CSS dan DaisyUI, saya dapat dengan cepat membangun komponen UI yang konsisten dan estetis, serta mengoptimalkan pengalaman pengguna. Proyek ini tidak hanya menekankan pada fungsionalitas, tetapi juga pada desain yang intuitif, sehingga pengguna dapat dengan mudah mengakses informasi yang mereka butuhkan. Melalui iterasi dan pengujian, saya berkomitmen untuk menyempurnakan aplikasi ini agar dapat memberikan pengalaman pemantauan paket yang memuaskan dan efisien.
+
+            <!-- Sidebar (Right) -->
+            <div class="space-y-6">
+                <div class="border-4 border-black bg-white p-6 shadow-[6px_6px_0px_0px_rgba(37,37,43,1)] space-y-6 rounded-2xl">
+                    <h3 class="text-xl font-bold border-b-2 border-primary/10 pb-3 text-text">Detail Proyek</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <span class="text-sm font-bold uppercase tracking-wider text-text/50">Agensi</span>
+                            <p class="text-base font-semibold text-text mt-0.5">Atrem Project</p>
+                        </div>
+                        <div>
+                            <span class="text-sm font-bold uppercase tracking-wider text-text/50">Kategori</span>
+                            <p class="text-base font-semibold text-text mt-0.5">Frontend Development</p>
+                        </div>
+                        <div>
+                            <span class="text-sm font-bold uppercase tracking-wider text-text/50">Peran</span>
+                            <p class="text-base font-semibold text-text mt-0.5">Frontend Slicing Intern</p>
+                        </div>
+                        <div>
+                            <span class="text-sm font-bold uppercase tracking-wider text-text/50">Peralatan (Tools)</span>
+                            <div class="flex flex-wrap gap-1.5 mt-1.5">
+                                <span class="px-2.5 py-1 text-xs font-bold border border-primary/20 bg-primary/5 rounded-md text-text">HTML</span>
+                                <span class="px-2.5 py-1 text-xs font-bold border border-primary/20 bg-primary/5 rounded-md text-text">Tailwind CSS</span>
+                                <span class="px-2.5 py-1 text-xs font-bold border border-primary/20 bg-primary/5 rounded-md text-text">DaisyUI</span>
+                                <span class="px-2.5 py-1 text-xs font-bold border border-primary/20 bg-primary/5 rounded-md text-text">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://www.figma.com" target="_blank" class="flex items-center justify-center gap-2 w-full py-3.5 font-bold text-white bg-primary hover:bg-primary/95 border-2 border-primary shadow-[4px_4px_0px_0px_rgba(37,37,43,1)] hover:translate-x-[-1px] hover:translate-y-[-1px] hover:shadow-[5px_5px_0px_0px_rgba(37,37,43,1)] active:scale-95 duration-200 transition-all text-center rounded-xl">
+                        <span>Lihat Desain di Figma</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </a>
+                </div>
+
+                <a href="/" class="flex items-center justify-center gap-2 w-full py-3.5 font-bold text-text bg-white border-2 border-black/10 hover:border-black shadow-[4px_4px_0px_0px_rgba(37,37,43,0.05)] hover:translate-x-[-1px] hover:translate-y-[-1px] hover:shadow-[5px_5px_0px_0px_rgba(37,37,43,0.1)] transition-all duration-200 rounded-xl">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                    <span>Kembali ke Beranda</span>
+                </a>
             </div>
         </div>
     </div>
