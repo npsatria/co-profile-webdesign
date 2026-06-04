@@ -7,15 +7,22 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     description="Brutalist company profile for internship report Atrem Project."
 >
     <!-- Navigation Navbar -->
-    <header class="brutalist-header">
-        <a href="/" class="logo-text">Atrem Internship</a>
-        <nav>
-            <a href="#company" class="nav-link">Company</a>
-            <a href="#learnings" class="nav-link">Learning</a>
-            <a href="#sideq" class="nav-link">Side Quest</a>
-            <a href="#projects" class="nav-link">Project</a>
-        </nav>
-    </header>
+    <nav class="fixed z-40 my-container navbar w-full">
+        <div class="navbar-start"></div>
+        <div
+            class="navbar-center brutalist-nav-container w-fit mx-auto"
+        >
+            <div class="flex p-4 space-x-4">
+                <div class="mx-8 space-x-4">
+                    <a href="#company" class="nav-link">Company</a>
+                    <a href="#learnings" class="nav-link">Learning</a>
+                    <a href="#sideq" class="nav-link">Side Quest</a>
+                    <a href="#projects" class="nav-link">Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-end"></div>
+    </nav>
 
     <!-- Header Section -->
     <header class="hero-adxy">

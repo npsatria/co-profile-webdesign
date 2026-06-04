@@ -628,26 +628,26 @@ html{
 }
 
 :root{
-  --atrem-blue: #d64933;
-  --atrem-cyan: #ffffff;
-  --atrem-dark: #212121;
-  --atrem-gold: #cecdcd;
-  --atrem-surface: #f9f9f9;
-  --atrem-line: #a7a5a5;
-  --atrem-muted: #525252;
-  --atrem-soft-blue: #eef0f3;
-  --atrem-soft-cyan: #ffffff;
-  --atrem-soft-gold: rgba(214, 73, 51, 0.10);
-  --p: 56.24% 0.1873 34.22;
-  --b2: 96% 0.001 286;
-  --b3: 94% 0.001 286;
+  --atrem-blue: #ffffff;
+  --atrem-cyan: #181715;
+  --atrem-dark: #e8e8e3;
+  --atrem-gold: #bfbfb1;
+  --atrem-surface: #080807;
+  --atrem-line: #393632;
+  --atrem-muted: #938f8a;
+  --atrem-soft-blue: #181715;
+  --atrem-soft-cyan: #080807;
+  --atrem-soft-gold: rgba(232, 232, 227, 0.10);
+  --p: 100% 0 0;
+  --b2: 12% 0 0;
+  --b3: 10% 0 0;
   --in: 72.06% 0.191 231.6;
   --su: 64.8% 0.150 160;
   --wa: 84.71% 0.199 83.87;
   --er: 71.76% 0.221 22.18;
-  --bc: 21.05% 0 0;
-  --pc: 100% 0 0;
-  --sc: 100% 0 0;
+  --bc: 92% 0 0;
+  --pc: 0% 0 0;
+  --sc: 0% 0 0;
   --inc: 0% 0 0;
   --suc: 0% 0 0;
   --wac: 0% 0 0;
@@ -661,29 +661,29 @@ html{
   --border-btn: 2px;
   --tab-border: 2px;
   --tab-radius: 4px;
-  --s: 56.24% 0.1873 34.22;
-  --b1: 98.02% 0.001 286;
+  --s: 92% 0 0;
+  --b1: 15% 0 0;
 }
 
 @media (prefers-color-scheme: dark){
   :root{
     color-scheme: dark;
-    --atrem-blue: #318ce7;
-    --atrem-cyan: #0d0d0d;
-    --atrem-dark: #ededed;
-    --atrem-gold: #1e1c1c;
-    --atrem-surface: #111111;
-    --atrem-line: #474748;
-    --atrem-muted: #888888;
-    --atrem-soft-blue: #1e1e1e;
-    --atrem-soft-cyan: #0d0d0d;
-    --atrem-soft-gold: rgba(49, 140, 231, 0.10);
+    --atrem-blue: #ffffff;
+    --atrem-cyan: #181715;
+    --atrem-dark: #e8e8e3;
+    --atrem-gold: #bfbfb1;
+    --atrem-surface: #080807;
+    --atrem-line: #393632;
+    --atrem-muted: #938f8a;
+    --atrem-soft-blue: #181715;
+    --atrem-soft-cyan: #080807;
+    --atrem-soft-gold: rgba(232, 232, 227, 0.10);
     --in: 72.06% 0.191 231.6;
     --su: 64.8% 0.150 160;
     --wa: 84.71% 0.199 83.87;
     --er: 71.76% 0.221 22.18;
-    --pc: 13.138% 0.0392 275.75;
-    --sc: 14.96% 0.052 342.55;
+    --pc: 0% 0 0;
+    --sc: 0% 0 0;
     --ac: 14.902% 0.0334 183.61;
     --inc: 0% 0 0;
     --suc: 0% 0 0;
@@ -698,8 +698,8 @@ html{
     --border-btn: 2px;
     --tab-border: 2px;
     --tab-radius: 4px;
-    --p: 57% 0.18 250;
-    --s: 57% 0.18 250;
+    --p: 100% 0 0;
+    --s: 92% 0 0;
     --a: 74.51% 0.167 183.61;
     --n: 31.3815% 0.021108 254.139175;
     --nc: 74.6477% 0.0216 264.435964;
@@ -711,16 +711,16 @@ html{
 }
 
 [data-theme=mytheme]{
-  --p: 56.24% 0.1873 34.22;
-  --b2: 96% 0.001 286;
-  --b3: 94% 0.001 286;
+  --p: 100% 0 0;
+  --b2: 12% 0 0;
+  --b3: 10% 0 0;
   --in: 72.06% 0.191 231.6;
   --su: 64.8% 0.150 160;
   --wa: 84.71% 0.199 83.87;
   --er: 71.76% 0.221 22.18;
-  --bc: 21.05% 0 0;
-  --pc: 100% 0 0;
-  --sc: 100% 0 0;
+  --bc: 92% 0 0;
+  --pc: 0% 0 0;
+  --sc: 0% 0 0;
   --inc: 0% 0 0;
   --suc: 0% 0 0;
   --wac: 0% 0 0;
@@ -734,8 +734,8 @@ html{
   --border-btn: 2px;
   --tab-border: 2px;
   --tab-radius: 4px;
-  --s: 56.24% 0.1873 34.22;
-  --b1: 98.02% 0.001 286;
+  --s: 92% 0 0;
+  --b1: 15% 0 0;
 }
 
 [data-theme=dark]{
@@ -744,8 +744,8 @@ html{
   --su: 64.8% 0.150 160;
   --wa: 84.71% 0.199 83.87;
   --er: 71.76% 0.221 22.18;
-  --pc: 13.138% 0.0392 275.75;
-  --sc: 14.96% 0.052 342.55;
+  --pc: 0% 0 0;
+  --sc: 0% 0 0;
   --ac: 14.902% 0.0334 183.61;
   --inc: 0% 0 0;
   --suc: 0% 0 0;
@@ -760,8 +760,8 @@ html{
   --border-btn: 2px;
   --tab-border: 2px;
   --tab-radius: 4px;
-  --p: 57% 0.18 250;
-  --s: 57% 0.18 250;
+  --p: 100% 0 0;
+  --s: 92% 0 0;
   --a: 74.51% 0.167 183.61;
   --n: 31.3815% 0.021108 254.139175;
   --nc: 74.6477% 0.0216 264.435964;
@@ -2317,7 +2317,7 @@ body{
   grid-template-rows: auto 1fr auto;
   padding: clamp(112px, 12vw, 168px) clamp(20px, 7vw, 128px) clamp(28px, 5vw, 72px);
   background: var(--atrem-surface);
-  color: #151618;
+  color: var(--atrem-dark);
 }
 
 .hero-adxy-meta,
@@ -2326,9 +2326,9 @@ body{
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 12px;
-  border-top: 1px solid rgba(21, 22, 24, 0.18);
+  border-top: 1px solid var(--atrem-line);
   padding-top: 18px;
-  color: rgba(21, 22, 24, 0.58);
+  color: var(--atrem-muted);
   font-size: clamp(13px, 1.2vw, 16px);
   font-weight: 850;
   text-transform: uppercase;
@@ -2343,10 +2343,10 @@ body{
 
 .hero-adxy-title p{
   width: fit-content;
-  border: 1px solid rgba(21, 22, 24, 0.22);
+  border: 1px solid var(--atrem-line);
   border-radius: 999px;
   padding: 10px 16px;
-  color: rgba(21, 22, 24, 0.72);
+  color: var(--atrem-muted);
   font-size: clamp(14px, 1.4vw, 18px);
   font-weight: 900;
   text-transform: uppercase;
@@ -2356,12 +2356,12 @@ body{
   font-size: clamp(76px, 16vw, 244px);
   font-weight: 950;
   line-height: 0.82;
-  color: #151618;
+  color: var(--atrem-dark);
 }
 
 .hero-adxy-footer{
   border-top: 0;
-  border-bottom: 1px solid rgba(21, 22, 24, 0.18);
+  border-bottom: 1px solid var(--atrem-line);
   padding-top: 0;
   padding-bottom: 18px;
 }
@@ -2734,10 +2734,51 @@ body{
 
 /* ==========================================
    NEOBRUTALISM CONCEPT THEME OVERRIDES
-   Inspired by adxy.dev and brutalist design rules
+   Inspired by bymonolog.com design guidelines
    ========================================== */
 
-/* Typography */
+/* Typography & Base Readability */
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  background-color: var(--atrem-surface) !important;
+  color: var(--atrem-dark) !important;
+  letter-spacing: -0.015em !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.section-title,
+.portfolio-heading h2,
+.hero-adxy-title h1,
+.cho-detail-hero h1,
+.cho-next-link strong {
+  font-family: "Space Grotesk", sans-serif !important;
+  color: var(--atrem-dark) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.03em !important;
+}
+
+p, li, select, input, textarea {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  color: var(--atrem-dark) !important;
+  opacity: 0.95 !important;
+  line-height: 1.65 !important;
+}
+
+/* Specific text color fixes for visibility */
+.hero-adxy-title p {
+  color: var(--atrem-muted) !important;
+  background: var(--atrem-cyan) !important;
+  border-color: var(--atrem-line) !important;
+}
+
+.portfolio-copy p,
+.about-me-text,
+.side-quest-card p,
+.cho-detail-story p {
+  color: var(--atrem-muted) !important;
+}
+
+/* Monospace Details */
 .nav-link,
 .portfolio-filters span,
 .portfolio-copy span,
@@ -2752,21 +2793,21 @@ body{
 /* Navbar */
 .brutalist-nav-container {
   background-color: var(--atrem-cyan) !important;
-  border: 2px solid var(--atrem-dark) !important;
+  border: 2px solid var(--atrem-line) !important;
   border-radius: 4px !important;
-  box-shadow: 4px 4px 0px 0px var(--atrem-dark) !important;
+  box-shadow: 4px 4px 0px 0px var(--atrem-line) !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
   transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
 }
 
 .brutalist-nav-container:hover {
-  box-shadow: 6px 6px 0px 0px var(--atrem-dark) !important;
+  box-shadow: 6px 6px 0px 0px var(--atrem-line) !important;
   transform: translate(-2px, -2px) !important;
 }
 
 .nav-link {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 700 !important;
   text-transform: uppercase !important;
   letter-spacing: 0.05em !important;
@@ -2778,7 +2819,7 @@ body{
   color: var(--atrem-blue) !important;
 }
 
-/* Section divider from adxy.dev */
+/* Section divider repeating linear gradient */
 .section-divider {
   --mask-image: linear-gradient(to top, transparent 0%, var(--atrem-surface) 150%);
   width: 100%;
@@ -2812,7 +2853,7 @@ body{
 #company p.cursor-pointer.border-b-primary {
   border-bottom-color: var(--atrem-blue) !important;
   color: var(--atrem-dark) !important;
-  font-weight: 800 !important;
+  font-weight: 850 !important;
   opacity: 1 !important;
 }
 
@@ -2837,8 +2878,8 @@ body{
 }
 
 .skill-card:hover {
-  background-color: var(--atrem-blue) !important;
-  color: #ffffff !important;
+  background-color: var(--atrem-line) !important;
+  color: var(--atrem-dark) !important;
 }
 
 .skill-card svg {
@@ -2846,22 +2887,22 @@ body{
 }
 
 .skill-card:hover svg {
-  fill: #ffffff !important;
+  fill: var(--atrem-dark) !important;
 }
 
 /* Side Quest cards */
 .side-quest-card {
-  border: 2px solid var(--atrem-dark) !important;
+  border: 2px solid var(--atrem-line) !important;
   border-radius: 4px !important;
   background: var(--atrem-cyan) !important;
-  box-shadow: 4px 4px 0px 0px var(--atrem-dark) !important;
+  box-shadow: 4px 4px 0px 0px var(--atrem-line) !important;
   transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
 }
 
 .side-quest-card:hover {
   background: var(--atrem-cyan) !important;
   color: var(--atrem-dark) !important;
-  box-shadow: 8px 8px 0px 0px var(--atrem-dark) !important;
+  box-shadow: 8px 8px 0px 0px var(--atrem-line) !important;
   transform: translate(-4px, -4px) !important;
 }
 
@@ -2870,15 +2911,15 @@ body{
 }
 
 .side-quest-number {
-  border: 2px solid var(--atrem-dark) !important;
+  border: 2px solid var(--atrem-line) !important;
   border-radius: 4px !important;
-  background: var(--atrem-blue) !important;
-  color: #ffffff !important;
+  background: var(--atrem-line) !important;
+  color: var(--atrem-surface) !important;
 }
 
 .side-quest-card:hover .side-quest-number {
   background: var(--atrem-dark) !important;
-  color: #ffffff !important;
+  color: var(--atrem-surface) !important;
   border-color: var(--atrem-dark) !important;
 }
 
@@ -2889,19 +2930,19 @@ body{
 }
 
 .portfolio-work-card:hover {
-  background: var(--atrem-blue) !important;
-  color: #ffffff !important;
-  border-bottom-color: var(--atrem-dark) !important;
+  background: var(--atrem-cyan) !important;
+  color: var(--atrem-dark) !important;
+  border-bottom-color: var(--atrem-blue) !important;
 }
 
 .portfolio-thumb {
-  border: 2px solid var(--atrem-dark) !important;
+  border: 2px solid var(--atrem-line) !important;
   border-radius: 4px !important;
-  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.3) !important;
 }
 
 .portfolio-work-card:hover .portfolio-thumb {
-  border-color: #ffffff !important;
+  border-color: var(--atrem-blue) !important;
 }
 
 .portfolio-copy span {
@@ -2915,10 +2956,10 @@ body{
 }
 
 .portfolio-filters span {
-  border: 2px solid var(--atrem-dark) !important;
+  border: 2px solid var(--atrem-line) !important;
   border-radius: 4px !important;
   background: var(--atrem-cyan) !important;
-  box-shadow: 2px 2px 0px 0px var(--atrem-dark) !important;
+  box-shadow: 2px 2px 0px 0px var(--atrem-line) !important;
   font-weight: 700 !important;
   cursor: pointer;
   transition: all 0.15s ease !important;
@@ -2926,20 +2967,20 @@ body{
 
 .portfolio-filters span:hover {
   transform: translate(-1px, -1px) !important;
-  box-shadow: 3px 3px 0px 0px var(--atrem-dark) !important;
+  box-shadow: 3px 3px 0px 0px var(--atrem-line) !important;
 }
 
 .portfolio-filters span:first-child {
   background: var(--atrem-blue) !important;
-  color: #ffffff !important;
-  box-shadow: 2px 2px 0px 0px var(--atrem-dark) !important;
+  color: var(--atrem-surface) !important;
+  box-shadow: 2px 2px 0px 0px var(--atrem-line) !important;
 }
 
 /* Project Detail layout overrides */
 .cho-detail-cover {
-  border: 3px solid var(--atrem-dark) !important;
+  border: 3px solid var(--atrem-line) !important;
   border-radius: 4px !important;
-  box-shadow: 8px 8px 0px 0px var(--atrem-dark) !important;
+  box-shadow: 8px 8px 0px 0px var(--atrem-line) !important;
 }
 
 .cho-detail-meta {
@@ -2966,26 +3007,12 @@ body{
 }
 
 .cho-next-link:hover {
-  background: var(--atrem-blue) !important;
-  color: #ffffff !important;
+  background: var(--atrem-cyan) !important;
+  color: var(--atrem-blue) !important;
   padding: 36px 24px !important;
 }
 
 .cho-next-link:hover span {
-  color: #ffffff !important;
-}
-
-/* Footer layout */
-.layout-footer {
-  border: 2px solid #ffffff !important;
-  border-radius: 4px !important;
-  background: #151618 !important;
-  box-shadow: 4px 4px 0px 0px #ffffff !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-}
-
-.layout-footer a:hover {
   color: var(--atrem-blue) !important;
 }
 
@@ -3015,194 +3042,4 @@ body{
     border-right: none !important;
     border-bottom: 2px solid var(--atrem-line) !important;
   }
-}
-
-/* High contrast & dark mode color visibility overrides */
-.hero-adxy {
-  color: var(--atrem-dark) !important;
-}
-
-.hero-adxy-title h1 {
-  color: var(--atrem-dark) !important;
-}
-
-.hero-adxy-title p {
-  color: var(--atrem-dark) !important;
-  border-color: var(--atrem-line) !important;
-  background: var(--atrem-soft-blue) !important;
-}
-
-.hero-adxy-meta,
-.hero-adxy-footer {
-  color: var(--atrem-muted) !important;
-  border-color: var(--atrem-line) !important;
-}
-
-.portfolio-index {
-  color: var(--atrem-muted) !important;
-}
-
-.cho-detail-story p {
-  color: var(--atrem-dark) !important;
-  opacity: 0.9 !important;
-}
-
-.section-projects,
-.section-os,
-.section-writings {
-  border-top: 2px solid var(--atrem-line) !important;
-  border-bottom: 2px solid var(--atrem-line) !important;
-  background-color: var(--atrem-surface) !important;
-}
-
-/* Base link color brutalist visibility */
-a {
-  border-bottom-color: var(--atrem-line) !important;
-}
-
-a:hover {
-  border-bottom-color: var(--atrem-blue) !important;
-}
-
-/* ==========================================
-   ADXY.DEV EXACT CLONE LAYOUT STYLING
-   ========================================== */
-
-/* Capped 750px center single-column layout wrapper */
-body {
-  max-width: 750px !important;
-  margin: 0 auto !important;
-  padding: 0 !important;
-  background-color: var(--atrem-surface) !important;
-}
-
-.parent-container {
-  min-height: 100vh;
-  width: 100%;
-  border-left: 2px solid var(--atrem-line) !important;
-  border-right: 2px solid var(--atrem-line) !important;
-  position: relative;
-  background-color: var(--atrem-cyan) !important;
-  box-sizing: border-box;
-}
-
-/* Brutalist sticky header */
-.brutalist-header {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  height: 56px !important;
-  width: 100% !important;
-  border-bottom: 2px solid var(--atrem-line) !important;
-  background-color: var(--atrem-cyan) !important;
-  position: sticky !important;
-  top: 0 !important;
-  z-index: 100 !important;
-  padding: 0 1.5rem !important;
-  box-shadow: none !important;
-}
-
-.brutalist-header .logo-text {
-  font-family: "Space Mono", monospace !important;
-  font-weight: 800 !important;
-  font-size: 1.05rem !important;
-  text-transform: uppercase !important;
-  text-decoration: none !important;
-  color: var(--atrem-dark) !important;
-  border: none !important;
-}
-
-.brutalist-header nav {
-  display: flex !important;
-  gap: 1.25rem !important;
-}
-
-.brutalist-header nav .nav-link {
-  font-family: "Space Mono", monospace !important;
-  font-size: 0.85rem !important;
-  font-weight: 700 !important;
-  text-transform: uppercase !important;
-  text-decoration: none !important;
-  color: var(--atrem-dark) !important;
-  border: none !important;
-  opacity: 0.7 !important;
-  transition: all 0.2s ease !important;
-}
-
-.brutalist-header nav .nav-link:hover,
-.brutalist-header nav .nav-link.active {
-  opacity: 1 !important;
-  color: var(--atrem-blue) !important;
-  border-bottom: 2px solid var(--atrem-blue) !important;
-}
-
-/* Adapt full-viewport hero section to be a standard header */
-.hero-adxy {
-  display: flex !important;
-  flex-direction: column !important;
-  min-height: auto !important;
-  padding: 4rem 1.5rem 2rem !important;
-  background: var(--atrem-cyan) !important;
-  gap: 2.5rem !important;
-}
-
-.hero-adxy-title {
-  gap: 1.5rem !important;
-}
-
-.hero-adxy-title h1 {
-  font-size: clamp(48px, 9vw, 84px) !important;
-  line-height: 1.0 !important;
-  font-weight: 950 !important;
-  color: var(--atrem-dark) !important;
-}
-
-.hero-adxy-title p {
-  padding: 8px 14px !important;
-  border-radius: 4px !important;
-}
-
-.hero-adxy-meta,
-.hero-adxy-footer {
-  border-top: 2px solid var(--atrem-line) !important;
-  border-bottom: 2px solid var(--atrem-line) !important;
-  padding: 14px 0 !important;
-}
-
-.hero-adxy-footer {
-  border-top: none !important;
-}
-
-/* Reset full-screen breakout classes to stay within 750px borders */
-.footer-scene {
-  width: 100% !important;
-  margin-left: 0 !important;
-  border-top: 2px solid var(--atrem-line) !important;
-}
-
-#crowd-canvas,
-.footer-peeps-fallback {
-  width: 100% !important;
-  margin-left: 0 !important;
-}
-
-/* Padding overrides to match adxy.dev margins */
-.my-container,
-main {
-  padding-left: 1.5rem !important;
-  padding-right: 1.5rem !important;
-  box-sizing: border-box !important;
-}
-
-.pt-\[200px\] {
-  padding-top: 3.5rem !important;
-}
-
-.pb-\[100px\] {
-  padding-bottom: 2.5rem !important;
-}
-
-.py-\[100px\] {
-  padding-top: 3.5rem !important;
-  padding-bottom: 3.5rem !important;
 }
