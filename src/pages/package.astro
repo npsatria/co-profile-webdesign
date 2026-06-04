@@ -1,0 +1,54 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+    title="Package Monitoring / Atrem Project"
+    description="Detail dari proyek Package Monitoring selama PKL."
+>
+    <!-- Navigation Navbar -->
+    <nav class="fixed z-40 my-container navbar w-full">
+        <div class="navbar-start"></div>
+        <div class="border navbar-center backdrop-blur-lg rounded-3xl w-fit bg-base-100/50 border-primary/5 mx-auto">
+            <div class="flex p-4 space-x-4">
+                <div class="mx-8 space-x-4">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/proto/" class="nav-link">UI Prototype</a>
+                    <a href="/28ui/" class="nav-link">UI Project</a>
+                    <a href="/mira/" class="nav-link">Mira Course</a>
+                    <a href="/package/" class="opacity-100 nav-link">Package</a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-end"></div>
+    </nav>
+
+    <!-- Content -->
+    <div class="py-[200px] my-container">
+        <img src="/assets/images/packagae-fix.png" alt="" class="mx-auto" />
+        <div class="mt-12 px-28">
+            <div class="flex justify-between">
+                <div>
+                    <p class="text-3xl font-bold text-text">Package Monitoring (Frontend)</p>
+                    <div class="flex space-x-3 mt-4">
+                        <div class="duration-200 my-badge">Tailwind</div>
+                        <div class="duration-200 my-badge">Basic JS</div>
+                        <div class="duration-200 my-badge">Daisy UI</div>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <svg width="64" height="64" viewBox="0 0 64 65" fill="white" xmlns="http://www.w3.org/2000/svg" class="fill-primary mx-auto">
+                        <path
+                            d="M32 13.46C23.5378 13.46 18.2489 17.6911 16.1333 26.1533C19.3067 21.9222 23.0089 20.3355 27.24 21.3933C29.6533 21.996 31.3787 23.748 33.288 25.6866C36.4027 28.8466 40 32.5 47.8667 32.5C56.3289 32.5 61.6178 28.2688 63.7333 19.8066C60.56 24.0377 56.8578 25.6244 52.6267 24.5666C50.2107 23.964 48.488 22.212 46.5733 20.2733C43.4667 17.1133 39.8667 13.46 32 13.46ZM16.1333 32.5C7.67111 32.5 2.38222 36.7311 0.266663 45.1933C3.44 40.9622 7.14222 39.3755 11.3733 40.4333C13.7867 41.036 15.512 42.788 17.424 44.7266C20.5333 47.8866 24.1333 51.54 32 51.54C40.4622 51.54 45.7511 47.3089 47.8667 38.8466C44.6933 43.0777 40.9911 44.6644 36.76 43.6066C34.344 43.004 32.6213 41.252 30.7067 39.3133C27.6 36.1533 24 32.5 16.1333 32.5Z"
+                        />
+                    </svg>
+                </div>
+            </div>
+            <div class="mt-10 text-lg font-medium text-justify text-text leading-[27px]">
+                Package Monitoring System Slicing adalah proyek pengembangan aplikasi yang dirancang untuk memantau pengiriman paket secara efisien dan efektif. Dalam proyek ini, fokus utama saya adalah pada pengembangan antarmuka pengguna (UI) menggunakan teknologi front-end seperti JavaScript dasar, Tailwind CSS, dan DaisyUI. Dengan tools ini, saya bertujuan untuk menciptakan tampilan yang responsif dan menarik, yang memudahkan pengguna dalam melacak status pengiriman paket mereka. Proses pengembangan dimulai dengan mendesain website untuk memastikan bahwa setiap elemen antarmuka berfungsi dengan baik dan memenuhi kebutuhan pengguna.
+                <br /><br />
+                Sementara backend aplikasi dikerjakan oleh rekan tim saya, saya bertanggung jawab untuk mengimplementasikan logika front-end dan memastikan integrasi yang mulus dengan backend. Dengan menggunakan Tailwind CSS dan DaisyUI, saya dapat dengan cepat membangun komponen UI yang konsisten dan estetis, serta mengoptimalkan pengalaman pengguna. Proyek ini tidak hanya menekankan pada fungsionalitas, tetapi juga pada desain yang intuitif, sehingga pengguna dapat dengan mudah mengakses informasi yang mereka butuhkan. Melalui iterasi dan pengujian, saya berkomitmen untuk menyempurnakan aplikasi ini agar dapat memberikan pengalaman pemantauan paket yang memuaskan dan efisien.
+            </div>
+        </div>
+    </div>
+</BaseLayout>

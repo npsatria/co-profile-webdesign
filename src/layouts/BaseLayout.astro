@@ -1,0 +1,33 @@
+---
+import "../styles/global.css";
+
+const {
+    title = "Atrem Project Internship Portfolio",
+    description = "Company profile dan ringkasan pekerjaan PKL Atrem Project.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" data-theme="mytheme">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content={description} />
+        <link rel="icon" href="/assets/images/logo-atrem-project.svg" type="image/svg+xml" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Urbanist:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
+        <title>{title}</title>
+    </head>
+    <body>
+        <div class="parent-container">
+            <slot />
+        </div>
+        <script>
+            import "../scripts/site.js";
+        </script>
+    </body>
+</html>
