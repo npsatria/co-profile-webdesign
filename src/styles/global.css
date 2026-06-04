@@ -3063,3 +3063,146 @@ a {
 a:hover {
   border-bottom-color: var(--atrem-blue) !important;
 }
+
+/* ==========================================
+   ADXY.DEV EXACT CLONE LAYOUT STYLING
+   ========================================== */
+
+/* Capped 750px center single-column layout wrapper */
+body {
+  max-width: 750px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  background-color: var(--atrem-surface) !important;
+}
+
+.parent-container {
+  min-height: 100vh;
+  width: 100%;
+  border-left: 2px solid var(--atrem-line) !important;
+  border-right: 2px solid var(--atrem-line) !important;
+  position: relative;
+  background-color: var(--atrem-cyan) !important;
+  box-sizing: border-box;
+}
+
+/* Brutalist sticky header */
+.brutalist-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  height: 56px !important;
+  width: 100% !important;
+  border-bottom: 2px solid var(--atrem-line) !important;
+  background-color: var(--atrem-cyan) !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 100 !important;
+  padding: 0 1.5rem !important;
+  box-shadow: none !important;
+}
+
+.brutalist-header .logo-text {
+  font-family: "Space Mono", monospace !important;
+  font-weight: 800 !important;
+  font-size: 1.05rem !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  color: var(--atrem-dark) !important;
+  border: none !important;
+}
+
+.brutalist-header nav {
+  display: flex !important;
+  gap: 1.25rem !important;
+}
+
+.brutalist-header nav .nav-link {
+  font-family: "Space Mono", monospace !important;
+  font-size: 0.85rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  color: var(--atrem-dark) !important;
+  border: none !important;
+  opacity: 0.7 !important;
+  transition: all 0.2s ease !important;
+}
+
+.brutalist-header nav .nav-link:hover,
+.brutalist-header nav .nav-link.active {
+  opacity: 1 !important;
+  color: var(--atrem-blue) !important;
+  border-bottom: 2px solid var(--atrem-blue) !important;
+}
+
+/* Adapt full-viewport hero section to be a standard header */
+.hero-adxy {
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: auto !important;
+  padding: 4rem 1.5rem 2rem !important;
+  background: var(--atrem-cyan) !important;
+  gap: 2.5rem !important;
+}
+
+.hero-adxy-title {
+  gap: 1.5rem !important;
+}
+
+.hero-adxy-title h1 {
+  font-size: clamp(48px, 9vw, 84px) !important;
+  line-height: 1.0 !important;
+  font-weight: 950 !important;
+  color: var(--atrem-dark) !important;
+}
+
+.hero-adxy-title p {
+  padding: 8px 14px !important;
+  border-radius: 4px !important;
+}
+
+.hero-adxy-meta,
+.hero-adxy-footer {
+  border-top: 2px solid var(--atrem-line) !important;
+  border-bottom: 2px solid var(--atrem-line) !important;
+  padding: 14px 0 !important;
+}
+
+.hero-adxy-footer {
+  border-top: none !important;
+}
+
+/* Reset full-screen breakout classes to stay within 750px borders */
+.footer-scene {
+  width: 100% !important;
+  margin-left: 0 !important;
+  border-top: 2px solid var(--atrem-line) !important;
+}
+
+#crowd-canvas,
+.footer-peeps-fallback {
+  width: 100% !important;
+  margin-left: 0 !important;
+}
+
+/* Padding overrides to match adxy.dev margins */
+.my-container,
+main {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  box-sizing: border-box !important;
+}
+
+.pt-\[200px\] {
+  padding-top: 3.5rem !important;
+}
+
+.pb-\[100px\] {
+  padding-bottom: 2.5rem !important;
+}
+
+.py-\[100px\] {
+  padding-top: 3.5rem !important;
+  padding-bottom: 3.5rem !important;
+}
